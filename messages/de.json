@@ -1,0 +1,237 @@
+{
+  "nav": {
+    "services": "Leistungen",
+    "caseStudies": "Fallstudien",
+    "forWho": "Für wen",
+    "about": "Über uns",
+    "faq": "FAQ",
+    "contact": "Kontakt",
+    "cta": "Kostenloses Audit"
+  },
+  "hero": {
+    "eyebrow": "Google Business Profile · Local SEO · Google Ads",
+    "headline": "Wenn Ihre Kunden suchen —\nsollen sie Sie finden.",
+    "subheadline": "Ich helfe lokalen Unternehmen in Deutschland, bei Google Maps und der Suche sichtbarer zu werden. Individuell. Persönlich. Ohne Schablone.",
+    "cta": "Kostenloses Google Maps Audit",
+    "ctaSecondary": "Leistungen ansehen",
+    "trustLine": "Wir sprechen Deutsch, Russisch und Englisch",
+    "card1Label": "Profilaufrufe",
+    "card1Sub": "in 3 Monaten · Beautyroom Berlin",
+    "card2Label": "Wegbeschreibungen",
+    "card2Sub": "pro Monat · Beautyroom Berlin",
+    "card3Label": "Website-Klicks",
+    "card3Sub": "aus Google Maps · Beautyroom Berlin"
+  },
+  "problem": {
+    "eyebrow": "Das Problem",
+    "headline": "Warum viele lokale Unternehmen Kunden verlieren",
+    "subheadline": "Ihre Kunden suchen bereits bei Google. Aber wenn Ihr Unternehmen nicht sichtbar ist, schlecht präsentiert wird oder keine klare Strategie hat, gehen diese Anfragen zur Konkurrenz.",
+    "card1Title": "Nicht sichtbar bei Google Maps",
+    "card1Text": "Potenzielle Kunden suchen täglich nach Ihren Leistungen — und finden Ihre Konkurrenz.",
+    "card2Title": "Zu wenige Bewertungen",
+    "card2Text": "Bewertungen beeinflussen Vertrauen, Klicks und Kaufentscheidungen.",
+    "card3Title": "Keine klare Strategie",
+    "card3Text": "Viele Maßnahmen kosten Zeit und Geld, bringen aber keine messbaren Ergebnisse."
+  },
+  "services": {
+    "eyebrow": "Leistungen",
+    "headline": "Unsere Leistungen",
+    "subheadline": "Wir helfen lokalen Unternehmen, online sichtbarer zu werden, mehr qualifizierte Anfragen zu erhalten und ihre digitale Präsenz gezielt auszubauen.",
+    "service1Title": "Google Business Profile",
+    "service1Text": "Optimierung von Profil, Kategorien, Leistungen, Bildern, Beiträgen und lokaler Sichtbarkeit.",
+    "service2Title": "Local SEO",
+    "service2Text": "Bessere Rankings für relevante Suchanfragen in Ihrer Stadt und Region.",
+    "service3Title": "Google Ads",
+    "service3Text": "Gezielte Kampagnen für mehr Anfragen, mehr Anrufe und mehr planbare Kundengewinnung.",
+    "service4Title": "Bewertungsmanagement",
+    "service4Text": "Mehr Vertrauen durch professionelle Darstellung und klare Bewertungsstrategie.",
+    "service5Title": "Landing Pages",
+    "service5Text": "Schnelle und überzeugende Seiten für lokale Angebote und Kampagnen.",
+    "service6Title": "Digitale Prozesse",
+    "service6Text": "Automatisierung von Bewertungsantworten und Online-Terminbuchung.",
+    "service7Title": "Marken-Neustart",
+    "service7Text": "Vollständiger Neuaufbau Ihres digitalen Auftritts — neues Profil, neues Design, neue Sichtbarkeit."
+  },
+  "industries": {
+    "eyebrow": "Für wen",
+    "headline": "Für lokale Unternehmen, die online besser gefunden werden wollen",
+    "notInList": "Sie sind nicht dabei?",
+    "contactMe": "Schreiben Sie mir →",
+    "items": [
+      "Kosmetikstudios",
+      "Nagelstudios",
+      "Massagestudios",
+      "Friseure",
+      "Ärzte & Praxen",
+      "Handwerker",
+      "Reinigungsfirmen",
+      "Immobilienmakler",
+      "Restaurants & Cafés",
+      "Freiberufler"
+    ]
+  },
+  "caseStudies": {
+    "eyebrow": "Fallstudien",
+    "headline": "Ausgewählte Projekte",
+    "subheadline": "Reale Ergebnisse aus Berlin und Umgebung.",
+    "case1Name": "Beautyroom Berlin",
+    "case1Industry": "Kosmetik & Laser · Wilmersdorf",
+    "case1Focus": "Vollständiger Marken-Neustart: Umbenennung von Elena's Beautyroom zu Beautyroom Berlin, Aufbau des Google Business Profiles von Null, Local SEO und Content-Optimierung.",
+    "case1Stat1Label": "Profilaufrufe",
+    "case1Stat1Value": "3.505",
+    "case1Stat1Sub": "in 3 Monaten",
+    "case1Stat2Label": "Wegbeschreibungen",
+    "case1Stat2Value": "396",
+    "case1Stat2Sub": "in 3 Monaten",
+    "case1Stat3Label": "Website-Klicks",
+    "case1Stat3Value": "260",
+    "case1Stat3Sub": "aus Google Maps",
+    "case1Services": ["Google Business Profile", "Local SEO", "Marken-Neustart"],
+    "case2Name": "PartyMoments Berlin",
+    "case2Industry": "Kinderanimation & Events · Berlin",
+    "case2Focus": "Aufbau eines professionellen Google-Auftritts, Bewertungsstrategie und bessere lokale Auffindbarkeit für deutschsprachige und russischsprachige Kunden.",
+    "case2Services": ["Google Business Profile", "Local SEO", "Bewertungsmanagement"]
+  },
+  "process": {
+    "eyebrow": "Ablauf",
+    "headline": "So funktioniert die Zusammenarbeit",
+    "stepLabel": "Schritt",
+    "step1Title": "Analyse",
+    "step1Text": "Wir prüfen Ihre aktuelle Online-Präsenz, Google Business Profile, Website und Wettbewerber.",
+    "step2Title": "Strategie",
+    "step2Text": "Sie erhalten einen klaren Maßnahmenplan mit Prioritäten und Wachstumspotenzialen.",
+    "step3Title": "Umsetzung",
+    "step3Text": "Wir optimieren Sichtbarkeit, Rankings, Werbung und digitale Kontaktpunkte.",
+    "step4Title": "Wachstum",
+    "step4Text": "Kontinuierliche Verbesserung und nachhaltige Entwicklung Ihrer Online-Präsenz."
+  },
+  "about": {
+    "eyebrow": "Über mich",
+    "name": "Roman Andreiev",
+    "title": "Gründer von A.R. Local Growth",
+    "text1": "Ich unterstütze lokale Unternehmen dabei, online besser sichtbar zu werden und mehr Kunden über Google zu gewinnen.",
+    "text2": "Mein Fokus liegt auf Google Business Profile, Local SEO, Google Ads und klaren digitalen Prozessen. Ich arbeite persönlich mit meinen Kunden zusammen — kein Template, kein Callcenter.",
+    "text3": "Ich spreche Deutsch, Russisch und Ukrainisch — und verstehe die besonderen Herausforderungen von Unternehmern mit internationaler Erfahrung in Deutschland.",
+    "badge1": "Berlin, Deutschland",
+    "badge2": "DE · RU · UA",
+    "cta": "Kostenloses Audit anfordern"
+  },
+  "audit": {
+    "eyebrow": "Kostenloses Angebot",
+    "headline": "Kostenloses Google Maps Audit",
+    "subheadline": "Erfahren Sie, welche Chancen Ihr Unternehmen aktuell bei Google ungenutzt lässt.",
+    "whatWeCheck": "Wir prüfen:",
+    "checks": [
+      "Google Business Profile",
+      "Lokale Rankings",
+      "Website",
+      "Bewertungen",
+      "Wettbewerber"
+    ],
+    "note": "Kostenlos und unverbindlich.",
+    "fieldName": "Ihr Name",
+    "fieldCompany": "Firma",
+    "fieldPhone": "Telefon",
+    "fieldEmail": "E-Mail",
+    "fieldWebsite": "Website",
+    "fieldCity": "Stadt",
+    "fieldMessage": "Nachricht (optional)",
+    "phName": "Anna Schmidt",
+    "phCompany": "Ihr Unternehmen",
+    "phPhone": "+49 30 …",
+    "phEmail": "ihr@email.de",
+    "phWebsite": "https://ihrewebsite.de",
+    "phCity": "Berlin",
+    "phMessage": "Ihre Fragen oder besondere Wünsche...",
+    "cta": "Audit anfordern",
+    "successTitle": "Vielen Dank!",
+    "successText": "Ich melde mich innerhalb von 24 Stunden bei Ihnen.",
+    "errorText": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut oder schreiben Sie direkt an a.r.localgrowth@gmail.com"
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "headline": "Häufig gestellte Fragen",
+    "items": [
+      {
+        "q": "Was ist ein Google Business Profile und warum ist es wichtig?",
+        "a": "Ein Google Business Profile (früher Google My Business) ist Ihr kostenloser Unternehmenseintrag bei Google. Er erscheint in der Google-Suche und auf Google Maps, wenn jemand nach Ihrem Unternehmen oder ähnlichen Leistungen in Ihrer Stadt sucht. Ohne optimiertes Profil verlieren Sie täglich potenzielle Kunden."
+      },
+      {
+        "q": "Was genau passiert beim kostenlosen Google Maps Audit?",
+        "a": "Ich analysiere Ihr Google Business Profile, Ihre lokalen Rankings, Ihre Website, Ihre Bewertungen und Ihre Wettbewerber. Danach erhalten Sie einen konkreten Bericht mit den wichtigsten Verbesserungspotenzialen — kostenlos und unverbindlich."
+      },
+      {
+        "q": "Wie lange dauert es, bis sich Ergebnisse zeigen?",
+        "a": "Erste Verbesserungen bei Google Business Profile sind oft innerhalb weniger Wochen sichtbar. Local SEO-Ergebnisse in der organischen Suche entwickeln sich typischerweise über 3–6 Monate. Google Ads können deutlich schneller Ergebnisse liefern."
+      },
+      {
+        "q": "Für welche Branchen arbeiten Sie?",
+        "a": "Ich arbeite mit lokalen Unternehmen aller Art: Kosmetikstudios, Friseure, Massagestudios, Ärzte & Praxen, Handwerker, Reinigungsfirmen, Restaurants, Immobilienmakler und Freiberufler. Wenn Sie ein lokales Unternehmen haben, das bei Google besser gefunden werden möchte, kann ich helfen."
+      },
+      {
+        "q": "Arbeiten Sie nur in Berlin?",
+        "a": "Nein. Ich arbeite remote mit Unternehmen in ganz Deutschland, Österreich und der Schweiz. Die Zusammenarbeit findet online statt — per Videocall, E-Mail und WhatsApp."
+      },
+      {
+        "q": "Sprechen Sie auch Russisch?",
+        "a": "Ja. Ich biete meine Leistungen auf Deutsch, Russisch und Ukrainisch an. Viele meiner Kunden sind russisch- oder ukrainischsprachige Unternehmer in Deutschland, die jemanden suchen, der ihre Situation versteht."
+      },
+      {
+        "q": "Was kostet die Zusammenarbeit?",
+        "a": "Jedes Unternehmen hat andere Ziele und Ausgangssituationen. Nach dem kostenlosen Audit erstelle ich ein individuelles Angebot. Schreiben Sie mir oder fordern Sie das kostenlose Audit an — dann besprechen wir alles persönlich."
+      },
+      {
+        "q": "Kann ich Google Ads auch ohne Local SEO buchen?",
+        "a": "Ja, jede Leistung kann einzeln gebucht werden. Aber in Kombination wirken Google Ads und Local SEO deutlich stärker — Ads bringen schnelle Ergebnisse, SEO sorgt für nachhaltiges Wachstum."
+      },
+      {
+        "q": "Was ist Bewertungsmanagement und warum brauche ich das?",
+        "a": "Bewertungsmanagement umfasst eine Strategie, wie Sie systematisch mehr Google-Bewertungen erhalten und professionell auf bestehende Bewertungen reagieren. Mehr positive Bewertungen verbessern Ihr Ranking und Ihr Vertrauen bei potenziellen Kunden."
+      },
+      {
+        "q": "Wie läuft die Zusammenarbeit konkret ab?",
+        "a": "Nach dem ersten Gespräch und dem Audit erstellen wir gemeinsam einen Maßnahmenplan. Ich setze die vereinbarten Schritte um, halte Sie regelmäßig auf dem Laufenden und passe die Strategie bei Bedarf an. Sie haben immer einen direkten Ansprechpartner — mich."
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Kontakt",
+    "headline": "Schreiben Sie mir",
+    "subheadline": "Ich antworte in der Regel innerhalb von 24 Stunden.",
+    "whatsapp": "WhatsApp",
+    "phone": "Anrufen",
+    "email": "E-Mail",
+    "fieldName": "Name",
+    "fieldCompany": "Firma (optional)",
+    "fieldPhone": "Telefon (optional)",
+    "fieldEmail": "E-Mail",
+    "fieldMessage": "Nachricht",
+    "phName": "Ihr Name",
+    "phCompany": "Firma",
+    "phPhone": "+49 …",
+    "phEmail": "ihr@email.de",
+    "phMessage": "Wie kann ich Ihnen helfen?",
+    "cta": "Nachricht senden",
+    "successTitle": "Nachricht gesendet!",
+    "successText": "Ich melde mich bald bei Ihnen."
+  },
+  "footer": {
+    "tagline": "Mehr Sichtbarkeit bei Google. Individuell gemacht.",
+    "services": "Leistungen",
+    "legal": "Rechtliches",
+    "impressum": "Impressum",
+    "datenschutz": "Datenschutz",
+    "copyright": "© 2026 A.R. Local Growth & Automation. Alle Rechte vorbehalten.",
+    "madeBy": "Individuell gemacht in Berlin."
+  },
+  "cookie": {
+    "text": "Diese Website verwendet ausschließlich technisch notwendige Cookies — kein Tracking, keine Werbung.",
+    "link": "Datenschutz",
+    "dismiss": "Schließen"
+  },
+  "meta": {
+    "homeTitle": "A.R. Local Growth – Google Maps & Local SEO für lokale Unternehmen",
+    "homeDescription": "Mehr Kunden über Google Maps, Local SEO und Google Ads. Individueller Ansatz für lokale Unternehmen in Deutschland. Kostenloses Google Maps Audit anfordern.",
+    "homeKeywords": "Local SEO Berlin, Google Business Profile, Google Maps Optimierung, lokales Marketing, Google Ads"
+  }
+}

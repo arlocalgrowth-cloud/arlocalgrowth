@@ -1,0 +1,120 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 220 9% 13%; /* #202124 */
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 9% 13%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 9% 13%;
+
+    --primary: 217 91% 60%; /* #4285F4 */
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 210 17% 98%; /* #F8F9FA */
+    --secondary-foreground: 220 9% 13%;
+
+    --muted: 210 17% 98%;
+    --muted-foreground: 215 5% 40%; /* #5F6368 */
+
+    --accent: 210 17% 98%;
+    --accent-foreground: 220 9% 13%;
+
+    --destructive: 4 86% 56%; /* #EA4335 */
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 216 12% 92%; /* #E8EAED */
+    --input: 216 12% 92%;
+    --ring: 217 91% 60%;
+
+    --radius: 0.75rem;
+  }
+  .theme {
+    --animate-accordion-down: accordion-down 0.2s ease-out;
+    --animate-accordion-up: accordion-up 0.2s ease-out;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Tabular numbers for all metric displays */
+  .metric {
+    font-variant-numeric: tabular-nums;
+    font-feature-settings: "tnum";
+  }
+}
+
+@layer utilities {
+  .section-padding {
+    @apply py-section px-6 md:px-8;
+  }
+
+  .section-padding-sm {
+    @apply py-section-sm px-6 md:px-8;
+  }
+
+  .container-content {
+    @apply mx-auto max-w-6xl;
+  }
+
+  /* Text utilities */
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  /* Smooth scroll */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Focus styles */
+  :focus-visible {
+    @apply outline-none ring-2 ring-brand-blue ring-offset-2;
+  }
+
+  /* Reduced motion */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    ::before,
+    ::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+@theme inline {
+  @keyframes accordion-down {
+  from {
+    height: 0;
+    }
+  to {
+    height: var(--radix-accordion-content-height);
+    }
+  }
+  @keyframes accordion-up {
+  from {
+    height: var(--radix-accordion-content-height);
+    }
+  to {
+    height: 0;
+    }
+  }
+}

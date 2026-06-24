@@ -1,0 +1,237 @@
+{
+  "nav": {
+    "services": "Services",
+    "caseStudies": "Case Studies",
+    "forWho": "For Who",
+    "about": "About",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "cta": "Free Audit"
+  },
+  "hero": {
+    "eyebrow": "Google Business Profile · Local SEO · Google Ads",
+    "headline": "When your customers search —\nthey should find you.",
+    "subheadline": "I help local businesses in Germany get found on Google Maps and Search. Individual. Personal. No template.",
+    "cta": "Free Google Maps Audit",
+    "ctaSecondary": "View Services",
+    "trustLine": "We speak German, Russian and English",
+    "card1Label": "Profile Views",
+    "card1Sub": "in 3 months · Beautyroom Berlin",
+    "card2Label": "Direction Requests",
+    "card2Sub": "per month · Beautyroom Berlin",
+    "card3Label": "Website Clicks",
+    "card3Sub": "from Google Maps · Beautyroom Berlin"
+  },
+  "problem": {
+    "eyebrow": "The Problem",
+    "headline": "Why many local businesses lose customers",
+    "subheadline": "Your customers are already searching on Google. But if your business isn't visible, poorly presented, or lacks a clear strategy, those inquiries go to your competitors.",
+    "card1Title": "Not visible on Google Maps",
+    "card1Text": "Potential customers search for your services daily — and find your competitors.",
+    "card2Title": "Too few reviews",
+    "card2Text": "Reviews influence trust, clicks, and purchasing decisions.",
+    "card3Title": "No clear strategy",
+    "card3Text": "Many measures cost time and money but produce no measurable results."
+  },
+  "services": {
+    "eyebrow": "Services",
+    "headline": "Our Services",
+    "subheadline": "We help local businesses become more visible online, receive more qualified inquiries, and strategically grow their digital presence.",
+    "service1Title": "Google Business Profile",
+    "service1Text": "Optimization of profile, categories, services, photos, posts, and local visibility.",
+    "service2Title": "Local SEO",
+    "service2Text": "Better rankings for relevant search queries in your city and region.",
+    "service3Title": "Google Ads",
+    "service3Text": "Targeted campaigns for more inquiries, more calls, and predictable customer acquisition.",
+    "service4Title": "Review Management",
+    "service4Text": "More trust through professional presentation and a clear review strategy.",
+    "service5Title": "Landing Pages",
+    "service5Text": "Fast and compelling pages for local offers and campaigns.",
+    "service6Title": "Digital Processes",
+    "service6Text": "Automation of review responses and online appointment booking.",
+    "service7Title": "Brand Relaunch",
+    "service7Text": "Complete rebuild of your digital presence — new profile, new design, new visibility."
+  },
+  "industries": {
+    "eyebrow": "For Who",
+    "headline": "For local businesses that want to be found online",
+    "notInList": "Not on the list?",
+    "contactMe": "Write to me →",
+    "items": [
+      "Beauty Studios",
+      "Nail Studios",
+      "Massage Studios",
+      "Hair Salons",
+      "Medical Practices",
+      "Tradespeople",
+      "Cleaning Companies",
+      "Real Estate Agents",
+      "Restaurants & Cafés",
+      "Freelancers"
+    ]
+  },
+  "caseStudies": {
+    "eyebrow": "Case Studies",
+    "headline": "Selected Projects",
+    "subheadline": "Real results from Berlin and surroundings.",
+    "case1Name": "Beautyroom Berlin",
+    "case1Industry": "Cosmetics & Laser · Wilmersdorf",
+    "case1Focus": "Complete brand relaunch: rename from Elena's Beautyroom to Beautyroom Berlin, building the Google Business Profile from zero, Local SEO and content optimization.",
+    "case1Stat1Label": "Profile Views",
+    "case1Stat1Value": "3,505",
+    "case1Stat1Sub": "in 3 months",
+    "case1Stat2Label": "Direction Requests",
+    "case1Stat2Value": "396",
+    "case1Stat2Sub": "in 3 months",
+    "case1Stat3Label": "Website Clicks",
+    "case1Stat3Value": "260",
+    "case1Stat3Sub": "from Google Maps",
+    "case1Services": ["Google Business Profile", "Local SEO", "Brand Relaunch"],
+    "case2Name": "PartyMoments Berlin",
+    "case2Industry": "Children's Entertainment & Events · Berlin",
+    "case2Focus": "Building a professional Google presence, review strategy, and better local findability for German and Russian-speaking customers.",
+    "case2Services": ["Google Business Profile", "Local SEO", "Review Management"]
+  },
+  "process": {
+    "eyebrow": "Process",
+    "headline": "How we work together",
+    "stepLabel": "Step",
+    "step1Title": "Analysis",
+    "step1Text": "We review your current online presence, Google Business Profile, website, and competitors.",
+    "step2Title": "Strategy",
+    "step2Text": "You receive a clear action plan with priorities and growth potential.",
+    "step3Title": "Implementation",
+    "step3Text": "We optimize visibility, rankings, advertising, and digital touchpoints.",
+    "step4Title": "Growth",
+    "step4Text": "Continuous improvement and sustainable development of your online presence."
+  },
+  "about": {
+    "eyebrow": "About",
+    "name": "Roman Andreiev",
+    "title": "Founder of A.R. Local Growth",
+    "text1": "I help local businesses become more visible online and win more customers through Google.",
+    "text2": "My focus is on Google Business Profile, Local SEO, Google Ads, and clear digital processes. I work personally with each client — no templates, no call centers.",
+    "text3": "I speak German, Russian, and Ukrainian — and understand the unique challenges of entrepreneurs with international backgrounds in Germany.",
+    "badge1": "Berlin, Germany",
+    "badge2": "DE · RU · UA",
+    "cta": "Request Free Audit"
+  },
+  "audit": {
+    "eyebrow": "Free Offer",
+    "headline": "Free Google Maps Audit",
+    "subheadline": "Find out what opportunities your business is currently missing on Google.",
+    "whatWeCheck": "We review:",
+    "checks": [
+      "Google Business Profile",
+      "Local Rankings",
+      "Website",
+      "Reviews",
+      "Competitors"
+    ],
+    "note": "Free and non-binding.",
+    "fieldName": "Your Name",
+    "fieldCompany": "Company",
+    "fieldPhone": "Phone",
+    "fieldEmail": "Email",
+    "fieldWebsite": "Website",
+    "fieldCity": "City",
+    "fieldMessage": "Message (optional)",
+    "phName": "Anna Schmidt",
+    "phCompany": "Your company",
+    "phPhone": "+49 30 …",
+    "phEmail": "your@email.de",
+    "phWebsite": "https://yourwebsite.de",
+    "phCity": "Berlin",
+    "phMessage": "Your questions or special requests...",
+    "cta": "Request Audit",
+    "successTitle": "Thank you!",
+    "successText": "I'll get back to you within 24 hours.",
+    "errorText": "Something went wrong. Please try again or write directly to a.r.localgrowth@gmail.com"
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "headline": "Frequently Asked Questions",
+    "items": [
+      {
+        "q": "What is a Google Business Profile and why is it important?",
+        "a": "A Google Business Profile (formerly Google My Business) is your free business listing on Google. It appears in Google Search and Google Maps when someone searches for your business or similar services in your city. Without an optimized profile, you lose potential customers every day."
+      },
+      {
+        "q": "What happens in the free Google Maps Audit?",
+        "a": "I analyze your Google Business Profile, local rankings, website, reviews, and competitors. You then receive a concrete report with the most important areas for improvement — free and non-binding."
+      },
+      {
+        "q": "How long does it take to see results?",
+        "a": "Initial improvements to Google Business Profile are often visible within a few weeks. Local SEO results in organic search typically develop over 3–6 months. Google Ads can deliver results much faster."
+      },
+      {
+        "q": "Which industries do you work with?",
+        "a": "I work with all types of local businesses: beauty studios, hair salons, massage studios, medical practices, tradespeople, cleaning companies, restaurants, real estate agents, and freelancers."
+      },
+      {
+        "q": "Do you only work in Berlin?",
+        "a": "No. I work remotely with businesses throughout Germany, Austria, and Switzerland. Collaboration happens online — via video call, email, and WhatsApp."
+      },
+      {
+        "q": "Do you speak Russian?",
+        "a": "Yes. I offer my services in German, Russian, and Ukrainian. Many of my clients are Russian or Ukrainian-speaking entrepreneurs in Germany."
+      },
+      {
+        "q": "What does it cost?",
+        "a": "Every business has different goals and starting points. After the free audit, I create an individual proposal. Request the free audit and we'll discuss everything personally."
+      },
+      {
+        "q": "Can I book Google Ads without Local SEO?",
+        "a": "Yes, each service can be booked individually. But combined, Google Ads and Local SEO work much more powerfully — Ads bring quick results, SEO ensures sustainable growth."
+      },
+      {
+        "q": "What is review management and why do I need it?",
+        "a": "Review management includes a strategy to systematically get more Google reviews and professionally respond to existing reviews. More positive reviews improve your ranking and trust with potential customers."
+      },
+      {
+        "q": "How does the collaboration work in practice?",
+        "a": "After our first conversation and the audit, we create an action plan together. I implement the agreed steps, keep you regularly updated, and adjust the strategy as needed. You always have a direct contact — me."
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "headline": "Write to me",
+    "subheadline": "I typically respond within 24 hours.",
+    "whatsapp": "WhatsApp",
+    "phone": "Call",
+    "email": "Email",
+    "fieldName": "Name",
+    "fieldCompany": "Company (optional)",
+    "fieldPhone": "Phone (optional)",
+    "fieldEmail": "Email",
+    "fieldMessage": "Message",
+    "phName": "Your name",
+    "phCompany": "Company",
+    "phPhone": "+49 …",
+    "phEmail": "your@email.de",
+    "phMessage": "How can I help you?",
+    "cta": "Send Message",
+    "successTitle": "Message sent!",
+    "successText": "I'll be in touch soon."
+  },
+  "footer": {
+    "tagline": "More visibility on Google. Individually made.",
+    "services": "Services",
+    "legal": "Legal",
+    "impressum": "Imprint",
+    "datenschutz": "Privacy Policy",
+    "copyright": "© 2026 A.R. Local Growth & Automation. All rights reserved.",
+    "madeBy": "Individually made in Berlin."
+  },
+  "cookie": {
+    "text": "This website uses only technically necessary cookies — no tracking, no ads.",
+    "link": "Privacy Policy",
+    "dismiss": "Dismiss"
+  },
+  "meta": {
+    "homeTitle": "A.R. Local Growth – Google Maps & Local SEO for Local Businesses",
+    "homeDescription": "More customers via Google Maps, Local SEO and Google Ads. Individual approach for local businesses in Germany. Request a free Google Maps audit.",
+    "homeKeywords": "Local SEO Berlin, Google Business Profile, Google Maps optimization, local marketing, Google Ads"
+  }
+}
