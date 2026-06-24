@@ -28,7 +28,7 @@ Nachricht: ${body.message || "—"}
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        from: "noreply@ar-localgrowth.de",
+        from: "onboarding@resend.dev",
         to: "a.r.localgrowth@gmail.com",
         reply_to: body.email,
         subject: `Audit-Anfrage: ${body.company} (${body.city})`,
