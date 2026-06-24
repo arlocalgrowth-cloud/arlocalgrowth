@@ -50,6 +50,7 @@ function MetricCard({
   sub,
   delay = 0,
   className,
+  compact = false,
 }: {
   icon: React.ElementType;
   label: string;
@@ -57,6 +58,7 @@ function MetricCard({
   sub: string;
   delay?: number;
   className?: string;
+  compact?: boolean;
 }) {
   return (
     <motion.div
@@ -64,27 +66,32 @@ function MetricCard({
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay }}
       className={cn(
-        "bg-white rounded-2xl border border-google-border shadow-card p-4 w-52",
+        "bg-white rounded-2xl border border-google-border shadow-card",
+        compact ? "p-3" : "p-4 w-52",
         className
       )}
-      style={{
-        animation: `float ${3 + delay}s ease-in-out infinite`,
-        animationDelay: `${delay * 0.5}s`,
-      }}
+      style={
+        !compact
+          ? {
+              animation: `float ${3 + delay}s ease-in-out infinite`,
+              animationDelay: `${delay * 0.5}s`,
+            }
+          : undefined
+      }
     >
       <div className="flex items-center gap-2 mb-2">
-        <div className="w-7 h-7 rounded-lg bg-brand-blue/10 flex items-center justify-center">
-          <Icon size={14} className="text-brand-blue" />
+        <div className={cn("rounded-lg bg-brand-blue/10 flex items-center justify-center shrink-0", compact ? "w-6 h-6" : "w-7 h-7")}>
+          <Icon size={compact ? 12 : 14} className="text-brand-blue" />
         </div>
-        <span className="text-xs text-google-secondary font-medium">{label}</span>
+        <span className={cn("text-google-secondary font-medium leading-tight", compact ? "text-[10px]" : "text-xs")}>{label}</span>
       </div>
-      <div className="text-2xl font-bold text-google-text metric">
+      <div className={cn("font-bold text-google-text metric", compact ? "text-xl" : "text-2xl")}>
         <CountUp end={value} />
       </div>
-      <p className="text-xs text-google-secondary mt-1 leading-tight">{sub}</p>
+      <p className={cn("text-google-secondary mt-1 leading-tight", compact ? "text-[10px]" : "text-xs")}>{sub}</p>
       <div className="flex items-center gap-1 mt-2">
-        <TrendingUp size={11} className="text-brand-green" />
-        <span className="text-xs text-brand-green font-medium">↑ von 0</span>
+        <TrendingUp size={10} className="text-brand-green" />
+        <span className={cn("text-brand-green font-medium", compact ? "text-[10px]" : "text-xs")}>↑ von 0</span>
       </div>
     </motion.div>
   );
@@ -284,21 +291,19 @@ export function HeroSection() {
           </div>
         </div>
 
-        {/* Mobile metric cards (horizontal scroll) */}
+        {/* Mobile metric cards — compact 3-column grid */}
         <motion.div
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.4 }}
-          className="lg:hidden mt-10 flex gap-4 overflow-x-auto pb-2 -mx-6 px-6 scrollbar-hide"
+          className="lg:hidden mt-8 grid grid-cols-3 gap-3"
         >
           {[
             { icon: Eye, label: t("card1Label"), value: 3505, sub: t("card1Sub") },
             { icon: Navigation, label: t("card2Label"), value: 396, sub: t("card2Sub") },
             { icon: MousePointerClick, label: t("card3Label"), value: 260, sub: t("card3Sub") },
           ].map((card, i) => (
-            <div key={i} className="shrink-0">
-              <MetricCard {...card} delay={i * 0.1} />
-            </div>
+            <MetricCard key={i} {...card} delay={i * 0.1} compact />
           ))}
         </motion.div>
       </div>
