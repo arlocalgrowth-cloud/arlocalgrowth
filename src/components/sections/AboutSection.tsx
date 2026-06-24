@@ -16,7 +16,7 @@ export function AboutSection() {
   return (
     <section id="uber-uns" className="section-padding" ref={ref}>
       <div className="container-content mx-auto">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
           {/* Photo */}
           <motion.div
             initial={{ opacity: 0, x: -20 }}
@@ -67,7 +67,7 @@ export function AboutSection() {
               <p className="text-label-sm uppercase text-google-secondary tracking-widest mb-3">
                 {t("eyebrow")}
               </p>
-              <h2 className="text-display-sm font-bold text-google-text">{t("name")}</h2>
+              <h2 className="text-2xl sm:text-display-sm font-bold text-google-text">{t("name")}</h2>
               <p className="text-body-lg text-brand-blue font-medium mt-1">{t("title")}</p>
             </div>
 

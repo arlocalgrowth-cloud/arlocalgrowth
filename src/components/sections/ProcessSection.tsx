@@ -28,12 +28,12 @@ export function ProcessSection() {
           initial={{ opacity: 0, y: 16 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5 }}
-          className="text-center mb-14"
+          className="text-center mb-8 sm:mb-12 lg:mb-14"
         >
           <p className="text-label-sm uppercase text-google-secondary tracking-widest mb-3">
             {t("eyebrow")}
           </p>
-          <h2 className="text-display-sm font-bold text-google-text">{t("headline")}</h2>
+          <h2 className="text-2xl sm:text-display-sm font-bold text-google-text">{t("headline")}</h2>
         </motion.div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 relative">

@@ -177,7 +177,7 @@ export function HeroSection() {
       <div className="absolute inset-0 bg-gradient-to-b from-blue-50/40 via-white to-white pointer-events-none" />
       <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-blue-50/30 to-transparent pointer-events-none" />
 
-      <div className="container-content mx-auto px-6 py-20 lg:py-28 relative">
+      <div className="container-content mx-auto px-5 py-14 sm:py-20 lg:py-28 relative">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Left — Text */}
           <div className="space-y-8">
@@ -196,7 +196,7 @@ export function HeroSection() {
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="text-display-md lg:text-display-lg font-bold text-google-text text-balance"
+              className="text-[2rem] sm:text-display-md lg:text-display-lg font-bold text-google-text text-balance"
             >
               {headline.map((line, i) => (
                 <span key={i} className={i > 0 ? "block text-brand-blue" : "block"}>

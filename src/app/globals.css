@@ -61,11 +61,11 @@
 
 @layer utilities {
   .section-padding {
-    @apply py-section px-6 md:px-8;
+    @apply py-16 md:py-20 lg:py-section px-5 md:px-8;
   }
 
   .section-padding-sm {
-    @apply py-section-sm px-6 md:px-8;
+    @apply py-10 md:py-14 lg:py-section-sm px-5 md:px-8;
   }
 
   .container-content {

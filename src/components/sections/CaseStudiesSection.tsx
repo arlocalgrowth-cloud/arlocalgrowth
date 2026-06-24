@@ -31,12 +31,12 @@ export function CaseStudiesSection() {
           initial={{ opacity: 0, y: 16 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5 }}
-          className="text-center mb-14"
+          className="text-center mb-8 sm:mb-12 lg:mb-14"
         >
           <p className="text-label-sm uppercase text-google-secondary tracking-widest mb-3">
             {t("eyebrow")}
           </p>
-          <h2 className="text-display-sm font-bold text-google-text">{t("headline")}</h2>
+          <h2 className="text-2xl sm:text-display-sm font-bold text-google-text">{t("headline")}</h2>
           <p className="mt-3 text-body-lg text-google-secondary">{t("subheadline")}</p>
         </motion.div>
 

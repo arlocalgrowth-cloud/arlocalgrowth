@@ -70,13 +70,13 @@ export function AuditSection() {
             initial={{ opacity: 0, x: -20 }}
             animate={inView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.6 }}
-            className="lg:sticky lg:top-24 space-y-6"
+            className="space-y-6"
           >
             <div>
               <p className="text-label-sm uppercase text-google-secondary tracking-widest mb-3">
                 {t("eyebrow")}
               </p>
-              <h2 className="text-display-sm font-bold text-google-text">{t("headline")}</h2>
+              <h2 className="text-2xl sm:text-display-sm font-bold text-google-text">{t("headline")}</h2>
               <p className="mt-4 text-body-lg text-google-secondary leading-relaxed">
                 {t("subheadline")}
               </p>
@@ -104,7 +104,7 @@ export function AuditSection() {
             animate={inView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.1 }}
           >
-            <div className="bg-white rounded-card-lg border border-google-border shadow-card p-8">
+            <div className="bg-white rounded-card-lg border border-google-border shadow-card p-5 sm:p-8">
               {status === "success" ? (
                 <div className="flex flex-col items-center text-center py-10 gap-4">
                   <CheckCircle2 size={48} className="text-brand-green" />

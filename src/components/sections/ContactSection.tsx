@@ -67,12 +67,12 @@ export function ContactSection() {
           initial={{ opacity: 0, y: 16 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5 }}
-          className="text-center mb-12"
+          className="text-center mb-8 sm:mb-10 lg:mb-12"
         >
           <p className="text-label-sm uppercase text-google-secondary tracking-widest mb-3">
             {t("eyebrow")}
           </p>
-          <h2 className="text-display-sm font-bold text-google-text">{t("headline")}</h2>
+          <h2 className="text-2xl sm:text-display-sm font-bold text-google-text">{t("headline")}</h2>
           <p className="mt-3 text-body-lg text-google-secondary">{t("subheadline")}</p>
         </motion.div>
 
@@ -138,7 +138,7 @@ export function ContactSection() {
             animate={inView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.5, delay: 0.15 }}
           >
-            <div className="bg-white rounded-card-lg border border-google-border shadow-card p-7">
+            <div className="bg-white rounded-card-lg border border-google-border shadow-card p-5 sm:p-7">
               {status === "success" ? (
                 <div className="flex flex-col items-center text-center py-8 gap-4">
                   <CheckCircle2 size={44} className="text-brand-green" />
