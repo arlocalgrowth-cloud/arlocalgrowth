@@ -6,6 +6,7 @@ import { useRef, useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
+import { Turnstile } from "@marsidev/react-turnstile";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -30,6 +31,7 @@ export function ContactSection() {
   const ref = useRef(null);
   const inView = useInView(ref, { once: true, margin: "-80px" });
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
+  const [turnstileToken, setTurnstileToken] = useState<string | null>(null);
 
   const {
     register,
@@ -41,16 +43,18 @@ export function ContactSection() {
   });
 
   const onSubmit = async (data: ContactFormValues) => {
+    if (!turnstileToken) return;
     setStatus("loading");
     try {
       const res = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(data),
+        body: JSON.stringify({ ...data, turnstileToken }),
       });
       if (!res.ok) throw new Error("Server error");
       setStatus("success");
       reset();
+      setTurnstileToken(null);
     } catch {
       setStatus("error");
     }
@@ -195,16 +199,22 @@ export function ContactSection() {
                     />
                   </div>
 
+                  <Turnstile
+                    siteKey={process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY!}
+                    onSuccess={setTurnstileToken}
+                    onError={() => setTurnstileToken(null)}
+                    onExpire={() => setTurnstileToken(null)}
+                    options={{ theme: "light", language: "auto" }}
+                  />
+
                   <Button
                     type="submit"
                     size="lg"
                     className="w-full"
-                    disabled={status === "loading"}
+                    disabled={status === "loading" || !turnstileToken}
                   >
                     {status === "loading" ? (
-                      <>
-                        <Loader2 size={16} className="animate-spin" />
-                      </>
+                      <Loader2 size={16} className="animate-spin" />
                     ) : (
                       t("cta")
                     )}

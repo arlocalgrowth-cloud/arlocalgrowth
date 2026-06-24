@@ -6,6 +6,7 @@ import { useRef, useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
+import { Turnstile } from "@marsidev/react-turnstile";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -29,6 +30,7 @@ export function AuditSection() {
   const ref = useRef(null);
   const inView = useInView(ref, { once: true, margin: "-80px" });
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
+  const [turnstileToken, setTurnstileToken] = useState<string | null>(null);
 
   const checks = t.raw("checks") as string[];
 
@@ -42,16 +44,18 @@ export function AuditSection() {
   });
 
   const onSubmit = async (data: AuditFormValues) => {
+    if (!turnstileToken) return;
     setStatus("loading");
     try {
       const res = await fetch("/api/audit", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(data),
+        body: JSON.stringify({ ...data, turnstileToken }),
       });
       if (!res.ok) throw new Error("Server error");
       setStatus("success");
       reset();
+      setTurnstileToken(null);
     } catch {
       setStatus("error");
     }
@@ -199,6 +203,14 @@ export function AuditSection() {
                     />
                   </div>
 
+                  <Turnstile
+                    siteKey={process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY!}
+                    onSuccess={setTurnstileToken}
+                    onError={() => setTurnstileToken(null)}
+                    onExpire={() => setTurnstileToken(null)}
+                    options={{ theme: "light", language: "auto" }}
+                  />
+
                   {status === "error" && (
                     <div className="flex items-start gap-2 p-3 rounded-xl bg-red-50 border border-red-100">
                       <AlertCircle size={15} className="text-brand-red shrink-0 mt-0.5" />
@@ -210,7 +222,7 @@ export function AuditSection() {
                     type="submit"
                     size="xl"
                     className="w-full"
-                    disabled={status === "loading"}
+                    disabled={status === "loading" || !turnstileToken}
                   >
                     {status === "loading" ? (
                       <>
