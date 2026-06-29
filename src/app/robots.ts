@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://ar-localgrowth.de/sitemap.xml",
+    sitemap: "https://arlocalgrowth.de/sitemap.xml",
   };
 }
