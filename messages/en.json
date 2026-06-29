@@ -213,7 +213,9 @@
     "phMessage": "How can I help you?",
     "cta": "Send Message",
     "successTitle": "Message sent!",
-    "successText": "I'll be in touch soon."
+    "successText": "I'll be in touch soon.",
+    "auditPrompt": "Or would you like to request a free audit directly?",
+    "auditCta": "Free Google Maps Audit"
   },
   "footer": {
     "tagline": "More visibility on Google. Individually made.",

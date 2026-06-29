@@ -213,7 +213,9 @@
     "phMessage": "Wie kann ich Ihnen helfen?",
     "cta": "Nachricht senden",
     "successTitle": "Nachricht gesendet!",
-    "successText": "Ich melde mich bald bei Ihnen."
+    "successText": "Ich melde mich bald bei Ihnen.",
+    "auditPrompt": "Oder möchten Sie direkt ein kostenloses Audit anfordern?",
+    "auditCta": "Kostenloses Google Maps Audit"
   },
   "footer": {
     "tagline": "Mehr Sichtbarkeit bei Google. Individuell gemacht.",
