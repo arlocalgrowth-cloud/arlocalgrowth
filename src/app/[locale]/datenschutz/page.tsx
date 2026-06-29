@@ -109,6 +109,14 @@ function DeContent() {
             <strong className="text-google-text">Vercel Inc.</strong> (Hosting) — 340 S Lemon Ave #4133, Walnut, CA 91789, USA.
             Datenverarbeitung gemäß EU-US Data Privacy Framework.
           </li>
+          <li>
+            <strong className="text-google-text">Cloudflare Inc.</strong> (Bot-Schutz via Turnstile) — 101 Townsend St, San Francisco, CA 94107, USA.
+            Datenverarbeitung gemäß EU-US Data Privacy Framework. Nur bei Nutzung der Kontaktformulare aktiv.
+          </li>
+          <li>
+            <strong className="text-google-text">Google LLC</strong> (Google Analytics) — 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA.
+            Nur bei ausdrücklicher Einwilligung. IP-Anonymisierung ist aktiviert. Datenverarbeitung gemäß EU-US Data Privacy Framework.
+          </li>
         </ul>
       </section>
 
@@ -120,10 +128,18 @@ function DeContent() {
       </section>
 
       <section>
-        <h2 className="text-base font-semibold text-google-text mb-3">6. Cookies</h2>
-        <p className="text-google-secondary text-sm leading-relaxed">
-          Diese Website verwendet ausschließlich technisch notwendige Cookies, die für den Betrieb der Website erforderlich sind. Es werden keine Tracking- oder Marketing-Cookies eingesetzt. Eine Einwilligung ist für diese Cookies nach § 25 Abs. 2 TTDSG nicht erforderlich.
+        <h2 className="text-base font-semibold text-google-text mb-3">6. Cookies und Tracking</h2>
+        <p className="text-google-secondary text-sm leading-relaxed mb-3">
+          Diese Website verwendet folgende Cookies und ähnliche Technologien:
         </p>
+        <ul className="text-google-secondary text-sm space-y-3 list-disc pl-5">
+          <li>
+            <strong className="text-google-text">Cloudflare Turnstile</strong> (technisch notwendig) — schützt Kontaktformulare vor automatisierten Anfragen (Spam-Schutz). Keine Einwilligung nach § 25 Abs. 2 TTDSG erforderlich, da ausschließlich zur Bereitstellung des Dienstes notwendig.
+          </li>
+          <li>
+            <strong className="text-google-text">Google Analytics 4</strong> (nur mit Einwilligung) — erfasst anonymisierte Nutzungsstatistiken (aufgerufene Seiten, Verweildauer, Herkunft). Die IP-Adresse wird vor der Verarbeitung anonymisiert. Google Analytics wird erst nach Ihrer ausdrücklichen Zustimmung über den Cookie-Banner geladen. Rechtsgrundlage: Art. 6 Abs. 1 lit. a) DSGVO. Tracking-ID: G-JTS9F28JER. Sie können Ihre Einwilligung jederzeit widerrufen, indem Sie den Speicher Ihres Browsers leeren oder auf dieser Seite keine Analyse-Cookies akzeptieren.
+          </li>
+        </ul>
       </section>
 
       <section>
@@ -204,14 +220,21 @@ function EnContent() {
         <ul className="text-google-secondary text-sm space-y-2 list-disc pl-5">
           <li><strong className="text-google-text">Resend Inc.</strong> — email delivery (USA, EU Standard Contractual Clauses)</li>
           <li><strong className="text-google-text">Vercel Inc.</strong> — website hosting (USA, EU-US Data Privacy Framework)</li>
+          <li><strong className="text-google-text">Cloudflare Inc.</strong> — bot protection via Turnstile (USA, EU-US Data Privacy Framework). Active only when contact forms are used.</li>
+          <li><strong className="text-google-text">Google LLC</strong> — Google Analytics (USA, EU-US Data Privacy Framework). Only loaded with your explicit consent. IP anonymisation is active. Tracking ID: G-JTS9F28JER.</li>
         </ul>
       </section>
 
       <section>
-        <h2 className="text-base font-semibold text-google-text mb-3">5. Cookies</h2>
-        <p className="text-google-secondary text-sm leading-relaxed">
-          This website uses only technically necessary cookies. No tracking or marketing cookies are used.
-        </p>
+        <h2 className="text-base font-semibold text-google-text mb-3">5. Cookies &amp; Tracking</h2>
+        <ul className="text-google-secondary text-sm space-y-3 list-disc pl-5">
+          <li>
+            <strong className="text-google-text">Cloudflare Turnstile</strong> (technically necessary) — protects contact forms against automated requests. No consent required as it is strictly necessary for service delivery.
+          </li>
+          <li>
+            <strong className="text-google-text">Google Analytics 4</strong> (consent required) — collects anonymised usage statistics (pages visited, session duration, traffic source). IP anonymisation is active. Only loaded after your explicit consent via the cookie banner. Legal basis: Art. 6(1)(a) GDPR. You can withdraw consent at any time by clearing your browser storage.
+          </li>
+        </ul>
       </section>
 
       <section>
@@ -265,10 +288,25 @@ function RuContent() {
       </section>
 
       <section>
-        <h2 className="text-base font-semibold text-google-text mb-3">4. Файлы cookie</h2>
-        <p className="text-google-secondary text-sm leading-relaxed">
-          Сайт использует только технически необходимые файлы cookie. Трекинговые и маркетинговые cookie не применяются.
-        </p>
+        <h2 className="text-base font-semibold text-google-text mb-3">4. Cookie и отслеживание</h2>
+        <ul className="text-google-secondary text-sm space-y-3 list-disc pl-5">
+          <li>
+            <strong className="text-google-text">Cloudflare Turnstile</strong> (технически необходимый) — защищает контактные формы от автоматических запросов. Согласие не требуется, так как используется исключительно для обеспечения работы сервиса.
+          </li>
+          <li>
+            <strong className="text-google-text">Google Analytics 4</strong> (только с согласия) — собирает анонимную статистику использования (посещённые страницы, продолжительность сессий, источники трафика). IP-адрес анонимизируется до передачи данных. Загружается только после вашего явного согласия через баннер cookie. Правовая основа: ст. 6 (1)(a) DSGVO. Tracking-ID: G-JTS9F28JER. Вы можете отозвать согласие в любой момент, очистив хранилище браузера.
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-base font-semibold text-google-text mb-3">5. Поставщики услуг</h2>
+        <ul className="text-google-secondary text-sm space-y-2 list-disc pl-5">
+          <li><strong className="text-google-text">Resend Inc.</strong> — отправка электронной почты (США, стандартные договорные положения ЕС)</li>
+          <li><strong className="text-google-text">Vercel Inc.</strong> — хостинг сайта (США, EU-US Data Privacy Framework)</li>
+          <li><strong className="text-google-text">Cloudflare Inc.</strong> — защита от ботов (США, EU-US Data Privacy Framework)</li>
+          <li><strong className="text-google-text">Google LLC</strong> — Google Analytics (США, EU-US Data Privacy Framework). Только с вашего согласия.</li>
+        </ul>
       </section>
 
       <section>

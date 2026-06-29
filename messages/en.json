@@ -6,6 +6,7 @@
     "about": "About",
     "faq": "FAQ",
     "contact": "Contact",
+    "blog": "Blog",
     "cta": "Get in touch"
   },
   "hero": {
@@ -114,7 +115,7 @@
     "text3": "I speak German, Russian, and Ukrainian — and understand the unique challenges of entrepreneurs with international backgrounds in Germany.",
     "badge1": "Berlin, Germany",
     "badge2": "DE · RU · UA",
-    "cta": "Request Free Audit"
+    "cta": "Get in touch"
   },
   "audit": {
     "eyebrow": "Contact",

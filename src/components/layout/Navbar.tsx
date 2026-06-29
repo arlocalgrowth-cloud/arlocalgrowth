@@ -47,6 +47,8 @@ export function Navbar() {
     return () => { document.body.style.overflow = ""; };
   }, [mobileOpen]);
 
+  const blogHref = locale === "de" ? "/blog" : `/${locale}/blog`;
+
   const navLinks = [
     { key: "services", href: "#leistungen" },
     { key: "caseStudies", href: "#fallstudien" },
@@ -109,6 +111,14 @@ export function Navbar() {
                 </a>
               </li>
             ))}
+            <li>
+              <NextLink
+                href={blogHref}
+                className="px-3 py-2 text-sm text-google-secondary hover:text-google-text rounded-lg hover:bg-google-light transition-colors"
+              >
+                {t("blog")}
+              </NextLink>
+            </li>
           </ul>
 
           {/* Desktop right */}
@@ -157,6 +167,19 @@ export function Navbar() {
                     {t(key)}
                   </motion.a>
                 ))}
+                <motion.div
+                  initial={{ opacity: 0, x: -12 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.15, delay: navLinks.length * 0.04 }}
+                >
+                  <NextLink
+                    href={blogHref}
+                    onClick={() => setMobileOpen(false)}
+                    className="flex items-center px-4 py-3.5 text-base font-medium text-google-text hover:bg-google-light active:bg-google-light rounded-xl transition-colors"
+                  >
+                    {t("blog")}
+                  </NextLink>
+                </motion.div>
               </div>
 
               <div className="px-5 py-6 border-t border-google-border space-y-3">
