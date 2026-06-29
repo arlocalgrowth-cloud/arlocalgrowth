@@ -27,15 +27,17 @@ export async function POST(req: Request) {
     }
 
     const emailBody = `
-Neues Google Maps Audit angefordert
+Neue Anfrage über arlocalgrowth.de
 
 Name: ${body.name}
-Firma: ${body.company}
-Telefon: ${body.phone}
+Unternehmen: ${body.company}
 E-Mail: ${body.email}
-Website: ${body.website || "—"}
 Stadt: ${body.city}
-Nachricht: ${body.message || "—"}
+Telefon: ${body.phone || "—"}
+Google Business Profil: ${body.gbpUrl || "—"}
+
+Problem / Frage:
+${body.problem}
     `.trim();
 
     const res = await fetch("https://api.resend.com/emails", {
@@ -48,7 +50,7 @@ Nachricht: ${body.message || "—"}
         from: "onboarding@resend.dev",
         to: "a.r.localgrowth@gmail.com",
         reply_to: body.email,
-        subject: `Audit-Anfrage: ${body.company} (${body.city})`,
+        subject: `Neue Anfrage: ${body.company} (${body.city})`,
         text: emailBody,
       }),
     });

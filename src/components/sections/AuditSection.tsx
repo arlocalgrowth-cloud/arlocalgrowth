@@ -11,16 +11,16 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import { CheckCircle2, AlertCircle, Loader2, CheckSquare } from "lucide-react";
+import { CheckCircle2, AlertCircle, Loader2 } from "lucide-react";
 
 const auditSchema = z.object({
   name: z.string().min(2, "Name erforderlich"),
-  company: z.string().min(2, "Firma erforderlich"),
-  phone: z.string().min(6, "Telefon erforderlich"),
+  company: z.string().min(2, "Unternehmen erforderlich"),
   email: z.string().email("Gültige E-Mail erforderlich"),
-  website: z.string().optional(),
   city: z.string().min(2, "Stadt erforderlich"),
-  message: z.string().optional(),
+  phone: z.string().optional(),
+  gbpUrl: z.string().optional(),
+  problem: z.string().min(10, "Bitte beschreiben Sie kurz Ihre Situation"),
 });
 
 type AuditFormValues = z.infer<typeof auditSchema>;
@@ -32,7 +32,7 @@ export function AuditSection() {
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
   const [turnstileToken, setTurnstileToken] = useState<string | null>(null);
 
-  const checks = t.raw("checks") as string[];
+  const steps = t.raw("steps") as string[];
 
   const {
     register,
@@ -76,25 +76,26 @@ export function AuditSection() {
               <p className="text-label-sm uppercase text-google-secondary tracking-widest mb-3">
                 {t("eyebrow")}
               </p>
-              <h2 className="text-2xl sm:text-display-sm font-bold text-google-text">{t("headline")}</h2>
+              <h2 className="text-2xl sm:text-display-sm font-bold text-google-text">
+                {t("headline")}
+              </h2>
               <p className="mt-4 text-body-lg text-google-secondary leading-relaxed">
                 {t("subheadline")}
               </p>
             </div>
 
-            <div className="bg-white rounded-card border border-google-border p-6 space-y-3">
-              <p className="text-body-sm font-semibold text-google-text">{t("whatWeCheck")}</p>
-              <ul className="space-y-2">
-                {checks.map((item) => (
-                  <li key={item} className="flex items-center gap-2.5 text-body-sm text-google-secondary">
-                    <CheckSquare size={15} className="text-brand-blue shrink-0" />
-                    {item}
+            <div className="bg-white rounded-card border border-google-border p-6 space-y-4">
+              <p className="text-body-sm font-semibold text-google-text">{t("howItWorks")}</p>
+              <ol className="space-y-4">
+                {steps.map((step, i) => (
+                  <li key={i} className="flex items-start gap-3 text-body-sm text-google-secondary">
+                    <span className="flex-shrink-0 w-6 h-6 rounded-full bg-brand-blue/10 text-brand-blue text-xs font-bold flex items-center justify-center mt-0.5">
+                      {i + 1}
+                    </span>
+                    {step}
                   </li>
                 ))}
-              </ul>
-              <p className="text-xs text-google-secondary/70 pt-1 border-t border-google-border">
-                {t("note")}
-              </p>
+              </ol>
             </div>
           </motion.div>
 
@@ -113,6 +114,7 @@ export function AuditSection() {
                 </div>
               ) : (
                 <form onSubmit={handleSubmit(onSubmit)} className="space-y-5" noValidate>
+                  {/* Row 1: name + company */}
                   <div className="grid sm:grid-cols-2 gap-4">
                     <div className="space-y-1.5">
                       <Label htmlFor="audit-name">{t("fieldName")} *</Label>
@@ -140,20 +142,8 @@ export function AuditSection() {
                     </div>
                   </div>
 
+                  {/* Row 2: email + city */}
                   <div className="grid sm:grid-cols-2 gap-4">
-                    <div className="space-y-1.5">
-                      <Label htmlFor="audit-phone">{t("fieldPhone")} *</Label>
-                      <Input
-                        id="audit-phone"
-                        type="tel"
-                        placeholder={t("phPhone")}
-                        {...register("phone")}
-                        aria-invalid={!!errors.phone}
-                      />
-                      {errors.phone && (
-                        <p className="text-xs text-brand-red">{errors.phone.message}</p>
-                      )}
-                    </div>
                     <div className="space-y-1.5">
                       <Label htmlFor="audit-email">{t("fieldEmail")} *</Label>
                       <Input
@@ -166,18 +156,6 @@ export function AuditSection() {
                       {errors.email && (
                         <p className="text-xs text-brand-red">{errors.email.message}</p>
                       )}
-                    </div>
-                  </div>
-
-                  <div className="grid sm:grid-cols-2 gap-4">
-                    <div className="space-y-1.5">
-                      <Label htmlFor="audit-website">{t("fieldWebsite")}</Label>
-                      <Input
-                        id="audit-website"
-                        type="url"
-                        placeholder={t("phWebsite")}
-                        {...register("website")}
-                      />
                     </div>
                     <div className="space-y-1.5">
                       <Label htmlFor="audit-city">{t("fieldCity")} *</Label>
@@ -193,14 +171,41 @@ export function AuditSection() {
                     </div>
                   </div>
 
+                  {/* Row 3: phone + GBP URL (both optional) */}
+                  <div className="grid sm:grid-cols-2 gap-4">
+                    <div className="space-y-1.5">
+                      <Label htmlFor="audit-phone">{t("fieldPhone")}</Label>
+                      <Input
+                        id="audit-phone"
+                        type="tel"
+                        placeholder={t("phPhone")}
+                        {...register("phone")}
+                      />
+                    </div>
+                    <div className="space-y-1.5">
+                      <Label htmlFor="audit-gbp">{t("fieldGbp")}</Label>
+                      <Input
+                        id="audit-gbp"
+                        type="url"
+                        placeholder={t("phGbp")}
+                        {...register("gbpUrl")}
+                      />
+                    </div>
+                  </div>
+
+                  {/* Problem / question */}
                   <div className="space-y-1.5">
-                    <Label htmlFor="audit-message">{t("fieldMessage")}</Label>
+                    <Label htmlFor="audit-problem">{t("fieldProblem")} *</Label>
                     <Textarea
-                      id="audit-message"
-                      placeholder={t("phMessage")}
-                      rows={3}
-                      {...register("message")}
+                      id="audit-problem"
+                      placeholder={t("phProblem")}
+                      rows={4}
+                      {...register("problem")}
+                      aria-invalid={!!errors.problem}
                     />
+                    {errors.problem && (
+                      <p className="text-xs text-brand-red">{errors.problem.message}</p>
+                    )}
                   </div>
 
                   <Turnstile

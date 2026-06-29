@@ -6,13 +6,13 @@
     "about": "Über uns",
     "faq": "FAQ",
     "contact": "Kontakt",
-    "cta": "Kostenloses Audit"
+    "cta": "Jetzt anfragen"
   },
   "hero": {
     "eyebrow": "Google Business Profile · Local SEO · Google Ads",
     "headline": "Wenn Ihre Kunden suchen —\nsollen sie Sie finden.",
     "subheadline": "Ich helfe lokalen Unternehmen in Deutschland, bei Google Maps und der Suche sichtbarer zu werden. Individuell. Persönlich. Ohne Schablone.",
-    "cta": "Kostenloses Google Maps Audit",
+    "cta": "Jetzt anfragen",
     "ctaSecondary": "Leistungen ansehen",
     "trustLine": "Wir sprechen Deutsch, Russisch und Englisch",
     "card1Label": "Profilaufrufe",
@@ -117,35 +117,32 @@
     "cta": "Kostenloses Audit anfordern"
   },
   "audit": {
-    "eyebrow": "Kostenloses Angebot",
-    "headline": "Kostenloses Google Maps Audit",
-    "subheadline": "Erfahren Sie, welche Chancen Ihr Unternehmen aktuell bei Google ungenutzt lässt.",
-    "whatWeCheck": "Wir prüfen:",
-    "checks": [
-      "Google Business Profile",
-      "Lokale Rankings",
-      "Website",
-      "Bewertungen",
-      "Wettbewerber"
+    "eyebrow": "Kontakt",
+    "headline": "Schreiben Sie mir",
+    "subheadline": "Beschreiben Sie kurz Ihre Situation — ich melde mich innerhalb von 24 Stunden, stelle ein paar Rückfragen und wir sprechen, wenn alles klar ist.",
+    "howItWorks": "So läuft es ab:",
+    "steps": [
+      "Sie schreiben mir in 2–3 Sätzen, was Ihr größtes Problem ist",
+      "Ich antworte per Text und stelle ein paar Rückfragen",
+      "Wenn es passt, sprechen wir — auf Deutsch, Russisch oder Englisch"
     ],
-    "note": "Kostenlos und unverbindlich.",
     "fieldName": "Ihr Name",
-    "fieldCompany": "Firma",
-    "fieldPhone": "Telefon",
+    "fieldCompany": "Unternehmen",
+    "fieldPhone": "Telefon (optional)",
     "fieldEmail": "E-Mail",
-    "fieldWebsite": "Website",
+    "fieldGbp": "Google Business Profil Link (optional)",
     "fieldCity": "Stadt",
-    "fieldMessage": "Nachricht (optional)",
+    "fieldProblem": "Ihr größtes Problem oder Ihre Frage",
     "phName": "Anna Schmidt",
     "phCompany": "Ihr Unternehmen",
     "phPhone": "+49 30 …",
     "phEmail": "ihr@email.de",
-    "phWebsite": "https://ihrewebsite.de",
+    "phGbp": "https://maps.app.goo.gl/...",
     "phCity": "Berlin",
-    "phMessage": "Ihre Fragen oder besondere Wünsche...",
-    "cta": "Audit anfordern",
+    "phProblem": "z. B. Wir werden bei Google nicht gefunden, obwohl wir seit Jahren in Berlin sind...",
+    "cta": "Anfrage senden",
     "successTitle": "Vielen Dank!",
-    "successText": "Ich melde mich innerhalb von 24 Stunden bei Ihnen.",
+    "successText": "Ich melde mich innerhalb von 24 Stunden mit ein paar Rückfragen.",
     "errorText": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut oder schreiben Sie direkt an a.r.localgrowth@gmail.com"
   },
   "faq": {
@@ -214,8 +211,8 @@
     "cta": "Nachricht senden",
     "successTitle": "Nachricht gesendet!",
     "successText": "Ich melde mich bald bei Ihnen.",
-    "auditPrompt": "Oder möchten Sie direkt ein kostenloses Audit anfordern?",
-    "auditCta": "Kostenloses Google Maps Audit"
+    "auditPrompt": "Lieber direkt schreiben?",
+    "auditCta": "Jetzt anfragen"
   },
   "footer": {
     "tagline": "Mehr Sichtbarkeit bei Google. Individuell gemacht.",

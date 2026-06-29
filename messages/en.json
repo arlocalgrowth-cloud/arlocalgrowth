@@ -6,13 +6,13 @@
     "about": "About",
     "faq": "FAQ",
     "contact": "Contact",
-    "cta": "Free Audit"
+    "cta": "Get in touch"
   },
   "hero": {
     "eyebrow": "Google Business Profile · Local SEO · Google Ads",
     "headline": "When your customers search —\nthey should find you.",
     "subheadline": "I help local businesses in Germany get found on Google Maps and Search. Individual. Personal. No template.",
-    "cta": "Free Google Maps Audit",
+    "cta": "Get in touch",
     "ctaSecondary": "View Services",
     "trustLine": "We speak German, Russian and English",
     "card1Label": "Profile Views",
@@ -117,35 +117,32 @@
     "cta": "Request Free Audit"
   },
   "audit": {
-    "eyebrow": "Free Offer",
-    "headline": "Free Google Maps Audit",
-    "subheadline": "Find out what opportunities your business is currently missing on Google.",
-    "whatWeCheck": "We review:",
-    "checks": [
-      "Google Business Profile",
-      "Local Rankings",
-      "Website",
-      "Reviews",
-      "Competitors"
+    "eyebrow": "Contact",
+    "headline": "Write to me",
+    "subheadline": "Describe your situation briefly — I'll get back to you within 24 hours, ask a few questions, and we'll talk when everything is clear.",
+    "howItWorks": "How it works:",
+    "steps": [
+      "Write 2–3 sentences about your biggest problem",
+      "I reply by text and ask a few follow-up questions",
+      "If it's a good fit, we talk — in German, Russian or English"
     ],
-    "note": "Free and non-binding.",
     "fieldName": "Your Name",
-    "fieldCompany": "Company",
-    "fieldPhone": "Phone",
+    "fieldCompany": "Business",
+    "fieldPhone": "Phone (optional)",
     "fieldEmail": "Email",
-    "fieldWebsite": "Website",
+    "fieldGbp": "Google Business Profile Link (optional)",
     "fieldCity": "City",
-    "fieldMessage": "Message (optional)",
+    "fieldProblem": "Your biggest problem or question",
     "phName": "Anna Schmidt",
-    "phCompany": "Your company",
+    "phCompany": "Your business",
     "phPhone": "+49 30 …",
     "phEmail": "your@email.de",
-    "phWebsite": "https://yourwebsite.de",
+    "phGbp": "https://maps.app.goo.gl/...",
     "phCity": "Berlin",
-    "phMessage": "Your questions or special requests...",
-    "cta": "Request Audit",
+    "phProblem": "e.g. We can't be found on Google even though we've been in Berlin for years...",
+    "cta": "Send request",
     "successTitle": "Thank you!",
-    "successText": "I'll get back to you within 24 hours.",
+    "successText": "I'll get back to you within 24 hours with a few questions.",
     "errorText": "Something went wrong. Please try again or write directly to a.r.localgrowth@gmail.com"
   },
   "faq": {
@@ -214,8 +211,8 @@
     "cta": "Send Message",
     "successTitle": "Message sent!",
     "successText": "I'll be in touch soon.",
-    "auditPrompt": "Or would you like to request a free audit directly?",
-    "auditCta": "Free Google Maps Audit"
+    "auditPrompt": "Prefer to write directly?",
+    "auditCta": "Get in touch"
   },
   "footer": {
     "tagline": "More visibility on Google. Individually made.",
