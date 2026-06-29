@@ -224,7 +224,14 @@
     "madeBy": "Individuell gemacht in Berlin."
   },
   "cookie": {
-    "text": "Diese Website verwendet ausschließlich technisch notwendige Cookies — kein Tracking, keine Werbung.",
+    "title": "Cookie-Einstellungen",
+    "text": "Wir verwenden Cookies für Sicherheit und anonymisierte Nutzungsanalyse.",
+    "necessaryTitle": "Notwendig",
+    "necessaryText": "Cloudflare Turnstile (Schutz vor automatisierten Anfragen). Immer aktiv.",
+    "analyticsTitle": "Analyse",
+    "analyticsText": "Google Analytics (anonymisierte Nutzungsstatistiken, IP-Anonymisierung aktiv).",
+    "necessary": "Nur notwendige",
+    "acceptAll": "Alle akzeptieren",
     "link": "Datenschutz",
     "dismiss": "Schließen"
   },

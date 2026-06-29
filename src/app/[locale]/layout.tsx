@@ -6,6 +6,7 @@ import { getMessages, getTranslations } from "next-intl/server";
 import { routing } from "@/i18n/routing";
 import { CookieBanner } from "@/components/layout/CookieBanner";
 import { SchemaMarkup } from "@/components/seo/SchemaMarkup";
+import { GoogleAnalytics } from "@/components/analytics/GoogleAnalytics";
 import "../globals.css";
 
 const inter = Inter({
@@ -111,6 +112,7 @@ export default async function LocaleLayout({
       <body className="min-h-screen bg-background antialiased">
         <NextIntlClientProvider messages={messages}>
           <SchemaMarkup locale={locale} />
+          <GoogleAnalytics />
           {children}
           <CookieBanner />
         </NextIntlClientProvider>

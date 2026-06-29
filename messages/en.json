@@ -224,7 +224,14 @@
     "madeBy": "Individually made in Berlin."
   },
   "cookie": {
-    "text": "This website uses only technically necessary cookies — no tracking, no ads.",
+    "title": "Cookie Settings",
+    "text": "We use cookies for security and anonymised usage analytics.",
+    "necessaryTitle": "Necessary",
+    "necessaryText": "Cloudflare Turnstile (protection against automated requests). Always active.",
+    "analyticsTitle": "Analytics",
+    "analyticsText": "Google Analytics (anonymised usage statistics, IP anonymisation active).",
+    "necessary": "Necessary only",
+    "acceptAll": "Accept all",
     "link": "Privacy Policy",
     "dismiss": "Dismiss"
   },
