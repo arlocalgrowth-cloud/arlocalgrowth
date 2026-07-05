@@ -30,7 +30,7 @@ export function AboutSection() {
               <div className="relative rounded-card-lg overflow-hidden border-2 border-white shadow-card-md">
                 <Image
                   src="/roman-andreiev.jpg"
-                  alt="Roman Andreiev — Gründer von A.R. Local Growth"
+                  alt="Roman Andreiev — Google Business Profile & Local SEO Spezialist Berlin"
                   width={400}
                   height={500}
                   className="object-cover object-top w-full"
