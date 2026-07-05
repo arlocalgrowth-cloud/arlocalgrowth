@@ -75,6 +75,9 @@ export function AboutSection() {
               <p className="text-body-md text-google-secondary leading-relaxed">{t("text1")}</p>
               <p className="text-body-md text-google-secondary leading-relaxed">{t("text2")}</p>
               <p className="text-body-md text-google-secondary leading-relaxed">{t("text3")}</p>
+              <p className="text-body-sm text-brand-blue font-medium border-l-2 border-brand-blue pl-3 leading-relaxed">
+                {t("geoAnchor")}
+              </p>
             </div>
 
             <div className="flex flex-wrap gap-2">

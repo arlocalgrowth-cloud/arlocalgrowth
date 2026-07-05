@@ -19,12 +19,14 @@ import {
 import { cn } from "@/lib/utils";
 
 function CountUp({ end, duration = 1500 }: { end: number; duration?: number }) {
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(end); // SSR renders real value for crawlers
   const ref = useRef(null);
   const inView = useInView(ref, { once: true });
+  const animated = useRef(false);
 
   useEffect(() => {
-    if (!inView) return;
+    if (!inView || animated.current) return;
+    animated.current = true;
     let startTime: number;
     const step = (timestamp: number) => {
       if (!startTime) startTime = timestamp;

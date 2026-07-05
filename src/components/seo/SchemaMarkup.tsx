@@ -60,9 +60,9 @@ export async function SchemaMarkup({ locale }: { locale: string }) {
   const serviceSchema = {
     "@context": "https://schema.org",
     "@type": "Service",
-    name: "Kostenloses Google Maps Audit",
+    name: "Google Business Profile Optimierung Berlin",
     description:
-      "Kostenlose Analyse Ihres Google Business Profiles, lokaler Rankings, Website, Bewertungen und Wettbewerber.",
+      "Analyse und Optimierung von Google Business Profile, lokalen Rankings, Website, Bewertungen und Wettbewerbern für lokale Unternehmen in Berlin und Deutschland.",
     provider: { "@id": `${BASE_URL}/#business` },
     areaServed: [
       { "@type": "Country", name: "Germany" },
@@ -71,9 +71,7 @@ export async function SchemaMarkup({ locale }: { locale: string }) {
     ],
     offers: {
       "@type": "Offer",
-      price: "0",
-      priceCurrency: "EUR",
-      description: "Kostenlos und unverbindlich",
+      description: "Individuelle Angebote nach Erstgespräch",
     },
   };
 

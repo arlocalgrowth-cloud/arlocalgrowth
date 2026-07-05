@@ -23,6 +23,7 @@ export function CaseStudiesSection() {
 
   const case1Services = t.raw("case1Services") as string[];
   const case2Services = t.raw("case2Services") as string[];
+  const case2Status = t("case2Status");
 
   return (
     <section id="fallstudien" className="section-padding" ref={ref}>
@@ -161,6 +162,7 @@ export function CaseStudiesSection() {
                   </Badge>
                 ))}
               </div>
+              <p className="text-xs text-google-secondary/60 italic mt-3">{case2Status}</p>
             </div>
           </motion.div>
         </div>

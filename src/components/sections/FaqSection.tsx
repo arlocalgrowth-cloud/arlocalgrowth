@@ -48,7 +48,7 @@ export function FaqSection() {
                 <AccordionTrigger className="text-body-md text-google-text font-semibold hover:no-underline py-5 text-left">
                   {item.q}
                 </AccordionTrigger>
-                <AccordionContent className="text-body-sm text-google-secondary leading-relaxed pb-5 pt-0">
+                <AccordionContent forceMount className="text-body-sm text-google-secondary leading-relaxed pb-5 pt-0">
                   {item.a}
                 </AccordionContent>
               </AccordionItem>

@@ -91,7 +91,8 @@
     "case2Name": "PartyMoments Berlin",
     "case2Industry": "Children's Entertainment & Events · Berlin",
     "case2Focus": "Building a professional Google presence, review strategy, and better local findability for German and Russian-speaking customers.",
-    "case2Services": ["Google Business Profile", "Local SEO", "Review Management"]
+    "case2Services": ["Google Business Profile", "Local SEO", "Review Management"],
+    "case2Status": "Project ongoing — results to follow."
   },
   "process": {
     "eyebrow": "Process",
@@ -115,6 +116,7 @@
     "text3": "I speak German, Russian, and Ukrainian — and understand the unique challenges of entrepreneurs with international backgrounds in Germany.",
     "badge1": "Berlin, Germany",
     "badge2": "DE · RU · UA",
+    "geoAnchor": "Specialist for Google Business Profile in Berlin — in German, Russian and Ukrainian.",
     "cta": "Get in touch"
   },
   "audit": {
@@ -156,7 +158,7 @@
       },
       {
         "q": "What happens in the free Google Maps Audit?",
-        "a": "I analyze your Google Business Profile, local rankings, website, reviews, and competitors. You then receive a concrete report with the most important areas for improvement — free and non-binding."
+        "a": "I analyze your Google Business Profile, local rankings, website, reviews, and competitors. You then receive the 3 most important areas for improvement — free and non-binding."
       },
       {
         "q": "How long does it take to see results?",
