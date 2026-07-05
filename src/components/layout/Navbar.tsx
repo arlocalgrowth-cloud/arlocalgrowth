@@ -48,14 +48,15 @@ export function Navbar() {
   }, [mobileOpen]);
 
   const blogHref = locale === "de" ? "/blog" : `/${locale}/blog`;
+  const homeBase = locale === "de" ? "" : `/${locale}`;
 
   const navLinks = [
-    { key: "services", href: "#leistungen" },
-    { key: "caseStudies", href: "#fallstudien" },
-    { key: "forWho", href: "#fur-wen" },
-    { key: "about", href: "#uber-uns" },
-    { key: "faq", href: "#faq" },
-    { key: "contact", href: "#kontakt" },
+    { key: "services", href: `${homeBase}/#leistungen` },
+    { key: "caseStudies", href: `${homeBase}/#fallstudien` },
+    { key: "forWho", href: `${homeBase}/#fur-wen` },
+    { key: "about", href: `${homeBase}/#uber-uns` },
+    { key: "faq", href: `${homeBase}/#faq` },
+    { key: "contact", href: `${homeBase}/#kontakt` },
   ] as const;
 
   const LangSwitcher = () => (
@@ -125,7 +126,7 @@ export function Navbar() {
           <div className="hidden lg:flex items-center gap-3">
             <LangSwitcher />
             <Button size="sm" asChild>
-              <a href="#audit">{t("cta")}</a>
+              <a href={`${homeBase}/#audit`}>{t("cta")}</a>
             </Button>
           </div>
 
@@ -185,7 +186,7 @@ export function Navbar() {
               <div className="px-5 py-6 border-t border-google-border space-y-3">
                 <LangSwitcher />
                 <Button size="lg" className="w-full" asChild>
-                  <a href="#audit" onClick={() => setMobileOpen(false)}>
+                  <a href={`${homeBase}/#audit`} onClick={() => setMobileOpen(false)}>
                     {t("cta")}
                   </a>
                 </Button>

@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
-import { blogPosts, getBlogPost, formatDate } from "@/lib/blog";
+import { blogPosts, getBlogPost, getLocalizedPost, formatDate } from "@/lib/blog";
 import { ArrowLeft, Clock, Tag } from "lucide-react";
 
 const BASE_URL = "https://arlocalgrowth.de";
@@ -23,11 +23,12 @@ export async function generateMetadata({
   const post = getBlogPost(slug);
   if (!post) return {};
 
+  const localized = getLocalizedPost(post, locale);
   const canonicalPath = locale === "de" ? `/blog/${slug}` : `/${locale}/blog/${slug}`;
 
   return {
-    title: post.title,
-    description: post.description,
+    title: localized.title,
+    description: localized.description,
     authors: [{ name: "Roman Andreiev" }],
     alternates: {
       canonical: `${BASE_URL}${canonicalPath}`,
@@ -39,8 +40,8 @@ export async function generateMetadata({
     },
     openGraph: {
       type: "article",
-      title: post.title,
-      description: post.description,
+      title: localized.title,
+      description: localized.description,
       url: `${BASE_URL}${canonicalPath}`,
       publishedTime: post.date,
       authors: ["Roman Andreiev"],
@@ -58,6 +59,7 @@ export default async function BlogPostPage({
 
   if (!post) notFound();
 
+  const localized = getLocalizedPost(post, locale);
   const blogListPath = locale === "de" ? "/blog" : `/${locale}/blog`;
 
   const backLabel: Record<string, string> = {
@@ -66,11 +68,17 @@ export default async function BlogPostPage({
     ru: "← Назад к блогу",
   };
 
+  const minLabel: Record<string, string> = {
+    de: "Min.",
+    en: "min",
+    ru: "мин.",
+  };
+
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
-    headline: post.title,
-    description: post.description,
+    headline: localized.title,
+    description: localized.description,
     datePublished: post.date,
     author: {
       "@type": "Person",
@@ -104,7 +112,7 @@ export default async function BlogPostPage({
 
           {/* Tags */}
           <div className="flex flex-wrap gap-2 mb-4">
-            {post.tags.map((tag) => (
+            {localized.tags.map((tag) => (
               <span
                 key={tag}
                 className="inline-flex items-center gap-1 text-xs text-brand-blue bg-blue-50 px-2 py-1 rounded-full"
@@ -117,7 +125,7 @@ export default async function BlogPostPage({
 
           {/* Title */}
           <h1 className="text-2xl sm:text-3xl font-bold text-google-text mb-4 leading-tight">
-            {post.title}
+            {localized.title}
           </h1>
 
           {/* Meta */}
@@ -128,14 +136,14 @@ export default async function BlogPostPage({
             <span>·</span>
             <span className="flex items-center gap-1">
               <Clock size={13} />
-              {post.readingTime} Min.
+              {localized.readingTime} {minLabel[locale] ?? minLabel.de}
             </span>
           </div>
 
           {/* Content */}
           <div
             className="prose prose-google max-w-none"
-            dangerouslySetInnerHTML={{ __html: post.content }}
+            dangerouslySetInnerHTML={{ __html: localized.content }}
           />
 
           {/* CTA */}
@@ -156,7 +164,7 @@ export default async function BlogPostPage({
                   : "Ich analysiere Ihr Profil und zeige konkrete Schritte zur Verbesserung. Ich arbeite auf Deutsch, Russisch, Ukrainisch und Englisch."}
               </p>
               <Link
-                href={locale === "de" ? "/#audit" : `/${locale}#audit`}
+                href={locale === "de" ? "/#audit" : `/${locale}/#audit`}
                 className="inline-flex items-center gap-2 bg-brand-blue text-white text-sm font-semibold px-5 py-2.5 rounded-lg hover:bg-brand-blue/90 transition-colors"
               >
                 {locale === "ru"
