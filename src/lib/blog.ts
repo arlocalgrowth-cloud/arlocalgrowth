@@ -1,9 +1,15 @@
+export interface BlogFaqItem {
+  q: string;
+  a: string;
+}
+
 export interface BlogPostLocalized {
   title: string;
   description: string;
   tags: string[];
   readingTime: number;
   content: string;
+  faq?: BlogFaqItem[];
 }
 
 export interface BlogPost {
@@ -77,6 +83,13 @@ export const blogPosts: BlogPost[] = [
 <p>Sie möchten wissen, wo Ihr Google Business Profile aktuell steht und welche Verbesserungen den größten Effekt hätten? Ich analysiere Ihr Profil, Ihre lokalen Rankings und Ihre Wettbewerber — und zeige Ihnen genau, wo Potenzial liegt.</p>
 <p>Ich arbeite mit lokalen Unternehmen in ganz Deutschland auf Deutsch, Russisch, Ukrainisch und Englisch.</p>
         `,
+        faq: [
+          { q: "Was ist Google Maps Optimierung?", a: "Google Maps Optimierung bedeutet, Ihr Google Business Profile so zu gestalten, dass Google Ihr Unternehmen als relevant einstuft und weiter oben in den lokalen Suchergebnissen anzeigt. Dazu gehören vollständige Profilangaben, die richtigen Kategorien, professionelle Fotos, aktive Bewertungen und regelmäßige Beiträge." },
+          { q: "Wie lange dauert Google Maps Optimierung bis erste Ergebnisse sichtbar sind?", a: "Erste Verbesserungen bei der Sichtbarkeit sind oft innerhalb von 2–4 Wochen sichtbar. Ein vollständig optimiertes und regelmäßig gepflegtes Profil zeigt deutliche Verbesserungen nach 2–3 Monaten." },
+          { q: "Was ist die wichtigste Maßnahme bei Google Maps?", a: "Das vollständige Ausfüllen aller Profilfelder ist der wichtigste erste Schritt. Besonders entscheidend sind die Hauptkategorie, die Unternehmensbeschreibung mit relevanten Keywords und professionelle Fotos." },
+          { q: "Wie viele Fotos sollte ein Google Business Profil haben?", a: "Google Business Profile mit Fotos erhalten 42 % mehr Wegbeschreibungsanfragen und 35 % mehr Website-Klicks. Laden Sie mindestens 10 hochwertige Fotos hoch: Außenansicht, Innenbereich, Team und Leistungen." },
+          { q: "Kann ich Google Maps Optimierung selbst machen?", a: "Ja, viele Grundmaßnahmen können Sie selbst umsetzen: Profil vollständig ausfüllen, Fotos hochladen, auf Bewertungen antworten und regelmäßige Beiträge veröffentlichen. Für eine systematische Strategie und messbare Ergebnisse empfiehlt sich professionelle Unterstützung." },
+        ],
       },
       en: {
         title: "Google Maps Optimization: How to Get Found Better on Google Maps",
@@ -138,6 +151,13 @@ export const blogPosts: BlogPost[] = [
 <p>Want to know where your Google Business Profile stands today and which improvements would have the greatest impact? I analyze your profile, local rankings, and competitors — and show you exactly where the potential lies.</p>
 <p>I work with local businesses across Germany in German, Russian, Ukrainian and English.</p>
         `,
+        faq: [
+          { q: "What is Google Maps optimization?", a: "Google Maps optimization means shaping your Google Business Profile so that Google ranks your business as relevant and shows it higher in local search results. It includes completing all profile fields, choosing the right categories, adding professional photos, building reviews, and publishing regular posts." },
+          { q: "How long does Google Maps optimization take to show results?", a: "First improvements in visibility are often noticeable within 2–4 weeks. A fully optimized and regularly maintained profile typically shows significant improvements after 2–3 months." },
+          { q: "What is the single most important step in Google Maps optimization?", a: "Completing every field in your Google Business Profile is the most important first step. The primary category, your business description with relevant keywords, and professional photos have the strongest impact on rankings." },
+          { q: "How many photos should a Google Business Profile have?", a: "Google Business Profiles with photos receive 42% more direction requests and 35% more website clicks. Upload at least 10 high-quality photos: exterior, interior, team, and services." },
+          { q: "Can I do Google Maps optimization myself?", a: "Yes, many basic steps can be done yourself: complete the profile, upload photos, reply to reviews, and publish regular posts. For a systematic strategy and measurable results, professional support is recommended." },
+        ],
       },
       ru: {
         title: "Оптимизация Google Maps: как стать заметнее в поиске",
@@ -199,6 +219,13 @@ export const blogPosts: BlogPost[] = [
 <p>Хотите узнать, где сейчас находится ваш Google Business Profile и какие улучшения дадут наибольший эффект? Я анализирую ваш профиль, локальные позиции и конкурентов — и показываю конкретно, где есть потенциал.</p>
 <p>Работаю с локальным бизнесом по всей Германии на немецком, русском, украинском и английском языках.</p>
         `,
+        faq: [
+          { q: "Что такое оптимизация Google Maps?", a: "Оптимизация Google Maps — это настройка Google Business Profile таким образом, чтобы Google считал ваш бизнес релевантным и показывал его выше в локальных результатах поиска. Включает заполнение всех полей профиля, выбор правильных категорий, профессиональные фото, сбор отзывов и регулярные публикации." },
+          { q: "Как быстро видны результаты оптимизации Google Maps?", a: "Первые улучшения видимости заметны в течение 2–4 недель. Полностью оптимизированный и регулярно обновляемый профиль показывает значительные улучшения через 2–3 месяца." },
+          { q: "Какой самый важный шаг в оптимизации Google Maps?", a: "Полное заполнение всех полей Google Business Profile — самый важный первый шаг. Наибольшее влияние на ранжирование оказывают основная категория, описание с ключевыми словами и профессиональные фотографии." },
+          { q: "Сколько фотографий должно быть в Google Business Profile?", a: "Профили с фотографиями получают на 42% больше запросов маршрутов и на 35% больше кликов на сайт. Загрузите минимум 10 качественных фото: фасад, интерьер, команду и услуги." },
+          { q: "Могу ли я сам заниматься оптимизацией Google Maps?", a: "Да, базовые шаги можно сделать самостоятельно: заполнить профиль, загрузить фото, отвечать на отзывы и публиковать посты. Для системной стратегии и измеримых результатов рекомендуется профессиональная помощь." },
+        ],
       },
     },
   },
@@ -262,6 +289,13 @@ export const blogPosts: BlogPost[] = [
 <h2>Wie viele Bewertungen brauchen Sie?</h2>
 <p>In den meisten lokalen Märkten in Deutschland liegen die Top-Unternehmen bei 50–200 Bewertungen. Wichtiger als die Anzahl ist die Aktualität. Ziel für die ersten 3 Monate: 15–25 echte Bewertungen.</p>
         `,
+        faq: [
+          { q: "Wie bekomme ich mehr Google Bewertungen?", a: "Die effektivste Methode: Erstellen Sie einen direkten Link zu Ihrer Google Bewertungsseite und schicken Sie ihn zufriedenen Kunden direkt nach der Dienstleistung per WhatsApp. Der beste Zeitpunkt ist unmittelbar nach dem positiven Erlebnis, wenn die Zufriedenheit am höchsten ist." },
+          { q: "Darf ich Kunden um eine Google Bewertung bitten?", a: "Ja, Kunden um Bewertungen zu bitten ist erlaubt und empfehlenswert. Google verbietet nur das Kaufen von Bewertungen oder das Anbieten von Gegenleistungen. Eine persönliche Bitte oder ein freundlicher WhatsApp nach der Dienstleistung ist vollkommen in Ordnung." },
+          { q: "Wie reagiere ich auf negative Google Bewertungen?", a: "Antworten Sie auf negative Bewertungen professionell und lösungsorientiert: Danken Sie für das Feedback, erkennen Sie das Problem an und bieten Sie eine Lösung an. Setzen Sie das Gespräch offline fort. Potenzielle Kunden lesen Ihre Antwort — ein professioneller Umgang stärkt das Vertrauen." },
+          { q: "Wie viele Google Bewertungen brauche ich?", a: "In den meisten lokalen Märkten in Deutschland liegen die Top-Unternehmen bei 50–200 Bewertungen. Wichtiger als die Anzahl ist die Aktualität. Ein realistisches Ziel für die ersten 3 Monate: 15–25 echte Bewertungen." },
+          { q: "Was passiert wenn ich gefälschte Bewertungen kaufe?", a: "Gekaufte oder gefälschte Bewertungen sind gefährlich. Google erkennt unnatürliche Muster und kann Ihr Profil dauerhaft sperren oder die Bewertungen entfernen. Das Risiko überwiegt bei weitem den kurzfristigen Nutzen — setzen Sie ausschließlich auf echte Bewertungen." },
+        ],
       },
       en: {
         title: "Get More Google Reviews: 7 Proven Methods for Local Businesses",
@@ -319,6 +353,13 @@ export const blogPosts: BlogPost[] = [
 <h2>How Many Reviews Do You Need?</h2>
 <p>In most local markets in Germany, top-ranking businesses have 50–200 reviews. More important than the number is recency. Target for the first 3 months: 15–25 genuine reviews.</p>
         `,
+        faq: [
+          { q: "How do I get more Google reviews?", a: "The most effective method: create a direct link to your Google review page and send it to satisfied customers immediately after the service via WhatsApp. The best moment is right after a positive experience, when customer satisfaction is at its peak." },
+          { q: "Am I allowed to ask customers for a Google review?", a: "Yes, asking for reviews is permitted and recommended. Google only prohibits purchasing reviews or offering incentives in exchange. A personal request or friendly WhatsApp message after the service is completely fine." },
+          { q: "How should I respond to negative Google reviews?", a: "Respond professionally and solution-focused: thank the reviewer for the feedback, acknowledge the issue, and offer a resolution. Continue the conversation offline. Potential customers read your response — handling it well builds trust." },
+          { q: "How many Google reviews do I need?", a: "In most local markets in Germany, top-ranking businesses have 50–200 reviews. More important than the number is recency. A realistic target for the first 3 months: 15–25 genuine reviews." },
+          { q: "What happens if I buy fake reviews?", a: "Purchased or fake reviews are dangerous. Google detects unnatural patterns and can permanently suspend your profile or remove the reviews. The risk far outweighs any short-term benefit — always rely on genuine reviews from real customers." },
+        ],
       },
       ru: {
         title: "Больше отзывов в Google: 7 проверенных методов для локального бизнеса",
@@ -376,6 +417,13 @@ export const blogPosts: BlogPost[] = [
 <h2>Сколько отзывов вам нужно?</h2>
 <p>В большинстве локальных рынков Германии лидирующие компании имеют 50–200 отзывов. Важнее количества — актуальность. Цель на первые 3 месяца: 15–25 настоящих отзывов.</p>
         `,
+        faq: [
+          { q: "Как получить больше отзывов в Google?", a: "Самый эффективный метод: создайте прямую ссылку на страницу отзывов Google и отправляйте её довольным клиентам сразу после оказания услуги через WhatsApp. Лучший момент — сразу после положительного опыта, когда удовлетворённость клиента максимальна." },
+          { q: "Можно ли просить клиентов оставить отзыв в Google?", a: "Да, просить об отзывах разрешено и рекомендуется. Google запрещает только покупку отзывов или предложение вознаграждения в обмен на них. Личная просьба или дружеское сообщение в WhatsApp после услуги — совершенно нормальная практика." },
+          { q: "Как отвечать на негативные отзывы в Google?", a: "Отвечайте профессионально и ориентируясь на решение: поблагодарите за обратную связь, признайте проблему и предложите выход. Продолжите разговор в личных сообщениях. Потенциальные клиенты читают ваши ответы — профессиональная реакция укрепляет доверие." },
+          { q: "Сколько отзывов Google мне нужно?", a: "В большинстве локальных рынков Германии лидирующие компании имеют 50–200 отзывов. Важнее количества — актуальность. Реалистичная цель на первые 3 месяца: 15–25 настоящих отзывов." },
+          { q: "Что будет если купить поддельные отзывы?", a: "Накрученные или поддельные отзывы опасны. Google распознаёт неестественные паттерны и может навсегда заблокировать ваш профиль или удалить отзывы. Риск намного превышает краткосрочную выгоду — опирайтесь исключительно на настоящие отзывы." },
+        ],
       },
     },
   },

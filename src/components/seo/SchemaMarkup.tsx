@@ -16,14 +16,29 @@ export async function SchemaMarkup({ locale }: { locale: string }) {
     url: BASE_URL,
     telephone: "+4917623481952",
     email: "a.r.localgrowth@gmail.com",
+    image: `${BASE_URL}/roman-andreiev.jpg`,
+    logo: {
+      "@type": "ImageObject",
+      url: `${BASE_URL}/logo.png`,
+      width: 400,
+      height: 100,
+    },
+    priceRange: "€€",
     founder: {
       "@type": "Person",
+      "@id": `${BASE_URL}/#roman`,
       name: "Roman Andreiev",
     },
     address: {
       "@type": "PostalAddress",
       addressLocality: "Berlin",
+      addressRegion: "Berlin",
       addressCountry: "DE",
+    },
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: 52.52,
+      longitude: 13.405,
     },
     areaServed: [
       { "@type": "Country", name: "Germany" },
@@ -31,6 +46,10 @@ export async function SchemaMarkup({ locale }: { locale: string }) {
       { "@type": "Country", name: "Switzerland" },
     ],
     knowsLanguage: ["de", "en", "ru", "uk"],
+    sameAs: [
+      "https://www.linkedin.com/in/roman-andreiev",
+      "https://g.co/kgs/arlocalgrowth",
+    ],
     hasOfferCatalog: {
       "@type": "OfferCatalog",
       name: "Local Marketing Services",
@@ -41,6 +60,56 @@ export async function SchemaMarkup({ locale }: { locale: string }) {
         { "@type": "Offer", itemOffered: { "@type": "Service", name: "Bewertungsmanagement" } },
         { "@type": "Offer", itemOffered: { "@type": "Service", name: "Landing Pages" } },
       ],
+    },
+  };
+
+  const personSchema = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "@id": `${BASE_URL}/#roman`,
+    name: "Roman Andreiev",
+    url: BASE_URL,
+    image: `${BASE_URL}/roman-andreiev.jpg`,
+    jobTitle: "Google Business Profile & Local SEO Spezialist",
+    worksFor: {
+      "@id": `${BASE_URL}/#business`,
+    },
+    knowsAbout: [
+      "Google Business Profile",
+      "Google Maps Optimierung",
+      "Local SEO",
+      "Google Ads",
+      "Bewertungsmanagement",
+      "Lokales Marketing",
+    ],
+    knowsLanguage: ["de", "en", "ru", "uk"],
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "Berlin",
+      addressCountry: "DE",
+    },
+    sameAs: [
+      "https://www.linkedin.com/in/roman-andreiev",
+    ],
+  };
+
+  const websiteSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": `${BASE_URL}/#website`,
+    url: BASE_URL,
+    name: "A.R. Local Growth",
+    description:
+      "Google Maps Optimierung und Local SEO für lokale Unternehmen in Deutschland.",
+    publisher: { "@id": `${BASE_URL}/#business` },
+    inLanguage: ["de", "en", "ru"],
+    potentialAction: {
+      "@type": "SearchAction",
+      target: {
+        "@type": "EntryPoint",
+        urlTemplate: `${BASE_URL}/blog?q={search_term_string}`,
+      },
+      "query-input": "required name=search_term_string",
     },
   };
 
@@ -80,6 +149,14 @@ export async function SchemaMarkup({ locale }: { locale: string }) {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusiness) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
       />
       <script
         type="application/ld+json"

@@ -4,9 +4,11 @@ import Link from "next/link";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { blogPosts, getBlogPost, getLocalizedPost, formatDate } from "@/lib/blog";
-import { ArrowLeft, Clock, Tag } from "lucide-react";
+import { ArrowLeft, Clock, Tag, ChevronDown } from "lucide-react";
 
 const BASE_URL = "https://arlocalgrowth.de";
+
+const HOW_TO_SLUGS = ["google-maps-optimierung-anleitung"];
 
 export async function generateStaticParams() {
   return blogPosts.flatMap((post) =>
@@ -61,6 +63,7 @@ export default async function BlogPostPage({
 
   const localized = getLocalizedPost(post, locale);
   const blogListPath = locale === "de" ? "/blog" : `/${locale}/blog`;
+  const canonicalPath = locale === "de" ? `/blog/${slug}` : `/${locale}/blog/${slug}`;
 
   const backLabel: Record<string, string> = {
     de: "← Zurück zum Blog",
@@ -74,30 +77,144 @@ export default async function BlogPostPage({
     ru: "мин.",
   };
 
+  const faqHeading: Record<string, string> = {
+    de: "Häufige Fragen",
+    en: "Frequently Asked Questions",
+    ru: "Часто задаваемые вопросы",
+  };
+
+  // --- Structured Data ---
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: locale === "de" ? BASE_URL : `${BASE_URL}/${locale}`,
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Blog",
+        item: `${BASE_URL}${blogListPath}`,
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: localized.title,
+        item: `${BASE_URL}${canonicalPath}`,
+      },
+    ],
+  };
+
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
     headline: localized.title,
     description: localized.description,
     datePublished: post.date,
+    dateModified: post.date,
     author: {
       "@type": "Person",
+      "@id": `${BASE_URL}/#roman`,
       name: "Roman Andreiev",
       url: BASE_URL,
     },
     publisher: {
       "@type": "Organization",
+      "@id": `${BASE_URL}/#business`,
       name: "A.R. Local Growth",
       url: BASE_URL,
     },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `${BASE_URL}${canonicalPath}`,
+    },
+    keywords: localized.tags.join(", "),
+    inLanguage: locale,
+    wordCount: Math.round(localized.content.replace(/<[^>]*>/g, "").split(/\s+/).length),
   };
+
+  // HowTo schema only for step-based articles
+  const howToSchema = HOW_TO_SLUGS.includes(slug)
+    ? {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        name: localized.title,
+        description: localized.description,
+        inLanguage: locale,
+        author: { "@id": `${BASE_URL}/#roman` },
+        step: locale === "de"
+          ? [
+              { "@type": "HowToStep", position: 1, name: "Google Business Profile vollständig ausfüllen", text: "Füllen Sie jedes Feld im Profil aus: Name, Kategorie, Beschreibung (750 Zeichen), Öffnungszeiten, Telefon, Website und alle Leistungen." },
+              { "@type": "HowToStep", position: 2, name: "Die richtigen Kategorien wählen", text: "Wählen Sie eine Hauptkategorie und bis zu 9 Zusatzkategorien, die Ihr Angebot präzise beschreiben." },
+              { "@type": "HowToStep", position: 3, name: "Professionelle Fotos hinzufügen", text: "Laden Sie mindestens 10 Fotos hoch: Außenansicht, Innenbereich, Team und Leistungen." },
+              { "@type": "HowToStep", position: 4, name: "Google Bewertungen aktiv aufbauen", text: "Schicken Sie zufriedenen Kunden den direkten Bewertungslink per WhatsApp direkt nach der Dienstleistung." },
+              { "@type": "HowToStep", position: 5, name: "Regelmäßige Beiträge veröffentlichen", text: "Veröffentlichen Sie mindestens einmal pro Woche einen Beitrag im Google Business Profile." },
+              { "@type": "HowToStep", position: 6, name: "Lokale Keywords strategisch einsetzen", text: "Nutzen Sie in Beschreibung und Beiträgen die Keywords Ihrer Zielkunden inklusive Stadtname und Region." },
+            ]
+          : locale === "en"
+          ? [
+              { "@type": "HowToStep", position: 1, name: "Complete Your Google Business Profile Fully", text: "Fill in every field: name, category, description (750 characters), opening hours, phone, website and all services." },
+              { "@type": "HowToStep", position: 2, name: "Choose the Right Categories", text: "Select one primary category and up to 9 additional categories that accurately describe your offering." },
+              { "@type": "HowToStep", position: 3, name: "Add Professional Photos", text: "Upload at least 10 photos: exterior, interior, team and services." },
+              { "@type": "HowToStep", position: 4, name: "Actively Build Google Reviews", text: "Send satisfied customers the direct review link via WhatsApp immediately after the service." },
+              { "@type": "HowToStep", position: 5, name: "Publish Regular Posts", text: "Publish at least one post per week on your Google Business Profile." },
+              { "@type": "HowToStep", position: 6, name: "Use Local Keywords Strategically", text: "Include your target customers' search terms in your description and posts, including city name and region." },
+            ]
+          : [
+              { "@type": "HowToStep", position: 1, name: "Полностью заполните Google Business Profile", text: "Заполните каждое поле: название, категория, описание (750 символов), часы работы, телефон, сайт и все услуги." },
+              { "@type": "HowToStep", position: 2, name: "Выберите правильные категории", text: "Выберите основную категорию и до 9 дополнительных, точно описывающих ваше предложение." },
+              { "@type": "HowToStep", position: 3, name: "Добавьте профессиональные фотографии", text: "Загрузите минимум 10 фото: фасад, интерьер, команда и услуги." },
+              { "@type": "HowToStep", position: 4, name: "Активно собирайте отзывы Google", text: "Отправляйте довольным клиентам прямую ссылку на отзыв через WhatsApp сразу после услуги." },
+              { "@type": "HowToStep", position: 5, name: "Регулярно публикуйте посты", text: "Публикуйте минимум один пост в неделю в Google Business Profile." },
+              { "@type": "HowToStep", position: 6, name: "Используйте локальные ключевые слова", text: "Включайте поисковые запросы ваших клиентов в описание и посты, включая название города и района." },
+            ],
+      }
+    : null;
+
+  // FAQPage schema from article FAQ data
+  const faqPageSchema =
+    localized.faq && localized.faq.length > 0
+      ? {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: localized.faq.map((item) => ({
+            "@type": "Question",
+            name: item.q,
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: item.a,
+            },
+          })),
+        }
+      : null;
 
   return (
     <>
       <script
         type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <script
+        type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
       />
+      {howToSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }}
+        />
+      )}
+      {faqPageSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqPageSchema) }}
+        />
+      )}
       <Navbar />
       <main className="min-h-screen pt-24 pb-20">
         <div className="max-w-2xl mx-auto px-6">
@@ -145,6 +262,31 @@ export default async function BlogPostPage({
             className="prose prose-google max-w-none"
             dangerouslySetInnerHTML={{ __html: localized.content }}
           />
+
+          {/* FAQ section */}
+          {localized.faq && localized.faq.length > 0 && (
+            <div className="mt-12">
+              <h2 className="text-xl font-bold text-google-text mb-5">
+                {faqHeading[locale] ?? faqHeading.de}
+              </h2>
+              <div className="divide-y divide-google-border border border-google-border rounded-card-lg overflow-hidden bg-white">
+                {localized.faq.map((item, i) => (
+                  <details key={i} className="group px-5 py-4">
+                    <summary className="flex items-center justify-between cursor-pointer list-none text-body-sm font-semibold text-google-text">
+                      {item.q}
+                      <ChevronDown
+                        size={16}
+                        className="text-google-secondary shrink-0 ml-3 transition-transform group-open:rotate-180"
+                      />
+                    </summary>
+                    <p className="mt-3 text-body-sm text-google-secondary leading-relaxed">
+                      {item.a}
+                    </p>
+                  </details>
+                ))}
+              </div>
+            </div>
+          )}
 
           {/* CTA */}
           <div className="mt-12 pt-10 border-t border-google-border">
