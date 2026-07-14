@@ -95,6 +95,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const serviceRoutes: MetadataRoute.Sitemap = [
     {
+      url: `${BASE_URL}/leistungen`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.95,
+      alternates: {
+        languages: {
+          de: `${BASE_URL}/leistungen`,
+          en: `${BASE_URL}/en/leistungen`,
+          ru: `${BASE_URL}/ru/leistungen`,
+        },
+      },
+    },
+    {
       url: `${BASE_URL}/leistungen/google-business-profile`,
       lastModified: new Date(),
       changeFrequency: "monthly",

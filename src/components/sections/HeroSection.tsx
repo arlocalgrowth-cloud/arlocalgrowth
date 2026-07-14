@@ -15,6 +15,8 @@ import {
   TrendingUp,
   Eye,
   MousePointerClick,
+  Briefcase,
+  Languages,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -247,9 +249,21 @@ export function HeroSection() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.5 }}
-              className="flex items-center gap-2 text-sm text-google-secondary"
+              className="flex flex-wrap items-center gap-x-4 gap-y-2"
             >
-              <span>{t("trustLine")}</span>
+              {[
+                { icon: Briefcase, label: "50+ Projekte" },
+                { icon: MapPin, label: "Berlin" },
+                { icon: Languages, label: "DE · RU · UA · EN" },
+              ].map(({ icon: Icon, label }) => (
+                <span
+                  key={label}
+                  className="flex items-center gap-1.5 text-sm text-google-secondary"
+                >
+                  <Icon size={14} className="text-brand-blue shrink-0" />
+                  {label}
+                </span>
+              ))}
             </motion.div>
           </div>
 
