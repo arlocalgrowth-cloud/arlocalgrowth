@@ -48,7 +48,7 @@ function DeContent() {
   return (
     <article className="prose prose-sm max-w-none space-y-8">
       <h1 className="text-2xl font-bold text-google-text">Datenschutzerklärung</h1>
-      <p className="text-xs text-google-secondary">Stand: Juni 2026</p>
+      <p className="text-xs text-google-secondary">Stand: Juli 2026</p>
 
       <section>
         <h2 className="text-base font-semibold text-google-text mb-3">1. Verantwortlicher</h2>
@@ -137,7 +137,7 @@ function DeContent() {
             <strong className="text-google-text">Cloudflare Turnstile</strong> (technisch notwendig) — schützt Kontaktformulare vor automatisierten Anfragen (Spam-Schutz). Keine Einwilligung nach § 25 Abs. 2 TTDSG erforderlich, da ausschließlich zur Bereitstellung des Dienstes notwendig.
           </li>
           <li>
-            <strong className="text-google-text">Google Analytics 4</strong> (nur mit Einwilligung) — erfasst anonymisierte Nutzungsstatistiken (aufgerufene Seiten, Verweildauer, Herkunft). Die IP-Adresse wird vor der Verarbeitung anonymisiert. Google Analytics wird erst nach Ihrer ausdrücklichen Zustimmung über den Cookie-Banner geladen. Rechtsgrundlage: Art. 6 Abs. 1 lit. a) DSGVO. Tracking-ID: G-JTS9F28JER. Sie können Ihre Einwilligung jederzeit widerrufen, indem Sie den Speicher Ihres Browsers leeren oder auf dieser Seite keine Analyse-Cookies akzeptieren.
+            <strong className="text-google-text">Google Analytics 4</strong> (Consent Mode v2, nur mit Einwilligung) — Das Skript wird technisch geladen, erfasst jedoch standardmäßig keine personenbezogenen Daten (<em>analytics_storage: denied</em>). Die Datenerfassung (aufgerufene Seiten, Sitzungsdauer, Herkunft) beginnt erst nach Ihrer ausdrücklichen Zustimmung über den Cookie-Banner. Rechtsgrundlage: Art. 6 Abs. 1 lit. a) DSGVO. Tracking-ID: G-HHZSPBKS2C. Sie können Ihre Einwilligung jederzeit widerrufen, indem Sie den Browserspeicher leeren oder auf dieser Seite keine Analyse-Cookies akzeptieren.
           </li>
         </ul>
       </section>
@@ -179,7 +179,7 @@ function EnContent() {
   return (
     <article className="prose prose-sm max-w-none space-y-8">
       <h1 className="text-2xl font-bold text-google-text">Privacy Policy</h1>
-      <p className="text-xs text-google-secondary">Last updated: June 2026</p>
+      <p className="text-xs text-google-secondary">Last updated: July 2026</p>
 
       <section>
         <h2 className="text-base font-semibold text-google-text mb-3">1. Data Controller</h2>
@@ -221,7 +221,7 @@ function EnContent() {
           <li><strong className="text-google-text">Resend Inc.</strong> — email delivery (USA, EU Standard Contractual Clauses)</li>
           <li><strong className="text-google-text">Vercel Inc.</strong> — website hosting (USA, EU-US Data Privacy Framework)</li>
           <li><strong className="text-google-text">Cloudflare Inc.</strong> — bot protection via Turnstile (USA, EU-US Data Privacy Framework). Active only when contact forms are used.</li>
-          <li><strong className="text-google-text">Google LLC</strong> — Google Analytics (USA, EU-US Data Privacy Framework). Only loaded with your explicit consent. IP anonymisation is active. Tracking ID: G-JTS9F28JER.</li>
+          <li><strong className="text-google-text">Google LLC</strong> — Google Analytics (USA, EU-US Data Privacy Framework). Consent Mode v2 is active: the script loads unconditionally but data collection (<em>analytics_storage</em>) is denied by default and only activated with your explicit consent. Tracking ID: G-HHZSPBKS2C.</li>
         </ul>
       </section>
 
@@ -232,7 +232,7 @@ function EnContent() {
             <strong className="text-google-text">Cloudflare Turnstile</strong> (technically necessary) — protects contact forms against automated requests. No consent required as it is strictly necessary for service delivery.
           </li>
           <li>
-            <strong className="text-google-text">Google Analytics 4</strong> (consent required) — collects anonymised usage statistics (pages visited, session duration, traffic source). IP anonymisation is active. Only loaded after your explicit consent via the cookie banner. Legal basis: Art. 6(1)(a) GDPR. You can withdraw consent at any time by clearing your browser storage.
+            <strong className="text-google-text">Google Analytics 4</strong> (Consent Mode v2, consent required) — The script loads unconditionally but collects no personal data by default (<em>analytics_storage: denied</em>). Data collection (pages visited, session duration, traffic source) only begins after your explicit consent via the cookie banner. Legal basis: Art. 6(1)(a) GDPR. Tracking ID: G-HHZSPBKS2C. You can withdraw consent at any time by clearing your browser storage.
           </li>
         </ul>
       </section>
@@ -251,7 +251,7 @@ function RuContent() {
   return (
     <article className="prose prose-sm max-w-none space-y-8">
       <h1 className="text-2xl font-bold text-google-text">Политика конфиденциальности</h1>
-      <p className="text-xs text-google-secondary">Дата: июнь 2026</p>
+      <p className="text-xs text-google-secondary">Дата: июль 2026</p>
 
       <section>
         <h2 className="text-base font-semibold text-google-text mb-3">1. Ответственный за обработку данных</h2>
@@ -294,7 +294,7 @@ function RuContent() {
             <strong className="text-google-text">Cloudflare Turnstile</strong> (технически необходимый) — защищает контактные формы от автоматических запросов. Согласие не требуется, так как используется исключительно для обеспечения работы сервиса.
           </li>
           <li>
-            <strong className="text-google-text">Google Analytics 4</strong> (только с согласия) — собирает анонимную статистику использования (посещённые страницы, продолжительность сессий, источники трафика). IP-адрес анонимизируется до передачи данных. Загружается только после вашего явного согласия через баннер cookie. Правовая основа: ст. 6 (1)(a) DSGVO. Tracking-ID: G-JTS9F28JER. Вы можете отозвать согласие в любой момент, очистив хранилище браузера.
+            <strong className="text-google-text">Google Analytics 4</strong> (Consent Mode v2, только с согласия) — скрипт загружается всегда, однако по умолчанию сбор данных заблокирован (<em>analytics_storage: denied</em>). Сбор статистики (посещённые страницы, продолжительность сессий, источники трафика) начинается только после вашего явного согласия через баннер cookie. Правовая основа: ст. 6 (1)(a) DSGVO. Tracking-ID: G-HHZSPBKS2C. Вы можете отозвать согласие в любой момент, очистив хранилище браузера.
           </li>
         </ul>
       </section>
