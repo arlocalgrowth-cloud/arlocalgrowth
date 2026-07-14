@@ -103,14 +103,6 @@ export async function SchemaMarkup({ locale }: { locale: string }) {
       "Google Maps Optimierung und Local SEO für lokale Unternehmen in Deutschland.",
     publisher: { "@id": `${BASE_URL}/#business` },
     inLanguage: ["de", "en", "ru"],
-    potentialAction: {
-      "@type": "SearchAction",
-      target: {
-        "@type": "EntryPoint",
-        urlTemplate: `${BASE_URL}/blog?q={search_term_string}`,
-      },
-      "query-input": "required name=search_term_string",
-    },
   };
 
   const faqSchema = {

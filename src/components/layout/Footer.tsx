@@ -25,14 +25,16 @@ export function Footer() {
   const locale = useLocale();
   const pathname = usePathname();
 
+  const homeBase = locale === "de" ? "" : `/${locale}`;
+
   const services = [
-    "Google Business Profile",
-    "Local SEO",
-    "Google Ads",
-    "Bewertungsmanagement",
-    "Landing Pages",
-    "Digitale Prozesse",
-    "Marken-Neustart",
+    { label: "Google Business Profile", href: `${homeBase}/leistungen/google-business-profile` },
+    { label: "Local SEO", href: `${homeBase}/leistungen/local-seo` },
+    { label: "Google Ads", href: `${homeBase}/#leistungen` },
+    { label: "Bewertungsmanagement", href: `${homeBase}/leistungen/bewertungsmanagement` },
+    { label: "Landing Pages", href: `${homeBase}/#leistungen` },
+    { label: "Digitale Prozesse", href: `${homeBase}/#leistungen` },
+    { label: "Marken-Neustart", href: `${homeBase}/#leistungen` },
   ];
 
   // Impressum/Datenschutz links — locale-prefixed
@@ -71,13 +73,13 @@ export function Footer() {
             </h3>
             <ul className="space-y-2">
               {services.map((service) => (
-                <li key={service}>
-                  <a
-                    href="#leistungen"
+                <li key={service.label}>
+                  <NextLink
+                    href={service.href}
                     className="text-sm text-google-secondary hover:text-brand-blue transition-colors"
                   >
-                    {service}
-                  </a>
+                    {service.label}
+                  </NextLink>
                 </li>
               ))}
             </ul>

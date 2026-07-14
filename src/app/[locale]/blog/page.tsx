@@ -47,6 +47,13 @@ export async function generateMetadata({
         ru: "https://arlocalgrowth.de/ru/blog",
       },
     },
+    openGraph: {
+      type: "website",
+      title: m.title,
+      description: m.description,
+      url: locale === "de" ? "https://arlocalgrowth.de/blog" : `https://arlocalgrowth.de/${locale}/blog`,
+      siteName: "A.R. Local Growth",
+    },
   };
 }
 

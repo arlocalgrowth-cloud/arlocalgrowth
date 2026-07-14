@@ -8,7 +8,7 @@ import { ArrowLeft, Clock, Tag, ChevronDown } from "lucide-react";
 
 const BASE_URL = "https://arlocalgrowth.de";
 
-const HOW_TO_SLUGS = ["google-maps-optimierung-anleitung"];
+const HOW_TO_SLUGS = ["google-maps-optimierung-anleitung", "google-business-profile-einrichten"];
 
 export async function generateStaticParams() {
   return blogPosts.flatMap((post) =>
