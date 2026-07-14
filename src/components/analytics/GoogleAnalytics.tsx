@@ -3,7 +3,7 @@
 import Script from "next/script";
 import { useState, useEffect } from "react";
 
-const GA_ID = "G-JTS9F28JER";
+const GA_ID = "G-HHZSPBKS2C";
 export const CONSENT_KEY = "cookie-consent";
 
 export function GoogleAnalytics() {
