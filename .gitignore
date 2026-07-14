@@ -45,3 +45,8 @@ skills-lock.json
 
 # Duplicate root-level photo (real one is in public/)
 Roman Andreiev.jpg
+
+# MCP credentials (never commit)
+mcp-creds/
+client_secret*.json
+token*.json
