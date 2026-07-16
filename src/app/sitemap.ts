@@ -172,6 +172,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
       },
     },
     {
+      url: `${BASE_URL}/leistungen/geo-aeo`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.9,
+      alternates: {
+        languages: {
+          de: `${BASE_URL}/leistungen/geo-aeo`,
+          en: `${BASE_URL}/en/leistungen/geo-aeo`,
+          ru: `${BASE_URL}/ru/leistungen/geo-aeo`,
+        },
+      },
+    },
+    {
       url: `${BASE_URL}/fur-russischsprachige`,
       lastModified: new Date(),
       changeFrequency: "monthly",

@@ -180,8 +180,8 @@ const services = [
   },
   {
     icon: Globe,
-    slug: null,
-    live: false,
+    slug: "geo-aeo",
+    live: true,
     title: {
       de: "GEO & AEO",
       en: "GEO & AEO",

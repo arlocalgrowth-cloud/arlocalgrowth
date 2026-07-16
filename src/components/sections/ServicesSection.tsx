@@ -23,6 +23,7 @@ const SERVICE_LINKS: Record<number, string> = {
   0: "/leistungen/google-business-profile",
   1: "/leistungen/local-seo",
   3: "/leistungen/bewertungsmanagement",
+  7: "/leistungen/geo-aeo",
 };
 
 const CTA_LABELS: Record<string, string> = {
