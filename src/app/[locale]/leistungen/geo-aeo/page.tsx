@@ -10,8 +10,8 @@ import {
   MessageSquare,
   TrendingUp,
   Search,
-  ChevronDown,
 } from "lucide-react";
+import { FaqVisibleSimple } from "@/components/faq/FaqVisible";
 
 const BASE_URL = "https://arlocalgrowth.de";
 
@@ -237,27 +237,6 @@ export default async function GeoAeoPage({
 
 type FaqItem = { q: string; a: string };
 
-function FaqSection({ items }: { items: FaqItem[] }) {
-  return (
-    <div className="divide-y divide-google-border border border-google-border rounded-card-lg overflow-hidden bg-white">
-      {items.map((item, i) => (
-        <details key={i} className="group px-5 py-4">
-          <summary className="flex items-center justify-between cursor-pointer list-none text-body-sm font-semibold text-google-text">
-            {item.q}
-            <ChevronDown
-              size={16}
-              className="text-google-secondary shrink-0 ml-3 transition-transform group-open:rotate-180"
-            />
-          </summary>
-          <p className="mt-3 text-body-sm text-google-secondary leading-relaxed speakable">
-            {item.a}
-          </p>
-        </details>
-      ))}
-    </div>
-  );
-}
-
 // ─── DE ──────────────────────────────────────────────────────────────────────
 function DeContent({
   homeBase,
@@ -476,7 +455,7 @@ function DeContent({
           <h2 className="text-2xl font-bold text-google-text mb-8 text-center">
             Häufige Fragen zu GEO & AEO
           </h2>
-          <FaqSection items={faqItems} />
+          <FaqVisibleSimple items={faqItems} />
 
           {/* Internal links */}
           <div className="grid sm:grid-cols-2 gap-4 mt-12 mb-4">
@@ -645,7 +624,7 @@ function EnContent({
           </div>
 
           <h2 className="text-2xl font-bold text-google-text mb-8 text-center">FAQ — GEO & AEO</h2>
-          <FaqSection items={faqItems} />
+          <FaqVisibleSimple items={faqItems} />
 
           <div className="grid sm:grid-cols-2 gap-4 mt-12">
             <div className="p-5 bg-google-light rounded-card border border-google-border">
@@ -792,7 +771,7 @@ function RuContent({
           </div>
 
           <h2 className="text-2xl font-bold text-google-text mb-8 text-center">FAQ — GEO и AEO</h2>
-          <FaqSection items={faqItems} />
+          <FaqVisibleSimple items={faqItems} />
 
           <div className="grid sm:grid-cols-2 gap-4 mt-12">
             <div className="p-5 bg-google-light rounded-card border border-google-border">

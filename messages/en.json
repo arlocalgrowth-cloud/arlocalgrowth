@@ -10,7 +10,7 @@
     "cta": "Get in touch"
   },
   "hero": {
-    "eyebrow": "Google Business Profile · Local SEO · Google Ads",
+    "eyebrow": "Google Business Profile · Local SEO · GEO & AEO",
     "headline": "Google Maps Optimization for local businesses —\nso customers find you.",
     "subheadline": "I help local businesses in Germany get found on Google Maps and Search. Before we start, I ask 40 questions — so I work on the right things, not guesswork.",
     "cta": "Get in touch",
@@ -42,18 +42,16 @@
     "service1Text": "Optimization of profile, categories, services, photos, posts, and local visibility.",
     "service2Title": "Local SEO",
     "service2Text": "Better rankings for relevant search queries in your city and region.",
-    "service3Title": "Google Ads",
-    "service3Text": "Targeted campaigns for more inquiries, more calls, and predictable customer acquisition.",
-    "service4Title": "Review Management",
-    "service4Text": "A system that automatically asks every customer for a Google review after their appointment — via WhatsApp or email. On average 3–5 new reviews per month.",
-    "service5Title": "Landing Pages",
-    "service5Text": "Landing page in 21 days — first draft on day 5 for your review. Mobile-friendly and optimized for your most important local keyword.",
-    "service6Title": "Digital Processes",
-    "service6Text": "Automation of review responses and online appointment booking.",
-    "service7Title": "Brand Relaunch",
-    "service7Text": "Complete rebuild of your digital presence — new profile, new design, new visibility.",
-    "service8Title": "GEO & AEO",
-    "service8Text": "Optimization for modern search systems and digital assistants — so your business appears as the answer to local questions."
+    "service3Title": "Review Management",
+    "service3Text": "A system that automatically asks every customer for a Google review after their appointment — via WhatsApp or email. On average 3–5 new reviews per month.",
+    "service4Title": "Landing Pages",
+    "service4Text": "Landing page in 21 days — first draft on day 5 for your review. Mobile-friendly and optimized for your most important local keyword.",
+    "service5Title": "Digital Processes",
+    "service5Text": "Automation of review responses and online appointment booking.",
+    "service6Title": "Brand Relaunch",
+    "service6Text": "Complete rebuild of your digital presence — new profile, new design, new visibility.",
+    "service7Title": "GEO & AEO",
+    "service7Text": "Optimization for modern search systems and digital assistants — so your business appears as the answer to local questions."
   },
   "industries": {
     "eyebrow": "For Who",

@@ -10,7 +10,7 @@
     "cta": "Jetzt anfragen"
   },
   "hero": {
-    "eyebrow": "Google Business Profile · Local SEO · Google Ads",
+    "eyebrow": "Google Business Profile · Local SEO · GEO & AEO",
     "headline": "Google Maps Optimierung für lokale Unternehmen —\ndamit Kunden Sie finden.",
     "subheadline": "Ich helfe lokalen Unternehmen in Deutschland, bei Google Maps und der Suche sichtbarer zu werden. Vor dem Start stelle ich Ihnen 40 Fragen — damit ich an den richtigen Stellen ansetze, nicht ins Blaue.",
     "cta": "Jetzt anfragen",
@@ -42,18 +42,16 @@
     "service1Text": "Optimierung von Profil, Kategorien, Leistungen, Bildern, Beiträgen und lokaler Sichtbarkeit.",
     "service2Title": "Local SEO",
     "service2Text": "Bessere Rankings für relevante Suchanfragen in Ihrer Stadt und Region.",
-    "service3Title": "Google Ads",
-    "service3Text": "Gezielte Kampagnen für mehr Anfragen, mehr Anrufe und mehr planbare Kundengewinnung.",
-    "service4Title": "Bewertungsmanagement",
-    "service4Text": "Ein System, das jeden Kunden nach dem Termin automatisch um eine Google-Bewertung bittet — per WhatsApp oder E-Mail. Im Schnitt 3–5 neue Bewertungen pro Monat.",
-    "service5Title": "Landing Pages",
-    "service5Text": "Landingpage in 21 Tagen — erster Entwurf am 5. Tag zur Freigabe. Mobilfreundlich und auf Ihren wichtigsten lokalen Suchbegriff optimiert.",
-    "service6Title": "Digitale Prozesse",
-    "service6Text": "Automatisierung von Bewertungsantworten und Online-Terminbuchung.",
-    "service7Title": "Marken-Neustart",
-    "service7Text": "Vollständiger Neuaufbau Ihres digitalen Auftritts — neues Profil, neues Design, neue Sichtbarkeit.",
-    "service8Title": "GEO & AEO",
-    "service8Text": "Optimierung für moderne Suchsysteme und digitale Assistenten — damit Ihr Unternehmen als Antwort auf lokale Fragen erscheint."
+    "service3Title": "Bewertungsmanagement",
+    "service3Text": "Ein System, das jeden Kunden nach dem Termin automatisch um eine Google-Bewertung bittet — per WhatsApp oder E-Mail. Im Schnitt 3–5 neue Bewertungen pro Monat.",
+    "service4Title": "Landing Pages",
+    "service4Text": "Landingpage in 21 Tagen — erster Entwurf am 5. Tag zur Freigabe. Mobilfreundlich und auf Ihren wichtigsten lokalen Suchbegriff optimiert.",
+    "service5Title": "Digitale Prozesse",
+    "service5Text": "Automatisierung von Bewertungsantworten und Online-Terminbuchung.",
+    "service6Title": "Marken-Neustart",
+    "service6Text": "Vollständiger Neuaufbau Ihres digitalen Auftritts — neues Profil, neues Design, neue Sichtbarkeit.",
+    "service7Title": "GEO & AEO",
+    "service7Text": "Optimierung für moderne Suchsysteme und digitale Assistenten — damit Ihr Unternehmen als Antwort auf lokale Fragen erscheint."
   },
   "industries": {
     "eyebrow": "Für wen",

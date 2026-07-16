@@ -172,6 +172,45 @@ export default function sitemap(): MetadataRoute.Sitemap {
       },
     },
     {
+      url: `${BASE_URL}/leistungen/landing-pages`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.9,
+      alternates: {
+        languages: {
+          de: `${BASE_URL}/leistungen/landing-pages`,
+          en: `${BASE_URL}/en/leistungen/landing-pages`,
+          ru: `${BASE_URL}/ru/leistungen/landing-pages`,
+        },
+      },
+    },
+    {
+      url: `${BASE_URL}/leistungen/digitale-prozesse`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.9,
+      alternates: {
+        languages: {
+          de: `${BASE_URL}/leistungen/digitale-prozesse`,
+          en: `${BASE_URL}/en/leistungen/digitale-prozesse`,
+          ru: `${BASE_URL}/ru/leistungen/digitale-prozesse`,
+        },
+      },
+    },
+    {
+      url: `${BASE_URL}/leistungen/marken-neustart`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.9,
+      alternates: {
+        languages: {
+          de: `${BASE_URL}/leistungen/marken-neustart`,
+          en: `${BASE_URL}/en/leistungen/marken-neustart`,
+          ru: `${BASE_URL}/ru/leistungen/marken-neustart`,
+        },
+      },
+    },
+    {
       url: `${BASE_URL}/leistungen/geo-aeo`,
       lastModified: new Date(),
       changeFrequency: "monthly",

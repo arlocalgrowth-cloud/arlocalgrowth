@@ -5,7 +5,6 @@ import { Footer } from "@/components/layout/Footer";
 import {
   MapPin,
   BarChart2,
-  Megaphone,
   Star,
   FileText,
   Zap,
@@ -153,20 +152,9 @@ const services = [
     },
   },
   {
-    icon: Megaphone,
-    slug: null,
-    live: false,
-    title: { de: "Google Ads", en: "Google Ads", ru: "Google Ads" },
-    desc: {
-      de: "Lokal gezielte Google Ads Kampagnen mit maximaler Effizienz — nur für Suchanfragen aus Ihrer Region.",
-      en: "Locally targeted Google Ads campaigns with maximum efficiency — only for search queries from your region.",
-      ru: "Локально нацеленные Google Ads кампании с максимальной эффективностью — только для поисковых запросов из вашего региона.",
-    },
-  },
-  {
     icon: FileText,
-    slug: null,
-    live: false,
+    slug: "landing-pages",
+    live: true,
     title: {
       de: "Landing Pages",
       en: "Landing Pages",
@@ -200,8 +188,8 @@ const services = [
   },
   {
     icon: Zap,
-    slug: null,
-    live: false,
+    slug: "digitale-prozesse",
+    live: true,
     title: {
       de: "Digitale Prozesse",
       en: "Digital Processes",
@@ -215,8 +203,8 @@ const services = [
   },
   {
     icon: Sparkles,
-    slug: null,
-    live: false,
+    slug: "marken-neustart",
+    live: true,
     title: {
       de: "Marken-Neustart",
       en: "Brand Relaunch",

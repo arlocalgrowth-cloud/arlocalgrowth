@@ -83,7 +83,7 @@ export default async function BlogPage({
 
           {/* Posts */}
           <div className="space-y-6">
-            {blogPosts.map((post) => {
+            {[...blogPosts].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()).map((post) => {
               const localized = getLocalizedPost(post, locale);
               return (
                 <Link

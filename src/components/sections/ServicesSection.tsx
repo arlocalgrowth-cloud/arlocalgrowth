@@ -7,7 +7,6 @@ import Link from "next/link";
 import {
   MapPin,
   BarChart2,
-  Megaphone,
   Star,
   FileText,
   Zap,
@@ -16,14 +15,17 @@ import {
   ArrowRight,
 } from "lucide-react";
 
-const serviceIcons = [MapPin, BarChart2, Megaphone, Star, FileText, Zap, Sparkles, Globe];
+const serviceIcons = [MapPin, BarChart2, Star, FileText, Zap, Sparkles, Globe];
 
 // Services with dedicated pages — index → locale-relative path
 const SERVICE_LINKS: Record<number, string> = {
   0: "/leistungen/google-business-profile",
   1: "/leistungen/local-seo",
-  3: "/leistungen/bewertungsmanagement",
-  7: "/leistungen/geo-aeo",
+  2: "/leistungen/bewertungsmanagement",
+  3: "/leistungen/landing-pages",
+  4: "/leistungen/digitale-prozesse",
+  5: "/leistungen/marken-neustart",
+  6: "/leistungen/geo-aeo",
 };
 
 const CTA_LABELS: Record<string, string> = {
@@ -49,7 +51,6 @@ export function ServicesSection() {
     { titleKey: "service5Title", textKey: "service5Text" },
     { titleKey: "service6Title", textKey: "service6Text" },
     { titleKey: "service7Title", textKey: "service7Text" },
-    { titleKey: "service8Title", textKey: "service8Text" },
   ] as const;
 
   return (
@@ -73,7 +74,7 @@ export function ServicesSection() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {serviceKeys.map(({ titleKey, textKey }, i) => {
             const Icon = serviceIcons[i];
-            const isNew = i === 6;
+            const isNew = false;
             const pageSlug = SERVICE_LINKS[i];
             const href = pageSlug ? `${homeBase}${pageSlug}` : undefined;
 

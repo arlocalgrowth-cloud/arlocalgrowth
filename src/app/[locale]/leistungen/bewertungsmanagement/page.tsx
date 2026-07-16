@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
-import { Star, ArrowRight, MessageSquare, TrendingUp, Shield, ChevronDown, CheckCircle } from "lucide-react";
+import { Star, ArrowRight, MessageSquare, TrendingUp, Shield, CheckCircle } from "lucide-react";
+import { FaqVisibleSimple } from "@/components/faq/FaqVisible";
 
 const BASE_URL = "https://arlocalgrowth.de";
 
@@ -157,17 +158,7 @@ export default async function BewertungsmanagementPage({
         <section className="section-padding bg-google-light">
           <div className="container-content mx-auto max-w-3xl">
             <h2 className="text-2xl font-bold text-google-text mb-8 text-center">{faqHeading}</h2>
-            <div className="divide-y divide-google-border border border-google-border rounded-card-lg overflow-hidden bg-white">
-              {faqItems.map((item, i) => (
-                <details key={i} className="group px-5 py-4">
-                  <summary className="flex items-center justify-between cursor-pointer list-none text-body-sm font-semibold text-google-text">
-                    {item.q}
-                    <ChevronDown size={16} className="text-google-secondary shrink-0 ml-3 transition-transform group-open:rotate-180" />
-                  </summary>
-                  <p className="mt-3 text-body-sm text-google-secondary leading-relaxed">{item.a}</p>
-                </details>
-              ))}
-            </div>
+            <FaqVisibleSimple items={faqItems} />
           </div>
         </section>
 

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
-import { FaqAccordion } from "@/components/faq/FaqAccordion";
+import { FaqVisible } from "@/components/faq/FaqVisible";
 
 const BASE_URL = "https://arlocalgrowth.de";
 
@@ -293,9 +293,9 @@ export default async function FaqPage({
           </p>
         </div>
 
-        {/* Accordion */}
+        {/* FAQ — always visible for AEO/GEO indexing */}
         <div className="container-content mx-auto px-4">
-          <FaqAccordion categories={[...c.categories]} />
+          <FaqVisible categories={[...c.categories] as { id: string; label: string; items: { q: string; a: string }[] }[]} />
         </div>
 
         {/* CTA */}
