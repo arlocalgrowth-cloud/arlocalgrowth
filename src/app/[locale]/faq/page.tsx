@@ -6,8 +6,22 @@ import { FaqAccordion } from "@/components/faq/FaqAccordion";
 
 const BASE_URL = "https://arlocalgrowth.de";
 
+// ─── Types ────────────────────────────────────────────────────────────────────
+type FaqItem = { q: string; a: string };
+type FaqCategory = { id: string; label: string; items: FaqItem[] };
+type LocaleContent = {
+  title: string;
+  description: string;
+  pageTitle: string;
+  pageSubtitle: string;
+  ctaTitle: string;
+  ctaText: string;
+  ctaBtn: string;
+  categories: FaqCategory[];
+};
+
 // ─── Page content (DE/EN/RU) ──────────────────────────────────────────────────
-const content = {
+const content: Record<string, LocaleContent> = {
   de: {
     title: "FAQ — Häufige Fragen zu Google Maps, Local SEO & Google Business Profile",
     description:
