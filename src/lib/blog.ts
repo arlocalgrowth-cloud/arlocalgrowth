@@ -1377,6 +1377,497 @@ export const blogPosts: BlogPost[] = [
       },
     },
   },
+
+  // ─── Article 5 ────────────────────────────────────────────────────────────
+  {
+    slug: "google-maps-nicht-sichtbar",
+    date: "2026-07-01",
+    translations: {
+      de: {
+        title: "Warum erscheint mein Unternehmen nicht auf Google Maps? 7 häufige Ursachen",
+        description:
+          "Ihr Unternehmen ist auf Google Maps nicht sichtbar? Die 7 häufigsten Ursachen — und wie Sie jede davon Schritt für Schritt beheben.",
+        tags: ["Google Maps", "Google Business Profile", "Sichtbarkeit"],
+        readingTime: 8,
+        content: `
+<p class="speakable">Wenn ein Unternehmen auf Google Maps nicht erscheint, hat das fast immer eine konkrete technische oder strategische Ursache — keine zufällige. Roman Andreiev, Spezialist für Google Business Profile und Local SEO in Berlin, erklärt die 7 häufigsten Gründe und wie Sie sie beheben.</p>
+
+<h2>Ursache 1: Das Google Business Profile wurde nie beansprucht</h2>
+<p>Google erstellt für viele Unternehmen automatisch Einträge — aus Adressdaten, Webseiten oder Nutzerhinweisen. Dieser Eintrag existiert, aber niemand verwaltet ihn aktiv. Ohne Verifizierung und Pflege wird er von Google niedrig priorisiert.</p>
+<p><strong>Lösung:</strong> Rufen Sie <strong>business.google.com</strong> auf, suchen Sie Ihr Unternehmen und beanspruchen Sie den Eintrag. Nach der Verifizierung (per Postkarte, Telefon oder Video) können Sie alle Felder bearbeiten.</p>
+
+<h2>Ursache 2: Das Profil ist unvollständig ausgefüllt</h2>
+<p>Google bewertet die <strong>Vollständigkeit</strong> eines Profils als direkten Rankingfaktor. Profile ohne Beschreibung, fehlende Öffnungszeiten oder kein Foto werden in den Ergebnissen zurückgestuft.</p>
+<p>Folgende Felder müssen vollständig ausgefüllt sein:</p>
+<ul>
+  <li>Unternehmensname (exakt wie im Handelsregister)</li>
+  <li>Hauptkategorie + bis zu 9 Zusatzkategorien</li>
+  <li>Beschreibung (maximal 750 Zeichen)</li>
+  <li>Vollständige Adresse und Öffnungszeiten</li>
+  <li>Telefon, Website, alle Leistungen mit Preisen</li>
+  <li>Mindestens 10 Fotos (Außen, Innen, Team, Leistungen)</li>
+</ul>
+
+<h2>Ursache 3: Keyword-Stuffing im Unternehmensnamen</h2>
+<p>Viele Unternehmer schreiben Keywords direkt in den Unternehmensnamen: „Friseur Berlin Mitte – Günstiger Haarschnitt". Google erkennt das und kann das Profil dafür abstrafen oder sogar sperren.</p>
+<p><strong>Lösung:</strong> Verwenden Sie ausschließlich Ihren echten Unternehmensnamen. Keywords kommen in die Beschreibung, Leistungen und Beiträge.</p>
+
+<h2>Ursache 4: Falsche oder inkonsistente Adresse (NAP-Problem)</h2>
+<p>Google vergleicht die Adresse in Ihrem Profil mit allen anderen Online-Quellen. Wenn Ihr Eintrag auf Google „Hauptstr. 12" lautet, aber auf Yelp „Hauptstraße 12" — erkennt Google eine Diskrepanz und senkt das Vertrauen in Ihren Eintrag.</p>
+<p>Das nennt man <strong>NAP-Inkonsistenz</strong> (Name, Address, Phone). Überprüfen Sie alle Ihre Einträge in deutschen Verzeichnissen: Das Örtliche, Gelbe Seiten, Yelp, Facebook, Apple Maps.</p>
+
+<h2>Ursache 5: Zu wenige oder keine Bewertungen</h2>
+<p>Bewertungen sind einer der stärksten Rankingfaktoren im Local Pack. Unternehmen ohne Bewertungen erscheinen kaum in den Top-3 — egal wie gut das Profil sonst ausgefüllt ist.</p>
+<p>Für die meisten lokalen Branchen in deutschen Städten braucht man <strong>mindestens 10–20 aktuelle Bewertungen</strong> mit einem Durchschnitt über 4,3 Sterne, um in der Nähe der Top-3 zu erscheinen.</p>
+<p>Die einfachste Methode: Schicken Sie zufriedenen Kunden direkt nach der Dienstleistung den direkten Bewertungslink per WhatsApp.</p>
+
+<h2>Ursache 6: Das Profil ist gesperrt oder suspendiert</h2>
+<p>Google kann Unternehmensprofile sperren, wenn Richtlinien verletzt werden: Keyword-Stuffing im Namen, falsche Adresse, Verdacht auf gefälschte Bewertungen oder mehrere Einträge für dasselbe Unternehmen.</p>
+<p>Eine Sperre sehen Sie in Ihrem GBP-Dashboard mit dem Hinweis „Profil gesperrt" oder „Ausstehende Überprüfung". Die Entsperrung erfolgt über den Google-Support — dieser Prozess kann 1–4 Wochen dauern und erfordert oft Belege.</p>
+
+<h2>Ursache 7: Zu hoher lokaler Wettbewerb</h2>
+<p>In manchen Branchen und Stadtteilen ist der Wettbewerb so hoch, dass auch ein perfekt ausgefülltes Profil nicht automatisch in den Top-3 landet. Das ist besonders in Kategorien wie „Friseur Berlin Mitte" oder „Zahnarzt München" der Fall.</p>
+<p>In diesem Fall helfen:</p>
+<ul>
+  <li>Bewertungsanzahl und -qualität deutlich erhöhen</li>
+  <li>GBP-Beiträge wöchentlich veröffentlichen</li>
+  <li>Lokale Keywords auf der Website stärken (Local SEO)</li>
+  <li>Zitate in relevanten Branchenverzeichnissen aufbauen</li>
+</ul>
+
+<h2>Was tun, wenn trotz allem nichts hilft?</h2>
+<p>Wenn alle sieben Punkte erfüllt sind und das Profil immer noch nicht erscheint, liegt oft ein tieferliegendes technisches Problem vor: ein doppelter Eintrag, ein alter gesperrter Eintrag derselben Adresse oder ein Google-internes Datenproblem. In solchen Fällen hilft ein professionelles Audit — Roman Andreiev von A.R. Local Growth analysiert Ihr Profil kostenfrei und nennt die genaue Ursache.</p>
+`,
+        faq: [
+          { q: "Warum erscheint mein Unternehmen nicht auf Google Maps, obwohl es ein Profil hat?", a: "Ein vorhandenes Profil bedeutet nicht automatisch gute Sichtbarkeit. Häufige Ursachen: das Profil ist unverifiziert, unvollständig, hat zu wenige Bewertungen oder eine inkonsistente Adresse gegenüber anderen Verzeichnissen. Ein Audit deckt die genaue Ursache auf." },
+          { q: "Wie lange dauert es, bis ein Unternehmen auf Google Maps erscheint?", a: "Nach der Verifizierung erscheint ein neues Profil meist innerhalb von 3–7 Tagen in den Google-Suchergebnissen. Sichtbarkeit im Local Pack (Top 3) dauert je nach Wettbewerb 4–12 Wochen mit aktiver Optimierung." },
+          { q: "Kann Google ein Unternehmensprofil ohne Vorwarnung sperren?", a: "Ja. Google sperrt Profile automatisch bei Verdacht auf Richtlinienverstöße: Keyword-Stuffing im Namen, falsche Adresse, Verdacht auf gekaufte Bewertungen. Eine Entsperrung dauert 1–4 Wochen und erfordert Belege über die Echtheit des Unternehmens." },
+          { q: "Was bedeutet NAP-Konsistenz und warum ist sie wichtig?", a: "NAP steht für Name, Adresse, Telefon. Google vergleicht diese Daten aus allen Online-Quellen. Wenn Ihr Unternehmensname auf Google anders geschrieben ist als auf Yelp oder Facebook, senkt das das Vertrauen und damit das Ranking." },
+          { q: "Reicht ein Google Business Profile, oder brauche ich auch eine Website?", a: "Ein GBP allein reicht für einfache lokale Sichtbarkeit. Für kompetitive Suchanfragen brauchen Sie beides: ein optimiertes GBP und eine Website mit lokalem SEO-Content. Die Kombination ist deutlich stärker als jedes einzelne für sich." },
+        ],
+      },
+      en: {
+        title: "Why Isn't My Business Showing on Google Maps? 7 Common Reasons",
+        description:
+          "Your business isn't visible on Google Maps? The 7 most common causes — and how to fix each one step by step.",
+        tags: ["Google Maps", "Google Business Profile", "Visibility"],
+        readingTime: 8,
+        content: `
+<p class="speakable">When a business doesn't appear on Google Maps, there is almost always a specific technical or strategic reason — never random. Roman Andreiev, Google Business Profile and Local SEO specialist in Berlin, explains the 7 most common causes and how to fix them.</p>
+
+<h2>Cause 1: The Google Business Profile Was Never Claimed</h2>
+<p>Google automatically creates listings for many businesses — from address data, websites, or user tips. This listing exists, but nobody manages it actively. Without verification and maintenance, Google gives it low priority.</p>
+<p><strong>Fix:</strong> Go to <strong>business.google.com</strong>, search for your business, and claim the listing. After verification (by postcard, phone, or video), you can edit all fields.</p>
+
+<h2>Cause 2: The Profile Is Incomplete</h2>
+<p>Google treats <strong>profile completeness</strong> as a direct ranking factor. Profiles without a description, missing opening hours, or no photo get pushed down in results.</p>
+<p>These fields must be fully filled in: business name, categories, description, address and opening hours, phone, website, all services with prices, at least 10 photos.</p>
+
+<h2>Cause 3: Keyword Stuffing in the Business Name</h2>
+<p>Many business owners write keywords directly into the business name: "Hair Salon Berlin Center – Cheap Haircut." Google detects this and can penalize or even suspend the profile.</p>
+<p><strong>Fix:</strong> Use only your real business name. Keywords go in the description, services, and posts.</p>
+
+<h2>Cause 4: Wrong or Inconsistent Address (NAP Problem)</h2>
+<p>Google compares the address in your profile with all other online sources. If your Google listing shows "Main St 12" but your Yelp shows "Main Street 12" — Google detects a discrepancy and lowers trust in your listing. Check all your directory listings for NAP consistency.</p>
+
+<h2>Cause 5: Too Few or No Reviews</h2>
+<p>Reviews are one of the strongest ranking factors in the Local Pack. Businesses without reviews rarely appear in the top 3 — no matter how well the profile is otherwise filled in. Most local businesses need at least 10–20 recent reviews with an average above 4.3 stars.</p>
+
+<h2>Cause 6: The Profile Is Suspended</h2>
+<p>Google can suspend business profiles when guidelines are violated: keyword stuffing in the name, false address, suspected fake reviews, or multiple listings for the same business. A suspension shows in your GBP dashboard and takes 1–4 weeks to resolve.</p>
+
+<h2>Cause 7: High Local Competition</h2>
+<p>In some categories and neighborhoods, competition is so high that even a perfectly optimized profile won't automatically rank in the top 3. Combined strategies help: more reviews, weekly GBP posts, local SEO on your website, and citation building in relevant directories.</p>
+
+<h2>What If Nothing Works?</h2>
+<p>If all seven points are addressed and the profile still doesn't appear, there's usually a deeper technical issue: a duplicate listing, an old suspended listing at the same address, or a Google data problem. Roman Andreiev from A.R. Local Growth analyzes your profile for free and identifies the exact cause.</p>
+`,
+        faq: [
+          { q: "Why doesn't my business show on Google Maps even though I have a profile?", a: "Having a profile doesn't automatically mean good visibility. Common causes: the profile is unverified, incomplete, has too few reviews, or has an inconsistent address compared to other directories. An audit identifies the exact cause." },
+          { q: "How long does it take for a business to appear on Google Maps?", a: "After verification, a new profile usually appears in Google search results within 3–7 days. Visibility in the Local Pack (top 3) takes 4–12 weeks with active optimization, depending on competition." },
+          { q: "Can Google suspend a business profile without warning?", a: "Yes. Google automatically suspends profiles suspected of guideline violations: keyword stuffing in the name, false address, suspected purchased reviews. Reinstatement takes 1–4 weeks and requires proof of the business's legitimacy." },
+          { q: "What is NAP consistency and why does it matter?", a: "NAP stands for Name, Address, Phone. Google compares this data from all online sources. If your business name is spelled differently on Google vs. Yelp or Facebook, it lowers trust and thus ranking." },
+          { q: "Is a Google Business Profile enough, or do I need a website too?", a: "A GBP alone is sufficient for basic local visibility. For competitive search queries, you need both: an optimized GBP and a website with local SEO content. The combination is significantly stronger than either alone." },
+        ],
+      },
+      ru: {
+        title: "Почему моего бизнеса нет на Google Maps? 7 частых причин",
+        description:
+          "Ваш бизнес не виден в Google Maps? 7 самых частых причин — и как решить каждую из них шаг за шагом.",
+        tags: ["Google Maps", "Google Business Profile", "Видимость"],
+        readingTime: 8,
+        content: `
+<p class="speakable">Если бизнес не появляется в Google Maps, у этого почти всегда есть конкретная техническая или стратегическая причина — случайностей здесь нет. Роман Андреев, специалист по Google Business Profile и Local SEO в Берлине, объясняет 7 самых частых причин и способы их устранения.</p>
+
+<h2>Причина 1: Google Business Profile никогда не был заявлен</h2>
+<p>Google автоматически создаёт карточки для многих компаний — из адресных данных, сайтов или подсказок пользователей. Эта карточка существует, но никто ею не управляет. Без верификации и поддержки Google дает ей низкий приоритет.</p>
+<p><strong>Решение:</strong> Зайдите на <strong>business.google.com</strong>, найдите свою компанию и заявите карточку. После верификации (по открытке, телефону или видео) вы сможете редактировать все поля.</p>
+
+<h2>Причина 2: Профиль заполнен не полностью</h2>
+<p>Google оценивает <strong>полноту профиля</strong> как прямой фактор ранжирования. Профили без описания, без часов работы или без фото занижаются в результатах поиска.</p>
+<p>Обязательно должны быть заполнены: название компании, категории, описание, полный адрес и часы работы, телефон, сайт, все услуги с ценами, минимум 10 фотографий.</p>
+
+<h2>Причина 3: Ключевые слова в названии компании</h2>
+<p>Многие владельцы пишут ключевые слова прямо в название: «Парикмахерская Берлин Центр – Дешевая стрижка». Google это распознаёт и может наказать или даже заблокировать профиль.</p>
+<p><strong>Решение:</strong> Используйте только реальное название компании. Ключевые слова — в описание, услуги и публикации.</p>
+
+<h2>Причина 4: Неверный или непоследовательный адрес (проблема NAP)</h2>
+<p>Google сравнивает адрес в вашем профиле со всеми другими онлайн-источниками. Если на Google указано «Hauptstr. 12», а на Yelp — «Hauptstraße 12» — Google фиксирует расхождение и снижает доверие к вашей карточке. Проверьте все свои записи в каталогах на <strong>NAP-консистентность</strong> (Name, Address, Phone).</p>
+
+<h2>Причина 5: Слишком мало или совсем нет отзывов</h2>
+<p>Отзывы — один из самых сильных факторов ранжирования в Local Pack. Компании без отзывов почти никогда не попадают в топ-3 — как бы хорошо ни был заполнен профиль. Большинству локальных компаний нужно минимум 10–20 актуальных отзывов со средней оценкой выше 4,3 звезды.</p>
+
+<h2>Причина 6: Профиль заблокирован или приостановлен</h2>
+<p>Google может заблокировать профиль при нарушении правил: ключевые слова в названии, неверный адрес, подозрение в покупных отзывах или несколько карточек для одной компании. Разблокировка занимает 1–4 недели и требует документальных подтверждений.</p>
+
+<h2>Причина 7: Высокая локальная конкуренция</h2>
+<p>В некоторых нишах и районах конкуренция настолько высока, что даже идеально оптимизированный профиль не попадает автоматически в топ-3. Помогает комплексная стратегия: больше отзывов, еженедельные публикации в GBP, локальный SEO на сайте и создание цитаций в тематических каталогах.</p>
+
+<h2>Что делать, если ничего не помогает?</h2>
+<p>Если все семь пунктов выполнены, а профиль всё равно не появляется — скорее всего, есть более глубокая техническая проблема: дублирующая карточка, старый заблокированный профиль по тому же адресу или ошибка в данных Google. Роман Андреев из A.R. Local Growth анализирует ваш профиль бесплатно и называет точную причину.</p>
+`,
+        faq: [
+          { q: "Почему моя компания не показывается в Google Maps, хотя профиль есть?", a: "Наличие профиля не гарантирует хорошую видимость. Частые причины: профиль не верифицирован, заполнен не полностью, мало отзывов или непоследовательный адрес по сравнению с другими каталогами. Аудит выявляет точную причину." },
+          { q: "Сколько времени занимает появление в Google Maps?", a: "После верификации новый профиль обычно появляется в поиске Google в течение 3–7 дней. Попадание в Local Pack (топ-3) при активной оптимизации занимает 4–12 недель в зависимости от конкуренции." },
+          { q: "Может ли Google заблокировать профиль без предупреждения?", a: "Да. Google автоматически блокирует профили при подозрении на нарушение правил: ключевые слова в названии, ложный адрес, подозрение в покупных отзывах. Разблокировка занимает 1–4 недели и требует подтверждения реальности компании." },
+          { q: "Что такое NAP-консистентность и почему это важно?", a: "NAP — это Name, Address, Phone (Название, Адрес, Телефон). Google сравнивает эти данные из всех онлайн-источников. Если название компании написано по-разному на Google и на Yelp или Facebook — это снижает доверие и рейтинг." },
+          { q: "Достаточно ли Google Business Profile или нужен ещё и сайт?", a: "GBP один достаточен для базовой локальной видимости. Для конкурентных запросов нужны оба инструмента: оптимизированный GBP и сайт с локальным SEO-контентом. В связке они работают значительно сильнее." },
+        ],
+      },
+    },
+  },
+
+  // ─── Article 6 ────────────────────────────────────────────────────────────
+  {
+    slug: "negative-google-bewertungen-antworten",
+    date: "2026-07-08",
+    translations: {
+      de: {
+        title: "Negative Google Bewertungen: So antworten Sie richtig (mit Vorlagen)",
+        description:
+          "Eine schlechte Google-Bewertung muss nicht das Ende sein. Wie Sie professionell auf negative Bewertungen antworten — mit konkreten Vorlagen für verschiedene Situationen.",
+        tags: ["Google Bewertungen", "Bewertungsmanagement", "Reputationsmanagement"],
+        readingTime: 7,
+        content: `
+<p class="speakable">Jedes lokale Unternehmen erhält irgendwann eine negative Google-Bewertung. Wie Sie darauf antworten, entscheidet darüber, ob potenzielle Neukunden Vertrauen gewinnen oder verlieren — und beeinflusst Ihr lokales Ranking. Roman Andreiev erklärt die richtige Strategie.</p>
+
+<h2>Warum negative Bewertungen nicht ignoriert werden sollten</h2>
+<p>Laut aktuellen Studien lesen <strong>97 % der Konsumenten</strong> Antworten auf negative Bewertungen. Eine professionelle Antwort zeigt nicht nur dem unzufriedenen Kunden, dass Ihnen sein Anliegen wichtig ist — sie signalisiert auch allen anderen Lesern, dass Sie ein verlässliches, kundenorientiertes Unternehmen führen.</p>
+<p>Gleichzeitig hat die <strong>Antwortrate</strong> einen direkten Einfluss auf Ihr Google Maps Ranking. Unternehmen, die konsequent auf Bewertungen antworten, werden von Google als aktiver und glaubwürdiger eingestuft.</p>
+
+<h2>Die 5 goldenen Regeln</h2>
+<ol>
+  <li><strong>Innerhalb von 24–48 Stunden antworten.</strong> Schnelle Reaktion zeigt, dass Sie Ihr Profil aktiv betreuen.</li>
+  <li><strong>Nie emotional reagieren.</strong> Schreiben Sie immer im ruhigen, professionellen Ton — auch wenn die Bewertung unfair ist.</li>
+  <li><strong>Nie konkrete Kundendaten nennen.</strong> Datenschutz gilt auch in Antworten auf Bewertungen.</li>
+  <li><strong>Immer eine Lösung oder nächste Schritte anbieten.</strong> „Bitte melden Sie sich direkt bei uns" ist besser als eine Erklärung ohne Ausweg.</li>
+  <li><strong>Nie für eine Änderung der Bewertung bitten.</strong> Das ist gegen die Google-Richtlinien und wirkt unprofessionell.</li>
+</ol>
+
+<h2>Vorlage 1: Berechtigte Kritik</h2>
+<p>Wenn ein Kunde einen tatsächlichen Fehler beschreibt, ist Transparenz der beste Weg:</p>
+<blockquote>
+<p>„Vielen Dank für Ihr ehrliches Feedback, [Vorname]. Es tut uns leid, dass Ihr Besuch nicht Ihren Erwartungen entsprochen hat. Wir nehmen Ihre Rückmeldung ernst und arbeiten daran, [konkreter Punkt] zu verbessern. Bitte melden Sie sich unter [Kontakt], damit wir die Situation für Sie persönlich klären können."</p>
+</blockquote>
+
+<h2>Vorlage 2: Ungerechtfertigte oder falsche Bewertung</h2>
+<p>Wenn die Bewertung sachlich falsch ist oder das Unternehmen nicht erkennbar beschreibt:</p>
+<blockquote>
+<p>„Vielen Dank für Ihr Feedback. Wir können Ihren geschilderten Fall in unseren Unterlagen leider nicht zuordnen. Falls es zu einem Missverständnis gekommen ist, klären wir das gerne direkt — rufen Sie uns an unter [Telefon]. Wir sind täglich von [Öffnungszeiten] für Sie erreichbar."</p>
+</blockquote>
+
+<h2>Vorlage 3: Einmalige Situation oder Ausnahme</h2>
+<blockquote>
+<p>„Danke für Ihre Rückmeldung, [Vorname]. Was Sie beschreiben, entspricht nicht unserem üblichen Standard — und wir sind froh, dass Sie uns darauf aufmerksam machen. Unser Team hat den Fall intern besprochen. Wir würden uns freuen, Sie bei einem nächsten Besuch von unserem gewohnten Niveau überzeugen zu dürfen."</p>
+</blockquote>
+
+<h2>Wann kann man eine Bewertung bei Google melden?</h2>
+<p>Google erlaubt das Melden von Bewertungen, die gegen die Richtlinien verstoßen:</p>
+<ul>
+  <li>Bewertungen von nicht-Kunden (Mitbewerber, Verwechslung)</li>
+  <li>Beleidigende, diskriminierende oder obszöne Inhalte</li>
+  <li>Spam oder offensichtlich gefälschte Bewertungen</li>
+  <li>Bewertungen, die irrelevante Informationen enthalten</li>
+</ul>
+<p>Das Melden erfolgt direkt im Google Business Profile Dashboard. Google entscheidet innerhalb von 3–14 Tagen. Wichtig: Nicht jede negative Bewertung wird entfernt — nur Richtlinienverstöße.</p>
+
+<h2>Wie viele negative Bewertungen sind „normal"?</h2>
+<p>Eine Bewertungsverteilung von 90–95 % positiv und 5–10 % negativ wirkt für potenzielle Kunden oft glaubwürdiger als 100 % 5-Sterne-Bewertungen. Wichtiger als die Vermeidung negativer Bewertungen ist der professionelle Umgang damit.</p>
+`,
+        faq: [
+          { q: "Soll ich auf jede negative Google-Bewertung antworten?", a: "Ja — auf jede. Auch wenn die Bewertung unfair oder sachlich falsch ist. Eine professionelle Antwort zeigt potenziellen Neukunden, wie Sie mit Kritik umgehen. Unternehmen, die konsequent antworten, gewinnen mehr Vertrauen als solche, die schweigen." },
+          { q: "Kann man negative Google-Bewertungen löschen lassen?", a: "Nicht jede. Google entfernt nur Bewertungen, die gegen Richtlinien verstoßen: Spam, Beleidigungen, Bewertungen von Nicht-Kunden oder sachlich falsche Informationen. Legitime Kritik, auch wenn sie schmerzt, bleibt bestehen." },
+          { q: "Wie schnell soll man auf eine negative Bewertung antworten?", a: "Innerhalb von 24–48 Stunden. Schnelle Reaktion signalisiert aktive Profilpflege — Google bewertet das positiv. Außerdem: Je länger eine unbeantwortete negative Bewertung sichtbar ist, desto mehr potenzielle Kunden lesen sie ohne Ihr Gegenwort." },
+          { q: "Beeinflusst die Antwort auf Bewertungen das Google Maps Ranking?", a: "Ja. Die Antwortrate auf Bewertungen ist ein direkter Rankingfaktor. Unternehmen, die regelmäßig auf Bewertungen antworten, werden von Google als aktiver und vertrauenswürdiger eingestuft." },
+          { q: "Darf man einen Kunden um eine Änderung seiner negativen Bewertung bitten?", a: "Das Direkt-Bitten um eine Bewertungsänderung ist gegen die Google-Richtlinien. Was erlaubt ist: das Problem lösen und dem Kunden die Möglichkeit geben, seine Erfahrung zu überdenken. Viele Kunden aktualisieren ihre Bewertung freiwillig, wenn das Problem professionell gelöst wurde." },
+        ],
+      },
+      en: {
+        title: "Negative Google Reviews: How to Respond the Right Way (With Templates)",
+        description:
+          "A bad Google review doesn't have to be the end. How to respond professionally to negative reviews — with concrete templates for various situations.",
+        tags: ["Google Reviews", "Review Management", "Reputation Management"],
+        readingTime: 7,
+        content: `
+<p class="speakable">Every local business eventually receives a negative Google review. How you respond determines whether potential new customers gain or lose trust — and directly influences your local ranking. Roman Andreiev explains the right strategy.</p>
+
+<h2>Why Negative Reviews Should Never Be Ignored</h2>
+<p>According to current studies, <strong>97% of consumers</strong> read responses to negative reviews. A professional response not only shows the unhappy customer that their concern matters — it signals to all other readers that you run a reliable, customer-focused business.</p>
+<p>At the same time, your <strong>response rate</strong> directly influences your Google Maps ranking. Businesses that consistently respond to reviews are rated as more active and credible by Google.</p>
+
+<h2>The 5 Golden Rules</h2>
+<ol>
+  <li><strong>Respond within 24–48 hours.</strong> Fast response shows active profile management.</li>
+  <li><strong>Never react emotionally.</strong> Always write in a calm, professional tone — even if the review is unfair.</li>
+  <li><strong>Never mention specific customer data.</strong> Privacy protection applies in review responses too.</li>
+  <li><strong>Always offer a solution or next steps.</strong> "Please contact us directly" is better than an explanation with no way forward.</li>
+  <li><strong>Never ask for a rating change.</strong> This violates Google's guidelines and looks unprofessional.</li>
+</ol>
+
+<h2>Template 1: Legitimate Criticism</h2>
+<blockquote>
+<p>"Thank you for your honest feedback, [First name]. We're sorry your visit didn't meet your expectations. We take your feedback seriously and are working to improve [specific point]. Please reach out to us at [contact] so we can personally address the situation."</p>
+</blockquote>
+
+<h2>Template 2: Unjustified or Incorrect Review</h2>
+<blockquote>
+<p>"Thank you for your feedback. Unfortunately, we're unable to match your described experience to our records. If there has been a misunderstanding, we're happy to resolve it directly — please call us at [phone]. We're available daily during [opening hours]."</p>
+</blockquote>
+
+<h2>Template 3: Isolated Incident</h2>
+<blockquote>
+<p>"Thank you for your feedback, [First name]. What you describe doesn't reflect our usual standard — and we're glad you brought it to our attention. Our team has discussed this internally. We'd love the opportunity to show you our usual level of service on a future visit."</p>
+</blockquote>
+
+<h2>When Can You Report a Review to Google?</h2>
+<p>Google allows reporting reviews that violate guidelines: reviews from non-customers, offensive or discriminatory content, spam or obviously fake reviews, reviews with irrelevant information. Google decides within 3–14 days. Important: not every negative review is removed — only guideline violations.</p>
+`,
+        faq: [
+          { q: "Should I respond to every negative Google review?", a: "Yes — every one. Even if the review is unfair or factually wrong. A professional response shows potential new customers how you handle criticism. Businesses that respond consistently build more trust than those that stay silent." },
+          { q: "Can negative Google reviews be deleted?", a: "Not every one. Google only removes reviews that violate guidelines: spam, insults, reviews from non-customers, or factually false information. Legitimate criticism, even if it hurts, stays up." },
+          { q: "How quickly should I respond to a negative review?", a: "Within 24–48 hours. Fast response signals active profile management — Google rates this positively. Also: the longer an unanswered negative review is visible, the more potential customers read it without your side of the story." },
+          { q: "Do review responses affect Google Maps ranking?", a: "Yes. Response rate to reviews is a direct ranking factor. Businesses that regularly respond to reviews are rated as more active and trustworthy by Google." },
+          { q: "Can I ask a customer to change their negative review?", a: "Directly asking for a rating change violates Google's guidelines. What is allowed: solve the problem and give the customer the opportunity to reconsider their experience. Many customers voluntarily update their review when the issue is resolved professionally." },
+        ],
+      },
+      ru: {
+        title: "Плохие отзывы в Google: как правильно отвечать (с шаблонами)",
+        description:
+          "Плохой отзыв в Google — не катастрофа. Как профессионально отвечать на негативные отзывы с конкретными шаблонами для разных ситуаций.",
+        tags: ["Google Отзывы", "Управление репутацией", "Google Business Profile"],
+        readingTime: 7,
+        content: `
+<p class="speakable">Каждый локальный бизнес рано или поздно получает негативный отзыв в Google. То, как вы на него отвечаете, определяет, получат ли потенциальные клиенты доверие к вам — и напрямую влияет на ваш локальный рейтинг. Роман Андреев объясняет правильную стратегию.</p>
+
+<h2>Почему негативные отзывы нельзя игнорировать</h2>
+<p>По данным исследований, <strong>97% потребителей</strong> читают ответы на негативные отзывы. Профессиональный ответ показывает не только недовольному клиенту, что вы серьёзно относитесь к его проблеме — он сигнализирует всем остальным читателям, что вы ведёте надёжный, клиентоориентированный бизнес.</p>
+<p>Кроме того, <strong>коэффициент ответов</strong> напрямую влияет на ваш рейтинг в Google Maps. Компании, которые систематически отвечают на отзывы, Google оценивает как более активные и достоверные.</p>
+
+<h2>5 золотых правил</h2>
+<ol>
+  <li><strong>Отвечайте в течение 24–48 часов.</strong> Быстрая реакция показывает, что вы активно управляете профилем.</li>
+  <li><strong>Никогда не отвечайте эмоционально.</strong> Всегда пишите в спокойном, профессиональном тоне — даже если отзыв несправедлив.</li>
+  <li><strong>Никогда не называйте конкретные данные клиента.</strong> Защита данных распространяется и на ответы к отзывам.</li>
+  <li><strong>Всегда предлагайте решение или следующие шаги.</strong> «Свяжитесь с нами напрямую» лучше, чем объяснение без выхода.</li>
+  <li><strong>Никогда не просите об изменении оценки.</strong> Это нарушает правила Google и выглядит непрофессионально.</li>
+</ol>
+
+<h2>Шаблон 1: Обоснованная критика</h2>
+<blockquote>
+<p>«Спасибо за честную обратную связь, [Имя]. Нам жаль, что ваш визит не оправдал ожиданий. Мы серьёзно относимся к вашему отзыву и работаем над улучшением [конкретный момент]. Пожалуйста, напишите нам на [контакт], чтобы мы могли лично разобраться в ситуации.»</p>
+</blockquote>
+
+<h2>Шаблон 2: Несправедливый или ошибочный отзыв</h2>
+<blockquote>
+<p>«Спасибо за ваш отзыв. К сожалению, мы не можем сопоставить описанную вами ситуацию с нашими записями. Если произошло недоразумение, мы готовы разобраться напрямую — позвоните нам по [телефон]. Мы доступны ежедневно в [часы работы].»</p>
+</blockquote>
+
+<h2>Шаблон 3: Единичная ситуация</h2>
+<blockquote>
+<p>«Спасибо за обратную связь, [Имя]. То, что вы описываете, не соответствует нашему обычному стандарту — и мы рады, что вы обратили на это внимание. Наша команда внутренне разобрала этот случай. Мы будем рады показать вам наш обычный уровень при следующем визите.»</p>
+</blockquote>
+
+<h2>Когда можно пожаловаться на отзыв в Google?</h2>
+<p>Google разрешает сообщать об отзывах, нарушающих правила: отзывы от не-клиентов, оскорбительный или дискриминационный контент, спам или очевидно поддельные отзывы. Google принимает решение в течение 3–14 дней. Важно: не каждый негативный отзыв удаляется — только нарушения правил.</p>
+`,
+        faq: [
+          { q: "Нужно ли отвечать на каждый негативный отзыв в Google?", a: "Да — на каждый. Даже если отзыв несправедлив или фактически неверен. Профессиональный ответ показывает потенциальным клиентам, как вы справляетесь с критикой. Компании, которые систематически отвечают, вызывают больше доверия, чем те, кто молчит." },
+          { q: "Можно ли удалить негативный отзыв в Google?", a: "Не каждый. Google удаляет только отзывы, нарушающие правила: спам, оскорбления, отзывы от не-клиентов или фактически ложные сведения. Легитимная критика, даже болезненная, остаётся." },
+          { q: "Как быстро нужно отвечать на негативный отзыв?", a: "В течение 24–48 часов. Быстрая реакция сигнализирует об активном управлении профилем — Google оценивает это положительно. К тому же: чем дольше негативный отзыв остаётся без ответа, тем больше потенциальных клиентов читают его без вашей позиции." },
+          { q: "Влияют ли ответы на отзывы на рейтинг в Google Maps?", a: "Да. Коэффициент ответов на отзывы — прямой фактор ранжирования. Компании, которые регулярно отвечают, Google оценивает как более активные и заслуживающие доверия." },
+          { q: "Можно ли попросить клиента изменить негативный отзыв?", a: "Прямая просьба об изменении оценки нарушает правила Google. Что разрешено: решить проблему и дать клиенту возможность пересмотреть свой опыт. Многие клиенты сами обновляют отзыв, когда проблема профессионально решена." },
+        ],
+      },
+    },
+  },
+
+  // ─── Article 7 ────────────────────────────────────────────────────────────
+  {
+    slug: "local-seo-handwerker-berlin",
+    date: "2026-07-10",
+    translations: {
+      de: {
+        title: "Local SEO für Handwerker in Berlin: Mehr Aufträge über Google Maps",
+        description:
+          "Wie Handwerker in Berlin über Google Maps mehr Kunden gewinnen. Praktische Local SEO-Strategien für Sanitär, Elektro, Maler, Schreiner und andere Gewerke.",
+        tags: ["Local SEO", "Google Maps", "Handwerker", "Berlin"],
+        readingTime: 9,
+        content: `
+<p class="speakable">Handwerker in Berlin finden ihre Auftraggeber heute primär über Google — nicht mehr über Empfehlungen allein. Roman Andreiev, Spezialist für Local SEO in Berlin, erklärt, wie Handwerksbetriebe über Google Maps systematisch mehr Aufträge gewinnen.</p>
+
+<h2>Warum Google Maps für Handwerker entscheidend ist</h2>
+<p>Wenn ein Berliner Rohrbruch, Stromausfall oder einen Malerauftrag braucht, greift er sofort zum Smartphone und sucht auf Google Maps. Die Entscheidung fällt in Sekunden — und fast immer für einen der drei Betriebe im sogenannten <strong>Local Pack</strong> (die ersten drei Ergebnisse mit Karte).</p>
+<p>Laut Studien klicken über 70 % der Nutzer ausschließlich auf diese Top-3-Ergebnisse. Wer dort nicht erscheint, existiert für viele Kunden nicht.</p>
+
+<h2>Der wichtigste erste Schritt: Google Business Profile für Handwerker</h2>
+<p>Das Google Business Profile (GBP) ist die Basis. Für Handwerker gelten dabei einige Besonderheiten:</p>
+<ul>
+  <li><strong>Servicegebiet statt Adresse:</strong> Wenn Sie kein Ladengeschäft haben, können Sie ein Servicegebiet (z.B. „Berlin und Umgebung") angeben, ohne Ihre genaue Adresse öffentlich zu machen.</li>
+  <li><strong>Richtige Hauptkategorie:</strong> „Elektriker", „Klempner", „Malerbetrieb" — wählen Sie die spezifischste Kategorie für Ihren Kernbereich.</li>
+  <li><strong>Alle Leistungen eintragen:</strong> Jede Leistung ist ein eigenes Suchsignal. Statt „Elektroinstallation": „Steckdosen einbauen", „Beleuchtungsinstallation", „Sicherungskasten erneuern".</li>
+  <li><strong>Reaktionszeit angeben:</strong> „Reagiert in der Regel innerhalb von 1 Stunde" steigert die Klickrate deutlich.</li>
+</ul>
+
+<h2>Die richtigen lokalen Keywords für Handwerker</h2>
+<p>Kunden suchen nicht „Elektriker" — sie suchen „Elektriker Berlin Mitte" oder „Notelektriker Berlin 24h". Analysieren Sie, welche Stadtteil-Keywords für Ihr Einzugsgebiet relevant sind, und integrieren Sie diese in:</p>
+<ul>
+  <li>GBP-Beschreibung</li>
+  <li>Einzelne Leistungsbeschreibungen</li>
+  <li>Wöchentliche GBP-Beiträge</li>
+  <li>Ihre Website (falls vorhanden)</li>
+</ul>
+<p>Beispiel: Ein Sanitärbetrieb in Charlottenburg sollte nicht nur „Klempner Berlin" targetieren, sondern auch „Klempner Charlottenburg", „Rohrreinigung Charlottenburg", „Heizungsinstallation Berlin West".</p>
+
+<h2>Bewertungen: der stärkste Hebel für Handwerker</h2>
+<p>Handwerker haben einen strukturellen Vorteil beim Bewertungsaufbau: Sie haben echten persönlichen Kundenkontakt. Nutzen Sie das systematisch:</p>
+<ol>
+  <li>Schicken Sie am Ende jedes Auftrags eine kurze WhatsApp mit dem direkten Bewertungslink.</li>
+  <li>Bitten Sie mündlich direkt nach der Abnahme: „Wenn Sie zufrieden sind — eine kurze Bewertung bei Google würde uns sehr helfen."</li>
+  <li>Antworten Sie auf <strong>jede</strong> Bewertung — positive wie negative.</li>
+</ol>
+<p>Realistische Erwartung: 1 von 5 bis 1 von 10 zufriedenen Kunden hinterlässt auf direkte Bitte eine Bewertung. Bei 3 Aufträgen pro Tag macht das 15–30 neue Bewertungen im Monat.</p>
+
+<h2>Website oder GBP — was braucht ein Handwerksbetrieb?</h2>
+<p>Für viele Handwerksbetriebe reicht ein gut gepflegtes GBP allein für lokale Grundsichtbarkeit. Eine einfache, schnell ladende Landing Page (keine komplexe Website) verstärkt das Signal:</p>
+<ul>
+  <li>Eine Seite mit Leistungen, Einzugsgebiet und Kontaktformular</li>
+  <li>NAP-Daten exakt wie im GBP</li>
+  <li>Lokale Keywords im Seitentext</li>
+</ul>
+<p>Eine vollständige Website mit Blog und Stadtteils-Unterseiten ist der nächste Schritt — aber kein Pflicht-Start.</p>
+
+<h2>Typische Ergebnisse für Handwerker in Berlin</h2>
+<p>Mit konsequenter GBP-Optimierung und aktivem Bewertungsaufbau sind typische Ergebnisse nach 3 Monaten:</p>
+<ul>
+  <li>500–2.000 Profilaufrufe pro Monat (abhängig von Branche und Wettbewerb)</li>
+  <li>20–80 Anrufklicks pro Monat direkt aus dem GBP</li>
+  <li>Sichtbarkeit für 3–5 relevante Stadtteile im Einzugsgebiet</li>
+</ul>
+<p>Roman Andreiev von A.R. Local Growth bietet ein kostenloses GBP-Audit für Handwerksbetriebe in Berlin, Deutschland, Österreich und der Schweiz an — auf Deutsch, Russisch oder Ukrainisch.</p>
+`,
+        faq: [
+          { q: "Welche Google-Kategorie ist für Handwerker am besten?", a: "Wählen Sie die spezifischste Kategorie, die Ihr Kerngewerbe beschreibt: 'Elektriker', 'Klempner', 'Malerbetrieb' etc. Vermeiden Sie zu allgemeine Kategorien wie 'Handwerker'. Zusatzkategorien helfen, mehrere Bereiche abzudecken." },
+          { q: "Braucht ein Handwerker eine Adresse bei Google Maps?", a: "Nein. Handwerker, die beim Kunden arbeiten, können im GBP ein Servicegebiet angeben und die genaue Adresse ausblenden. Google zeigt dann das Einzugsgebiet statt der Privatadresse." },
+          { q: "Wie viele Google-Bewertungen braucht ein Handwerksbetrieb in Berlin?", a: "In den meisten Berliner Handwerk-Kategorien benötigen Sie 20–50 Bewertungen mit einem Durchschnitt über 4,5 Sterne, um dauerhaft in den Top-3 zu erscheinen. In weniger kompetitiven Stadtteilen reichen manchmal schon 10–15 Bewertungen." },
+          { q: "Lohnt sich Google Ads für Handwerker zusätzlich zu Local SEO?", a: "Google Ads liefert sofortige Ergebnisse, ist aber kontinuierlich kostenpflichtig. Local SEO liefert nachhaltige Sichtbarkeit ohne laufende Werbekosten. Für Handwerker, die schnell Aufträge brauchen, ist die Kombination beider Strategien am effektivsten." },
+          { q: "Wie lange dauert es bis ein Handwerksbetrieb bei Google Maps sichtbar wird?", a: "Erste Ergebnisse (mehr Profilaufrufe, erste Top-3-Platzierungen für Nischen-Keywords) sind oft nach 4–8 Wochen sichtbar. Für stark umkämpfte Kategorien wie 'Elektriker Berlin' dauert es 3–6 Monate kontinuierlicher Optimierung." },
+        ],
+      },
+      en: {
+        title: "Local SEO for Tradespeople in Berlin: More Jobs via Google Maps",
+        description:
+          "How tradespeople in Berlin win more clients via Google Maps. Practical Local SEO strategies for plumbers, electricians, painters, carpenters, and other trades.",
+        tags: ["Local SEO", "Google Maps", "Tradespeople", "Berlin"],
+        readingTime: 9,
+        content: `
+<p class="speakable">Tradespeople in Berlin find their clients primarily through Google today — not just word of mouth alone. Roman Andreiev, Local SEO specialist in Berlin, explains how trade businesses systematically win more jobs through Google Maps.</p>
+
+<h2>Why Google Maps Is Critical for Tradespeople</h2>
+<p>When a Berlin resident needs a plumber, electrician, or painter, they immediately reach for their smartphone and search on Google Maps. The decision is made in seconds — and almost always goes to one of the three businesses in the <strong>Local Pack</strong> (the first three results with the map). Studies show over 70% of users click exclusively on these top-3 results.</p>
+
+<h2>The Most Important First Step: Google Business Profile for Tradespeople</h2>
+<p>Special considerations for tradespeople:</p>
+<ul>
+  <li><strong>Service area instead of address:</strong> If you don't have a storefront, you can specify a service area (e.g., "Berlin and surroundings") without making your exact address public.</li>
+  <li><strong>Correct primary category:</strong> "Electrician", "Plumber", "Painting contractor" — choose the most specific category for your core trade.</li>
+  <li><strong>List all services individually:</strong> Each service is its own search signal. Instead of "Electrical installation": "Socket installation", "Lighting installation", "Fuse box replacement".</li>
+  <li><strong>State response time:</strong> "Usually responds within 1 hour" significantly increases the click rate.</li>
+</ul>
+
+<h2>Reviews: the Strongest Lever for Tradespeople</h2>
+<p>Tradespeople have a structural advantage in review building: real personal customer contact. Use it systematically:</p>
+<ol>
+  <li>Send a short WhatsApp with the direct review link at the end of every job.</li>
+  <li>Ask verbally right after handover: "If you're satisfied — a quick Google review would really help us."</li>
+  <li>Respond to <strong>every</strong> review — positive and negative.</li>
+</ol>
+<p>Realistic expectation: 1 in 5 to 1 in 10 satisfied customers leaves a review when directly asked. With 3 jobs per day, that's 15–30 new reviews per month.</p>
+
+<h2>Typical Results for Tradespeople in Berlin</h2>
+<p>With consistent GBP optimization and active review building, typical results after 3 months:</p>
+<ul>
+  <li>500–2,000 profile views per month (depending on trade and competition)</li>
+  <li>20–80 call clicks per month directly from the GBP</li>
+  <li>Visibility for 3–5 relevant neighborhoods in the service area</li>
+</ul>
+`,
+        faq: [
+          { q: "Which Google category is best for tradespeople?", a: "Choose the most specific category that describes your core trade: 'Electrician', 'Plumber', 'Painting contractor', etc. Avoid overly general categories like 'Tradesperson'. Additional categories help cover multiple areas." },
+          { q: "Does a tradesperson need an address on Google Maps?", a: "No. Tradespeople who work at the customer's location can specify a service area in their GBP and hide the exact address. Google then shows the service area instead of a private address." },
+          { q: "How many Google reviews does a trade business in Berlin need?", a: "In most Berlin trade categories, you need 20–50 reviews with an average above 4.5 stars to consistently appear in the top 3. In less competitive neighborhoods, sometimes 10–15 reviews are enough." },
+          { q: "Is Google Ads worth it for tradespeople in addition to Local SEO?", a: "Google Ads delivers immediate results but requires ongoing spend. Local SEO delivers sustainable visibility without ongoing advertising costs. For tradespeople who need jobs quickly, combining both strategies is most effective." },
+          { q: "How long does it take for a trade business to become visible on Google Maps?", a: "First results (more profile views, top-3 placements for niche keywords) are often visible after 4–8 weeks. For highly competitive categories like 'Electrician Berlin', it takes 3–6 months of continuous optimization." },
+        ],
+      },
+      ru: {
+        title: "Local SEO для мастеров и ремесленников в Берлине: больше заказов через Google Maps",
+        description:
+          "Как ремесленники в Берлине привлекают больше клиентов через Google Maps. Практические стратегии Local SEO для сантехников, электриков, маляров и других мастеров.",
+        tags: ["Local SEO", "Google Maps", "Ремесленники", "Берлин"],
+        readingTime: 9,
+        content: `
+<p class="speakable">Ремесленники и мастера в Берлине сегодня находят своих клиентов прежде всего через Google — уже не только через рекомендации. Роман Андреев, специалист по Local SEO в Берлине, объясняет, как ремесленные предприятия системно привлекают больше заказов через Google Maps.</p>
+
+<h2>Почему Google Maps важен для ремесленников</h2>
+<p>Когда берлинцу нужен сантехник, электрик или маляр, он сразу тянется к смартфону и ищет в Google Maps. Решение принимается за секунды — и почти всегда в пользу одного из трёх предприятий в <strong>Local Pack</strong> (первые три результата с картой). Более 70% пользователей кликают исключительно на эти топ-3 результаты.</p>
+
+<h2>Важнейший первый шаг: Google Business Profile для мастеров</h2>
+<p>Особенности для ремесленников:</p>
+<ul>
+  <li><strong>Зона обслуживания вместо адреса:</strong> Если у вас нет торговой точки, можно указать зону обслуживания (например, «Берлин и окрестности»), не публикуя точный адрес.</li>
+  <li><strong>Правильная основная категория:</strong> «Электрик», «Сантехник», «Малярные работы» — выбирайте наиболее конкретную категорию для вашей основной специализации.</li>
+  <li><strong>Перечислите все услуги отдельно:</strong> Каждая услуга — отдельный поисковый сигнал. Вместо «Электромонтаж»: «Установка розеток», «Монтаж освещения», «Замена щитка».</li>
+  <li><strong>Укажите время ответа:</strong> «Как правило, отвечает в течение 1 часа» значительно повышает кликабельность.</li>
+</ul>
+
+<h2>Отзывы: самый сильный рычаг для ремесленников</h2>
+<p>У ремесленников структурное преимущество в сборе отзывов: реальный личный контакт с клиентами. Используйте это системно:</p>
+<ol>
+  <li>Отправляйте короткое WhatsApp-сообщение с прямой ссылкой на отзыв в конце каждого заказа.</li>
+  <li>Спросите устно сразу после приёмки: «Если довольны — короткий отзыв в Google нам очень поможет».</li>
+  <li>Отвечайте на <strong>каждый</strong> отзыв — положительный и отрицательный.</li>
+</ol>
+<p>Реалистичное ожидание: 1 из 5 до 1 из 10 довольных клиентов оставляет отзыв при прямой просьбе. При 3 заказах в день — это 15–30 новых отзывов в месяц.</p>
+
+<h2>Типичные результаты для ремесленников в Берлине</h2>
+<p>При последовательной оптимизации GBP и активном сборе отзывов типичные результаты через 3 месяца:</p>
+<ul>
+  <li>500–2000 просмотров профиля в месяц (зависит от отрасли и конкуренции)</li>
+  <li>20–80 кликов по звонку в месяц прямо из GBP</li>
+  <li>Видимость по 3–5 актуальным районам зоны обслуживания</li>
+</ul>
+<p>Роман Андреев из A.R. Local Growth предлагает бесплатный аудит GBP для ремесленных предприятий в Берлине, Германии, Австрии и Швейцарии — на немецком, русском или украинском языке.</p>
+`,
+        faq: [
+          { q: "Какая категория Google лучше всего подходит для ремесленников?", a: "Выбирайте наиболее конкретную категорию, описывающую ваш основной вид деятельности: «Электрик», «Сантехник», «Малярные работы» и т.д. Избегайте слишком общих категорий. Дополнительные категории помогают охватить несколько направлений." },
+          { q: "Нужен ли ремесленнику адрес в Google Maps?", a: "Нет. Мастера, работающие у клиента, могут указать в GBP зону обслуживания и скрыть точный адрес. Google тогда показывает зону обслуживания вместо домашнего адреса." },
+          { q: "Сколько отзывов Google нужно ремесленному предприятию в Берлине?", a: "В большинстве берлинских ремесленных категорий нужно 20–50 отзывов со средней оценкой выше 4,5 звезды, чтобы стабильно появляться в топ-3. В менее конкурентных районах иногда достаточно 10–15 отзывов." },
+          { q: "Стоит ли Google Ads для ремесленников в дополнение к Local SEO?", a: "Google Ads даёт немедленные результаты, но требует постоянных затрат. Local SEO обеспечивает устойчивую видимость без постоянных рекламных расходов. Для мастеров, которым нужны заказы быстро, наиболее эффективна комбинация обеих стратегий." },
+          { q: "Сколько времени занимает появление ремесленного предприятия в Google Maps?", a: "Первые результаты (больше просмотров профиля, попадание в топ-3 по нишевым запросам) часто заметны уже через 4–8 недель. Для высококонкурентных категорий, как «Электрик Берлин», требуется 3–6 месяцев непрерывной оптимизации." },
+        ],
+      },
+    },
+  },
 ];
 
 export function getLocalizedPost(post: BlogPost, locale: string): BlogPostLocalized {

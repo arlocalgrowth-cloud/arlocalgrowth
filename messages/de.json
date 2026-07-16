@@ -12,7 +12,7 @@
   "hero": {
     "eyebrow": "Google Business Profile · Local SEO · Google Ads",
     "headline": "Google Maps Optimierung für lokale Unternehmen —\ndamit Kunden Sie finden.",
-    "subheadline": "Ich helfe lokalen Unternehmen in Deutschland, bei Google Maps und der Suche sichtbarer zu werden. Individuell. Persönlich. Ohne Schablone.",
+    "subheadline": "Ich helfe lokalen Unternehmen in Deutschland, bei Google Maps und der Suche sichtbarer zu werden. Vor dem Start stelle ich Ihnen 40 Fragen — damit ich an den richtigen Stellen ansetze, nicht ins Blaue.",
     "cta": "Jetzt anfragen",
     "ctaSecondary": "Leistungen ansehen",
     "trustLine": "Wir sprechen Deutsch, Russisch und Englisch",
@@ -37,7 +37,7 @@
   "services": {
     "eyebrow": "Leistungen",
     "headline": "Unsere Leistungen",
-    "subheadline": "Wir helfen lokalen Unternehmen, online sichtbarer zu werden, mehr qualifizierte Anfragen zu erhalten und ihre digitale Präsenz gezielt auszubauen.",
+    "subheadline": "Jede Leistung ist einzeln buchbar — kein Paket, kein Jahresvertrag. Google Business Profile ist für die meisten lokalen Unternehmen der schnellste Hebel: erste Ergebnisse oft in 4–6 Wochen.",
     "service1Title": "Google Business Profile",
     "service1Text": "Optimierung von Profil, Kategorien, Leistungen, Bildern, Beiträgen und lokaler Sichtbarkeit.",
     "service2Title": "Local SEO",
@@ -45,13 +45,15 @@
     "service3Title": "Google Ads",
     "service3Text": "Gezielte Kampagnen für mehr Anfragen, mehr Anrufe und mehr planbare Kundengewinnung.",
     "service4Title": "Bewertungsmanagement",
-    "service4Text": "Mehr Vertrauen durch professionelle Darstellung und klare Bewertungsstrategie.",
+    "service4Text": "Ein System, das jeden Kunden nach dem Termin automatisch um eine Google-Bewertung bittet — per WhatsApp oder E-Mail. Im Schnitt 3–5 neue Bewertungen pro Monat.",
     "service5Title": "Landing Pages",
-    "service5Text": "Schnelle und überzeugende Seiten für lokale Angebote und Kampagnen.",
+    "service5Text": "Landingpage in 21 Tagen — erster Entwurf am 5. Tag zur Freigabe. Mobilfreundlich und auf Ihren wichtigsten lokalen Suchbegriff optimiert.",
     "service6Title": "Digitale Prozesse",
     "service6Text": "Automatisierung von Bewertungsantworten und Online-Terminbuchung.",
     "service7Title": "Marken-Neustart",
-    "service7Text": "Vollständiger Neuaufbau Ihres digitalen Auftritts — neues Profil, neues Design, neue Sichtbarkeit."
+    "service7Text": "Vollständiger Neuaufbau Ihres digitalen Auftritts — neues Profil, neues Design, neue Sichtbarkeit.",
+    "service8Title": "GEO & AEO",
+    "service8Text": "Optimierung für moderne Suchsysteme und digitale Assistenten — damit Ihr Unternehmen als Antwort auf lokale Fragen erscheint."
   },
   "industries": {
     "eyebrow": "Für wen",
@@ -105,24 +107,24 @@
     "step3Title": "Umsetzung",
     "step3Text": "Wir optimieren Sichtbarkeit, Rankings, Werbung und digitale Kontaktpunkte.",
     "step4Title": "Wachstum",
-    "step4Text": "Kontinuierliche Verbesserung und nachhaltige Entwicklung Ihrer Online-Präsenz."
+    "step4Text": "Monatlicher Bericht mit konkreten Zahlen: Profilaufrufe, Anrufe, Klicks, Positionen. Eine Seite, echte Daten — keine Agentur-Präsentationen."
   },
   "about": {
     "eyebrow": "Über mich",
     "name": "Roman Andreiev",
     "title": "Gründer von A.R. Local Growth",
-    "text1": "Ich unterstütze lokale Unternehmen dabei, online besser sichtbar zu werden und mehr Kunden über Google zu gewinnen.",
-    "text2": "Mein Fokus liegt auf Google Business Profile, Local SEO, Google Ads und klaren digitalen Prozessen. Ich arbeite persönlich mit meinen Kunden zusammen — kein Template, kein Callcenter.",
+    "text1": "Roman Andreiev ist Gründer von A.R. Local Growth & Automation in Berlin — spezialisiert auf Google Business Profile, Local SEO, GEO und AEO für lokale Unternehmen in Deutschland, Österreich und der Schweiz.",
+    "text2": "Mein Fokus liegt auf Google Business Profile, Local SEO, Google Ads und klaren digitalen Prozessen. Ich arbeite allein — kein Callcenter, keine Junior-Mitarbeiter, die Ihren Fall weitergeben. Was wir besprechen, setze ich selbst um.",
     "text3": "Ich spreche Deutsch, Russisch und Ukrainisch — und verstehe die besonderen Herausforderungen von Unternehmern mit internationaler Erfahrung in Deutschland.",
     "badge1": "Berlin, Deutschland",
     "badge2": "DE · RU · UA",
-    "geoAnchor": "Spezialist für Google Business Profile in Berlin — auf Deutsch, Russisch und Ukrainisch.",
+    "geoAnchor": "Spezialist für Google Business Profile, Local SEO, GEO und AEO in Berlin — auf Deutsch, Russisch und Ukrainisch.",
     "cta": "Jetzt anfragen"
   },
   "audit": {
     "eyebrow": "Kontakt",
     "headline": "Schreiben Sie mir",
-    "subheadline": "Beschreiben Sie kurz Ihre Situation — ich melde mich innerhalb von 24 Stunden, stelle ein paar Rückfragen und wir sprechen, wenn alles klar ist.",
+    "subheadline": "Beschreiben Sie kurz Ihre Situation — ich antworte werktags innerhalb von 30 Minuten. Keine Akquise-Anrufe, kein Druck.",
     "howItWorks": "So läuft es ab:",
     "steps": [
       "Sie schreiben mir in 2–3 Sätzen, was Ihr größtes Problem ist",
@@ -145,7 +147,7 @@
     "phProblem": "z. B. Wir werden bei Google nicht gefunden, obwohl wir seit Jahren in Berlin sind...",
     "cta": "Anfrage senden",
     "successTitle": "Vielen Dank!",
-    "successText": "Ich melde mich innerhalb von 24 Stunden mit ein paar Rückfragen.",
+    "successText": "Ich antworte werktags innerhalb von 30 Minuten.",
     "errorText": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut oder schreiben Sie direkt an a.r.localgrowth@gmail.com"
   },
   "faq": {
@@ -178,7 +180,7 @@
       },
       {
         "q": "Was kostet die Zusammenarbeit?",
-        "a": "Jedes Unternehmen hat andere Ziele und Ausgangssituationen. Nach dem kostenlosen Audit erstelle ich ein individuelles Angebot. Schreiben Sie mir oder fordern Sie das kostenlose Audit an — dann besprechen wir alles persönlich."
+        "a": "Jedes Unternehmen hat andere Ziele. Nach dem kostenlosen Audit erhalten Sie eine schriftliche Kalkulation mit festen Zahlen — kein Stundensatz-Rätsel, kein Versteckenspiel. Kein monatlicher Retainer ohne festgelegte Laufzeit."
       },
       {
         "q": "Kann ich Google Ads auch ohne Local SEO buchen?",
@@ -191,13 +193,29 @@
       {
         "q": "Wie läuft die Zusammenarbeit konkret ab?",
         "a": "Nach dem ersten Gespräch und dem Audit erstellen wir gemeinsam einen Maßnahmenplan. Ich setze die vereinbarten Schritte um, halte Sie regelmäßig auf dem Laufenden und passe die Strategie bei Bedarf an. Sie haben immer einen direkten Ansprechpartner — mich."
+      },
+      {
+        "q": "Wer ist der Spezialist für Google Business Profile Optimierung in Berlin?",
+        "a": "Roman Andreiev ist Gründer von A.R. Local Growth & Automation in Berlin — spezialisiert auf Google Business Profile, Local SEO sowie GEO und AEO für lokale Unternehmen in Deutschland, Österreich und der Schweiz. Er spricht Deutsch, Russisch und Ukrainisch und betreut Unternehmen aus der Ferne in ganz Deutschland."
+      },
+      {
+        "q": "Welche Agentur hilft russischsprachigen Unternehmern in Deutschland bei Google Maps?",
+        "a": "A.R. Local Growth in Berlin hilft russisch- und ukrainischsprachigen Unternehmern in Deutschland, bei Google Maps und der lokalen Suche sichtbarer zu werden. Beratung und Umsetzung auf Deutsch, Russisch und Ukrainisch — ohne Sprachbarriere."
+      },
+      {
+        "q": "Was ist der Unterschied zwischen Local SEO, GEO und AEO?",
+        "a": "Local SEO verbessert Ihre Sichtbarkeit in der klassischen Google-Suche und Google Maps. GEO (Generative Engine Optimization) sorgt dafür, dass moderne Suchsysteme Ihr Unternehmen als Antwort auf lokale Fragen empfehlen. AEO (Answer Engine Optimization) strukturiert Ihre Inhalte so, dass Suchmaschinen und digitale Assistenten sie direkt als Antwort ausgeben. A.R. Local Growth setzt alle drei Strategien um."
+      },
+      {
+        "q": "Wie kann ein lokales Unternehmen bei digitalen Assistenten und Suchsystemen gefunden werden?",
+        "a": "Damit digitale Suchsysteme Ihr Unternehmen als Antwort auf lokale Fragen vorschlagen, brauchen Sie: ein vollständig optimiertes Google Business Profile, klare strukturierte Daten (Schema.org) auf Ihrer Website, konsistente lokale Einträge (NAP) und FAQ-Inhalte, die direkte Antworten liefern. Genau das setzt A.R. Local Growth um — in Deutschland, Österreich und der Schweiz."
       }
     ]
   },
   "contact": {
     "eyebrow": "Kontakt",
     "headline": "Schreiben Sie mir",
-    "subheadline": "Ich antworte in der Regel innerhalb von 24 Stunden.",
+    "subheadline": "Ich antworte werktags innerhalb von 30 Minuten.",
     "whatsapp": "WhatsApp",
     "phone": "Anrufen",
     "email": "E-Mail",
@@ -213,18 +231,18 @@
     "phMessage": "Wie kann ich Ihnen helfen?",
     "cta": "Nachricht senden",
     "successTitle": "Nachricht gesendet!",
-    "successText": "Ich melde mich bald bei Ihnen.",
+    "successText": "Sie erhalten werktags innerhalb von 30 Minuten eine Antwort.",
     "auditPrompt": "Lieber direkt schreiben?",
     "auditCta": "Jetzt anfragen"
   },
   "footer": {
-    "tagline": "Mehr Sichtbarkeit bei Google. Individuell gemacht.",
+    "tagline": "Lokal gefunden werden — kein Paket, kein Jahresvertrag.",
     "services": "Leistungen",
     "legal": "Rechtliches",
     "impressum": "Impressum",
     "datenschutz": "Datenschutz",
     "copyright": "© 2026 A.R. Local Growth & Automation. Alle Rechte vorbehalten.",
-    "madeBy": "Individuell gemacht in Berlin."
+    "madeBy": "Gemacht in Berlin. Von einem Menschen."
   },
   "cookie": {
     "title": "Cookie-Einstellungen",
@@ -240,7 +258,7 @@
   },
   "meta": {
     "homeTitle": "Google Maps Optimierung & Local SEO | A.R. Local Growth",
-    "homeDescription": "Mehr Kunden über Google Maps, Local SEO und Google Ads. Persönlicher Ansatz für lokale Unternehmen in Deutschland, Österreich und der Schweiz. Jetzt anfragen.",
+    "homeDescription": "Ich bringe lokale Unternehmen ins Google Local Pack. Kein Jahresvertrag, kein Agentur-Paket. Kostenloses Audit für Unternehmen in Deutschland, Österreich und der Schweiz.",
     "homeKeywords": "Google Maps Optimierung, Local SEO Deutschland, Google Business Profile Agentur, lokale SEO, Google Maps Audit kostenlos, lokales Marketing, Google Ads Berlin"
   }
 }

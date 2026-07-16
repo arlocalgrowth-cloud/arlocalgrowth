@@ -10,6 +10,7 @@ import {
   FileText,
   Zap,
   Sparkles,
+  Globe,
   ArrowRight,
   CheckCircle,
   Clock,
@@ -28,22 +29,22 @@ const pageMeta: Record<
     title: "Leistungen — Google Maps, Local SEO & mehr für lokale Unternehmen",
     description:
       "Alle Leistungen von A.R. Local Growth: Google Business Profile, Local SEO, Bewertungsmanagement, Google Ads und mehr. Kostenloses Audit anfragen.",
-    headline: "Leistungen für Ihren lokalen Erfolg",
-    sub: "Von Google Maps Optimierung bis zur vollständigen lokalen Online-Präsenz — maßgeschneiderte Dienstleistungen für lokale Unternehmen in Deutschland, Österreich und der Schweiz.",
+    headline: "Alle Leistungen — einzeln buchbar, ohne Jahresvertrag",
+    sub: "Von Google Maps Optimierung bis zur vollständigen lokalen Online-Präsenz. Jede Leistung einzeln buchbar — in Deutschland, Österreich und der Schweiz.",
   },
   en: {
     title: "Services — Google Maps, Local SEO & more for local businesses",
     description:
       "All services from A.R. Local Growth: Google Business Profile, Local SEO, review management, Google Ads and more. Request a free audit.",
-    headline: "Services for your local success",
-    sub: "From Google Maps optimization to a complete local online presence — tailored services for local businesses in Germany, Austria, and Switzerland.",
+    headline: "All services — book individually, no annual contract",
+    sub: "From Google Maps optimization to a complete local online presence. Book each service individually — in Germany, Austria, and Switzerland.",
   },
   ru: {
     title: "Услуги — Google Maps, Local SEO и другие для локального бизнеса",
     description:
       "Все услуги A.R. Local Growth: Google Business Profile, Local SEO, управление отзывами, Google Ads и другие. Запросите бесплатный аудит.",
-    headline: "Услуги для вашего местного успеха",
-    sub: "От оптимизации Google Maps до полного локального онлайн-присутствия — индивидуальные услуги для локального бизнеса в Германии, Австрии и Швейцарии.",
+    headline: "Все услуги — каждая заказывается отдельно, без годового контракта",
+    sub: "От оптимизации Google Maps до полного локального онлайн-присутствия. Каждую услугу можно заказать отдельно — в Германии, Австрии и Швейцарии.",
   },
 };
 
@@ -126,27 +127,27 @@ const services = [
       ru: "Управление отзывами",
     },
     desc: {
-      de: "Systematischer Aufbau positiver Google-Bewertungen, professionelle Antwortvorlagen und Reputationsschutz — für mehr Vertrauen und mehr Klicks.",
-      en: "Systematic build-up of positive Google reviews, professional response templates and reputation protection — for more trust and more clicks.",
-      ru: "Систематическое получение положительных отзывов Google, профессиональные шаблоны ответов и защита репутации — для большего доверия и кликов.",
+      de: "Automatisches Follow-up nach jedem Kundentermin per WhatsApp oder E-Mail — der Kunde bekommt einen kurzen Link zur Google-Bewertung. Antwortvorlagen für jede Situation, auch für 1-Stern-Bewertungen.",
+      en: "Automated follow-up after every appointment via WhatsApp or email — the customer gets a direct link to leave a Google review. Response templates for every situation, including 1-star reviews.",
+      ru: "Автоматическое напоминание после каждого визита через WhatsApp или e-mail — клиент получает прямую ссылку для отзыва в Google. Шаблоны ответов для любой ситуации, включая отзывы с 1 звездой.",
     },
     highlights: {
       de: [
         "Bewertungsstrategie",
         "Anfrage-Vorlagen",
-        "Professionelle Antworten",
+        "Antwortvorlagen für 1–5 Sterne",
         "Reputationsschutz",
       ],
       en: [
         "Review strategy",
         "Request templates",
-        "Professional responses",
+        "Templates for 1–5 star reviews",
         "Reputation protection",
       ],
       ru: [
         "Стратегия отзывов",
         "Шаблоны запросов",
-        "Профессиональные ответы",
+        "Шаблоны для отзывов 1–5 звёзд",
         "Защита репутации",
       ],
     },
@@ -172,9 +173,29 @@ const services = [
       ru: "Лендинговые страницы",
     },
     desc: {
-      de: "Konversionsoptimierte Landingpages für lokale Unternehmen — schnell, mobilfreundlich und SEO-optimiert.",
-      en: "Conversion-optimized landing pages for local businesses — fast, mobile-friendly and SEO-optimized.",
-      ru: "Конверсионные посадочные страницы для локального бизнеса — быстрые, мобильные и SEO-оптимизированные.",
+      de: "Landingpage in 21 Tagen — erster Entwurf am 5. Tag zur Freigabe. Mobilfreundlich und auf Ihren wichtigsten lokalen Suchbegriff optimiert.",
+      en: "Landing page in 21 days — first draft on day 5 for your review. Mobile-friendly and optimized for your most important local keyword.",
+      ru: "Лендинг за 21 день — первый вариант на 5-й день для согласования. Мобильный и оптимизированный под ваш главный локальный запрос.",
+    },
+  },
+  {
+    icon: Globe,
+    slug: null,
+    live: false,
+    title: {
+      de: "GEO & AEO",
+      en: "GEO & AEO",
+      ru: "GEO & AEO",
+    },
+    desc: {
+      de: "Optimierung für moderne Suchsysteme und digitale Assistenten: strukturierte Daten, FAQ-Inhalte und Entity-Aufbau — damit Ihr Unternehmen als Antwort auf lokale Fragen erscheint.",
+      en: "Optimization for modern search systems and digital assistants: structured data, FAQ content and entity building — so your business appears as the answer to local questions.",
+      ru: "Оптимизация для современных поисковых систем и цифровых помощников: структурированные данные, FAQ-контент и entity-построение — чтобы ваш бизнес появлялся как ответ на локальные запросы.",
+    },
+    highlights: {
+      de: ["Schema.org Strukturdaten", "FAQ-Inhalte für direkte Antworten", "Entity-Aufbau", "NAP-Konsistenz"],
+      en: ["Schema.org structured data", "FAQ content for direct answers", "Entity building", "NAP consistency"],
+      ru: ["Структурированные данные Schema.org", "FAQ-контент для прямых ответов", "Entity-построение", "NAP-консистентность"],
     },
   },
   {
@@ -240,7 +261,7 @@ const ui: Record<
     includes: "Enthält:",
     popularServices: "Die beliebtesten Leistungen",
     popularSub:
-      "Schnellstart mit den Leistungen, die lokale Unternehmen am meisten voranbringen.",
+      "Die drei Leistungen mit dem höchsten Hebel für lokale Sichtbarkeit — erste Ergebnisse in 4–6 Wochen.",
   },
   en: {
     breadcrumbHome: "Home",
@@ -255,7 +276,7 @@ const ui: Record<
     includes: "Includes:",
     popularServices: "Most popular services",
     popularSub:
-      "Quick start with the services that move local businesses forward the most.",
+      "The three services with the highest leverage for local visibility — first results in 4–6 weeks.",
   },
   ru: {
     breadcrumbHome: "Главная",
@@ -270,7 +291,7 @@ const ui: Record<
     includes: "Включает:",
     popularServices: "Популярные услуги",
     popularSub:
-      "Быстрый старт с услугами, которые больше всего помогают локальному бизнесу.",
+      "Три услуги с наибольшим эффектом для локальной видимости — первые результаты за 4–6 недель.",
   },
 };
 

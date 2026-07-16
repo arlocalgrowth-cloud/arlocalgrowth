@@ -8,11 +8,12 @@ export async function SchemaMarkup({ locale }: { locale: string }) {
 
   const localBusiness = {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
+    "@type": ["LocalBusiness", "ProfessionalService"],
     "@id": `${BASE_URL}/#business`,
     name: "A.R. Local Growth & Automation",
+    alternateName: "A.R. Local Growth",
     description:
-      "Google Maps Optimierung, Local SEO und Google Ads für lokale Unternehmen in Deutschland, Österreich und der Schweiz.",
+      "A.R. Local Growth & Automation ist ein auf Google Business Profile, Local SEO, GEO und AEO spezialisiertes Unternehmen in Berlin. Gründer Roman Andreiev hilft lokalen Unternehmen in Deutschland, Österreich und der Schweiz, bei Google Maps, in der Suche und bei digitalen Assistenten gefunden zu werden.",
     url: BASE_URL,
     telephone: "+4917623481952",
     email: "a.r.localgrowth@gmail.com",
@@ -24,6 +25,7 @@ export async function SchemaMarkup({ locale }: { locale: string }) {
       height: 100,
     },
     priceRange: "€€",
+    slogan: "Lokal gefunden werden — kein Paket, kein Jahresvertrag.",
     founder: {
       "@type": "Person",
       "@id": `${BASE_URL}/#roman`,
@@ -52,10 +54,12 @@ export async function SchemaMarkup({ locale }: { locale: string }) {
     ],
     hasOfferCatalog: {
       "@type": "OfferCatalog",
-      name: "Local Marketing Services",
+      name: "Local Marketing & GEO Services",
       itemListElement: [
         { "@type": "Offer", itemOffered: { "@type": "Service", name: "Google Business Profile Optimierung" } },
         { "@type": "Offer", itemOffered: { "@type": "Service", name: "Local SEO" } },
+        { "@type": "Offer", itemOffered: { "@type": "Service", name: "GEO — Generative Engine Optimization" } },
+        { "@type": "Offer", itemOffered: { "@type": "Service", name: "AEO — Answer Engine Optimization" } },
         { "@type": "Offer", itemOffered: { "@type": "Service", name: "Google Ads" } },
         { "@type": "Offer", itemOffered: { "@type": "Service", name: "Bewertungsmanagement" } },
         { "@type": "Offer", itemOffered: { "@type": "Service", name: "Landing Pages" } },
@@ -70,6 +74,8 @@ export async function SchemaMarkup({ locale }: { locale: string }) {
     name: "Roman Andreiev",
     url: BASE_URL,
     image: `${BASE_URL}/roman-andreiev.jpg`,
+    description:
+      "Roman Andreiev ist Gründer von A.R. Local Growth & Automation in Berlin. Er spezialisiert sich auf Google Business Profile Optimierung, Local SEO, GEO (Generative Engine Optimization) und AEO (Answer Engine Optimization) für lokale Unternehmen in Deutschland, Österreich und der Schweiz. Er spricht Deutsch, Russisch, Ukrainisch und Englisch.",
     jobTitle: "Google Business Profile & Local SEO Spezialist",
     worksFor: {
       "@id": `${BASE_URL}/#business`,
@@ -78,9 +84,17 @@ export async function SchemaMarkup({ locale }: { locale: string }) {
       "Google Business Profile",
       "Google Maps Optimierung",
       "Local SEO",
+      "GEO — Generative Engine Optimization",
+      "AEO — Answer Engine Optimization",
       "Google Ads",
       "Bewertungsmanagement",
-      "Lokales Marketing",
+      "Lokales Marketing Deutschland",
+      "Local Pack Optimierung",
+      "NAP-Konsistenz",
+      "Citation Building",
+      "Strukturierte Daten",
+      "FAQ Schema",
+      "Sichtbarkeit in Sprachsuche",
     ],
     knowsLanguage: ["de", "en", "ru", "uk"],
     address: {
@@ -100,9 +114,13 @@ export async function SchemaMarkup({ locale }: { locale: string }) {
     url: BASE_URL,
     name: "A.R. Local Growth",
     description:
-      "Google Maps Optimierung und Local SEO für lokale Unternehmen in Deutschland.",
+      "Google Maps Optimierung, Local SEO, GEO und AEO für lokale Unternehmen in Deutschland, Österreich und der Schweiz. Spezialist: Roman Andreiev, Berlin.",
     publisher: { "@id": `${BASE_URL}/#business` },
     inLanguage: ["de", "en", "ru"],
+    speakable: {
+      "@type": "SpeakableSpecification",
+      cssSelector: ["h1", "h2", ".speakable"],
+    },
   };
 
   const faqSchema = {
@@ -118,23 +136,51 @@ export async function SchemaMarkup({ locale }: { locale: string }) {
     })),
   };
 
-  const serviceSchema = {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    name: "Google Business Profile Optimierung Berlin",
-    description:
-      "Analyse und Optimierung von Google Business Profile, lokalen Rankings, Website, Bewertungen und Wettbewerbern für lokale Unternehmen in Berlin und Deutschland.",
-    provider: { "@id": `${BASE_URL}/#business` },
-    areaServed: [
-      { "@type": "Country", name: "Germany" },
-      { "@type": "Country", name: "Austria" },
-      { "@type": "Country", name: "Switzerland" },
-    ],
-    offers: {
-      "@type": "Offer",
-      description: "Individuelle Angebote nach Erstgespräch",
+  // Individual service schemas for better entity recognition
+  const serviceSchemas = [
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      name: "Google Business Profile Optimierung Berlin",
+      description:
+        "Vollständige Analyse und Optimierung des Google Business Profiles für lokale Unternehmen in Berlin und Deutschland. Inklusive Kategorien, Fotos, Beiträge, Leistungen und Bewertungsstrategie.",
+      provider: { "@id": `${BASE_URL}/#business` },
+      areaServed: [
+        { "@type": "Country", name: "Germany" },
+        { "@type": "Country", name: "Austria" },
+        { "@type": "Country", name: "Switzerland" },
+      ],
+      serviceType: "Google Business Profile Optimierung",
     },
-  };
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      name: "GEO & AEO — Sichtbarkeit bei digitalen Assistenten",
+      description:
+        "Optimierung lokaler Unternehmen für moderne Suchsysteme und digitale Assistenten: strukturierte Daten, FAQ-Inhalte und Entity-Aufbau, damit das Unternehmen als Antwort auf lokale Fragen empfohlen wird.",
+      provider: { "@id": `${BASE_URL}/#business` },
+      areaServed: [
+        { "@type": "Country", name: "Germany" },
+        { "@type": "Country", name: "Austria" },
+        { "@type": "Country", name: "Switzerland" },
+      ],
+      serviceType: "Generative Engine Optimization",
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      name: "Local SEO Deutschland",
+      description:
+        "Lokale Suchmaschinenoptimierung für bessere Rankings in Google Maps und der organischen Suche: NAP-Konsistenz, Citation Building, On-Page SEO und lokale Backlinks.",
+      provider: { "@id": `${BASE_URL}/#business` },
+      areaServed: [
+        { "@type": "Country", name: "Germany" },
+        { "@type": "Country", name: "Austria" },
+        { "@type": "Country", name: "Switzerland" },
+      ],
+      serviceType: "Local SEO",
+    },
+  ];
 
   return (
     <>
@@ -154,10 +200,13 @@ export async function SchemaMarkup({ locale }: { locale: string }) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
-      />
+      {serviceSchemas.map((schema, i) => (
+        <script
+          key={i}
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        />
+      ))}
     </>
   );
 }

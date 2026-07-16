@@ -55,7 +55,7 @@ export function Navbar() {
     { key: "caseStudies", href: `${homeBase}/#fallstudien` },
     { key: "forWho", href: `${homeBase}/#fur-wen` },
     { key: "about", href: `${homeBase}/#uber-uns` },
-    { key: "faq", href: `${homeBase}/#faq` },
+    { key: "faq", href: locale === "de" ? "/faq" : `/${locale}/faq` },
     { key: "contact", href: `${homeBase}/#kontakt` },
   ] as const;
 

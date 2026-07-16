@@ -12,10 +12,11 @@ import {
   FileText,
   Zap,
   Sparkles,
+  Globe,
   ArrowRight,
 } from "lucide-react";
 
-const serviceIcons = [MapPin, BarChart2, Megaphone, Star, FileText, Zap, Sparkles];
+const serviceIcons = [MapPin, BarChart2, Megaphone, Star, FileText, Zap, Sparkles, Globe];
 
 // Services with dedicated pages — index → locale-relative path
 const SERVICE_LINKS: Record<number, string> = {
@@ -47,6 +48,7 @@ export function ServicesSection() {
     { titleKey: "service5Title", textKey: "service5Text" },
     { titleKey: "service6Title", textKey: "service6Text" },
     { titleKey: "service7Title", textKey: "service7Text" },
+    { titleKey: "service8Title", textKey: "service8Text" },
   ] as const;
 
   return (

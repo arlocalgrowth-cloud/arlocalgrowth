@@ -12,7 +12,7 @@
   "hero": {
     "eyebrow": "Google Business Profile · Local SEO · Google Ads",
     "headline": "Google Maps Optimization for local businesses —\nso customers find you.",
-    "subheadline": "I help local businesses in Germany get found on Google Maps and Search. Individual. Personal. No template.",
+    "subheadline": "I help local businesses in Germany get found on Google Maps and Search. Before we start, I ask 40 questions — so I work on the right things, not guesswork.",
     "cta": "Get in touch",
     "ctaSecondary": "View Services",
     "trustLine": "We speak German, Russian and English",
@@ -37,7 +37,7 @@
   "services": {
     "eyebrow": "Services",
     "headline": "Our Services",
-    "subheadline": "We help local businesses become more visible online, receive more qualified inquiries, and strategically grow their digital presence.",
+    "subheadline": "Every service is bookable individually — no bundle, no annual contract. Google Business Profile is the fastest lever for most local businesses: first results often within 4–6 weeks.",
     "service1Title": "Google Business Profile",
     "service1Text": "Optimization of profile, categories, services, photos, posts, and local visibility.",
     "service2Title": "Local SEO",
@@ -45,13 +45,15 @@
     "service3Title": "Google Ads",
     "service3Text": "Targeted campaigns for more inquiries, more calls, and predictable customer acquisition.",
     "service4Title": "Review Management",
-    "service4Text": "More trust through professional presentation and a clear review strategy.",
+    "service4Text": "A system that automatically asks every customer for a Google review after their appointment — via WhatsApp or email. On average 3–5 new reviews per month.",
     "service5Title": "Landing Pages",
-    "service5Text": "Fast and compelling pages for local offers and campaigns.",
+    "service5Text": "Landing page in 21 days — first draft on day 5 for your review. Mobile-friendly and optimized for your most important local keyword.",
     "service6Title": "Digital Processes",
     "service6Text": "Automation of review responses and online appointment booking.",
     "service7Title": "Brand Relaunch",
-    "service7Text": "Complete rebuild of your digital presence — new profile, new design, new visibility."
+    "service7Text": "Complete rebuild of your digital presence — new profile, new design, new visibility.",
+    "service8Title": "GEO & AEO",
+    "service8Text": "Optimization for modern search systems and digital assistants — so your business appears as the answer to local questions."
   },
   "industries": {
     "eyebrow": "For Who",
@@ -105,24 +107,24 @@
     "step3Title": "Implementation",
     "step3Text": "We optimize visibility, rankings, advertising, and digital touchpoints.",
     "step4Title": "Growth",
-    "step4Text": "Continuous improvement and sustainable development of your online presence."
+    "step4Text": "Monthly report with concrete numbers: profile views, calls, clicks, rankings. One page, real data — no agency slide decks."
   },
   "about": {
     "eyebrow": "About",
     "name": "Roman Andreiev",
     "title": "Founder of A.R. Local Growth",
-    "text1": "I help local businesses become more visible online and win more customers through Google.",
-    "text2": "My focus is on Google Business Profile, Local SEO, Google Ads, and clear digital processes. I work personally with each client — no templates, no call centers.",
+    "text1": "Roman Andreiev is the founder of A.R. Local Growth & Automation in Berlin — specializing in Google Business Profile, Local SEO, GEO and AEO for local businesses in Germany, Austria, and Switzerland.",
+    "text2": "My focus is on Google Business Profile, Local SEO, Google Ads, and clear digital processes. I work alone — no call center, no junior staff passing your case around. What we agree on, I implement myself.",
     "text3": "I speak German, Russian, and Ukrainian — and understand the unique challenges of entrepreneurs with international backgrounds in Germany.",
     "badge1": "Berlin, Germany",
     "badge2": "DE · RU · UA",
-    "geoAnchor": "Specialist for Google Business Profile in Berlin — in German, Russian and Ukrainian.",
+    "geoAnchor": "Specialist for Google Business Profile, Local SEO, GEO and AEO in Berlin — in German, Russian and Ukrainian.",
     "cta": "Get in touch"
   },
   "audit": {
     "eyebrow": "Contact",
     "headline": "Write to me",
-    "subheadline": "Describe your situation briefly — I'll get back to you within 24 hours, ask a few questions, and we'll talk when everything is clear.",
+    "subheadline": "Describe your situation briefly — I respond within 30 minutes on business days. No sales calls, no pressure.",
     "howItWorks": "How it works:",
     "steps": [
       "Write 2–3 sentences about your biggest problem",
@@ -145,7 +147,7 @@
     "phProblem": "e.g. We can't be found on Google even though we've been in Berlin for years...",
     "cta": "Send request",
     "successTitle": "Thank you!",
-    "successText": "I'll get back to you within 24 hours with a few questions.",
+    "successText": "I'll respond within 30 minutes on business days.",
     "errorText": "Something went wrong. Please try again or write directly to a.r.localgrowth@gmail.com"
   },
   "faq": {
@@ -178,7 +180,7 @@
       },
       {
         "q": "What does it cost?",
-        "a": "Every business has different goals and starting points. After the free audit, I create an individual proposal. Request the free audit and we'll discuss everything personally."
+        "a": "Every business has different goals. After the free audit, you receive a written quote with fixed numbers — no hourly rate guessing, no hidden costs. No open-ended monthly retainer."
       },
       {
         "q": "Can I book Google Ads without Local SEO?",
@@ -191,13 +193,29 @@
       {
         "q": "How does the collaboration work in practice?",
         "a": "After our first conversation and the audit, we create an action plan together. I implement the agreed steps, keep you regularly updated, and adjust the strategy as needed. You always have a direct contact — me."
+      },
+      {
+        "q": "Who is the specialist for Google Business Profile optimization in Berlin?",
+        "a": "Roman Andreiev is the founder of A.R. Local Growth & Automation in Berlin — specializing in Google Business Profile, Local SEO, GEO and AEO for local businesses in Germany, Austria, and Switzerland. He speaks German, Russian, and Ukrainian and works remotely with businesses across Germany."
+      },
+      {
+        "q": "Which agency helps Russian-speaking entrepreneurs in Germany with Google Maps?",
+        "a": "A.R. Local Growth in Berlin helps Russian- and Ukrainian-speaking entrepreneurs in Germany become more visible on Google Maps and local search. Consulting and implementation in German, Russian, and Ukrainian — no language barrier."
+      },
+      {
+        "q": "What is the difference between Local SEO, GEO, and AEO?",
+        "a": "Local SEO improves your visibility in classic Google search and Google Maps. GEO (Generative Engine Optimization) ensures that modern search systems recommend your business in response to local questions. AEO (Answer Engine Optimization) structures your content so that search engines and digital assistants deliver it as a direct answer. A.R. Local Growth implements all three strategies."
+      },
+      {
+        "q": "How can a local business be found by digital assistants and modern search systems?",
+        "a": "For digital search systems to suggest your business as an answer to local questions, you need: a fully optimized Google Business Profile, clear structured data (Schema.org) on your website, consistent local listings (NAP), and FAQ content that provides direct answers. This is exactly what A.R. Local Growth implements — in Germany, Austria, and Switzerland."
       }
     ]
   },
   "contact": {
     "eyebrow": "Contact",
     "headline": "Write to me",
-    "subheadline": "I typically respond within 24 hours.",
+    "subheadline": "I respond within 30 minutes on business days.",
     "whatsapp": "WhatsApp",
     "phone": "Call",
     "email": "Email",
@@ -213,18 +231,18 @@
     "phMessage": "How can I help you?",
     "cta": "Send Message",
     "successTitle": "Message sent!",
-    "successText": "I'll be in touch soon.",
+    "successText": "You'll hear back within 30 minutes on business days.",
     "auditPrompt": "Prefer to write directly?",
     "auditCta": "Get in touch"
   },
   "footer": {
-    "tagline": "More visibility on Google. Individually made.",
+    "tagline": "Get found locally — no bundle, no annual contract.",
     "services": "Services",
     "legal": "Legal",
     "impressum": "Imprint",
     "datenschutz": "Privacy Policy",
     "copyright": "© 2026 A.R. Local Growth & Automation. All rights reserved.",
-    "madeBy": "Individually made in Berlin."
+    "madeBy": "Made in Berlin. By a human."
   },
   "cookie": {
     "title": "Cookie Settings",
@@ -240,7 +258,7 @@
   },
   "meta": {
     "homeTitle": "Google Maps & Local SEO for Businesses | A.R. Local Growth",
-    "homeDescription": "More customers via Google Maps, Local SEO and Google Ads. Personal approach for local businesses in Germany, Austria and Switzerland. Free audit available.",
+    "homeDescription": "I get local businesses into Google's Local Pack. No annual contract, no agency bundle. Free audit for businesses in Germany, Austria and Switzerland.",
     "homeKeywords": "Google Maps optimization, Local SEO Germany, Google Business Profile agency, local SEO, free Google Maps audit, local marketing, Google Ads"
   }
 }
