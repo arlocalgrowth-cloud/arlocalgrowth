@@ -237,7 +237,7 @@ export function generateStaticParams() {
 // ─── FAQPage schema ───────────────────────────────────────────────────────────
 function buildFaqSchema(locale: string) {
   const c = content[locale as keyof typeof content] ?? content.de;
-  const allItems = c.categories.flatMap((cat) => cat.items);
+  const allItems = c.categories.flatMap((cat) => cat.items as { q: string; a: string }[]);
   return {
     "@context": "https://schema.org",
     "@type": "FAQPage",
