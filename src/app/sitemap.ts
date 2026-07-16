@@ -31,6 +31,31 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
+      url: `${BASE_URL}/faq`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.9,
+      alternates: {
+        languages: {
+          de: `${BASE_URL}/faq`,
+          en: `${BASE_URL}/en/faq`,
+          ru: `${BASE_URL}/ru/faq`,
+        },
+      },
+    },
+    {
+      url: `${BASE_URL}/en/faq`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.85,
+    },
+    {
+      url: `${BASE_URL}/ru/faq`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.85,
+    },
+    {
       url: `${BASE_URL}/blog`,
       lastModified: new Date(),
       changeFrequency: "weekly",
